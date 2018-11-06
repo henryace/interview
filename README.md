@@ -1,34 +1,34 @@
-# C/C++ 面试知识总结
+# C/C++ 面{U+8BD5}知{U+8BC6}{U+603B}{U+7ED3}
 
-C/C++ 面试知识总结，只为复习、分享。部分知识点与图片来自网络，侵删。
+C/C++ 面{U+8BD5}知{U+8BC6}{U+603B}{U+7ED3}，只{U+4E3A}複{U+4E60}、分享。部分知{U+8BC6}{U+70B9}與{U+56FE}片{U+6765}自網{U+7EDC}，侵{U+5220}。
 
-勘误新增请 Issue、PR，建议、讨论请 [#issues/12](https://github.com/huihut/interview/issues/12)，排版使用 [中文文案排版指北](https://github.com/mzlogin/chinese-copywriting-guidelines)
+勘{U+8BEF}新增{U+8BF7} Issue、PR，建{U+8BAE}、{U+8BA8}{U+8BBA}{U+8BF7} [#issues/12](https://github.com/huihut/interview/issues/12)，排版使用 [中文文案排版指北](https://github.com/mzlogin/chinese-copywriting-guidelines)
 
-使用建议：
+使用建{U+8BAE}：
 
-* `Ctrl + F`：快速查找定位知识点
-* `TOC 导航`：[jawil/GayHub](https://github.com/jawil/GayHub) 插件快速目录跳转
+* `Ctrl + F`：快速查找定位知{U+8BC6}{U+70B9}
+* `TOC {U+5BFC}航`：[jawil/GayHub](https://github.com/jawil/GayHub) 插件快速目{U+5F55}跳{U+8F6C}
 
-## 目录
+## 目{U+5F55}
 
 * [C/C++](#cc)
 * [STL](#stl)
-* [数据结构](#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
+* [{U+6570}據{U+7ED3}構](#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
 * [算法](#%E7%AE%97%E6%B3%95)
 * [Problems](#problems)
-* [操作系统](#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F)
-* [计算机网络](#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C)
-* [网络编程](#%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B)
-* [数据库](#%E6%95%B0%E6%8D%AE%E5%BA%93)
-* [设计模式](#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
-* [链接装载库](#%E9%93%BE%E6%8E%A5%E8%A3%85%E8%BD%BD%E5%BA%93)
-* [海量数据处理](#%E6%B5%B7%E9%87%8F%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86)
-* [音视频](#%E9%9F%B3%E8%A7%86%E9%A2%91)
+* [操作系{U+7EDF}](#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F)
+* [{U+8BA1}算機網{U+7EDC}](#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C)
+* [網{U+7EDC}{U+7F16}程](#%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B)
+* [{U+6570}據{U+5E93}](#%E6%95%B0%E6%8D%AE%E5%BA%93)
+* [{U+8BBE}{U+8BA1}模式](#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
+* [{U+94FE}接{U+88C5}{U+8F7D}{U+5E93}](#%E9%93%BE%E6%8E%A5%E8%A3%85%E8%BD%BD%E5%BA%93)
+* [海量{U+6570}據{U+5904}理](#%E6%B5%B7%E9%87%8F%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86)
+* [音{U+89C6}{U+9891}](#%E9%9F%B3%E8%A7%86%E9%A2%91)
 * [其他](#%E5%85%B6%E4%BB%96)
-* [书籍](#%E4%B9%A6%E7%B1%8D)
-* [复习刷题网站](#%E5%A4%8D%E4%B9%A0%E5%88%B7%E9%A2%98%E7%BD%91%E7%AB%99)
-* [招聘时间岗位](#%E6%8B%9B%E8%81%98%E6%97%B6%E9%97%B4%E5%B2%97%E4%BD%8D)
-* [面试题目经验](#%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E7%BB%8F%E9%AA%8C)
+* [{U+4E66}籍](#%E4%B9%A6%E7%B1%8D)
+* [複{U+4E60}刷{U+9898}網站](#%E5%A4%8D%E4%B9%A0%E5%88%B7%E9%A2%98%E7%BD%91%E7%AB%99)
+* [招聘{U+65F6}{U+95F4}{U+5C97}位](#%E6%8B%9B%E8%81%98%E6%97%B6%E9%97%B4%E5%B2%97%E4%BD%8D)
+* [面{U+8BD5}{U+9898}目{U+7ECF}{U+9A8C}](#%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E7%BB%8F%E9%AA%8C)
 
 ## C/C++
 
@@ -36,58 +36,58 @@ C/C++ 面试知识总结，只为复习、分享。部分知识点与图片来�
 
 #### 作用
 
-1. 修饰变量，说明该变量不可以被改变；
-2. 修饰指针，分为指向常量的指针和指针常量；
-3. 常量引用，经常用于形参类型，即避免了拷贝，又避免了函数对值的修改；
-4. 修饰成员函数，说明该成员函数内不能修改成员变量。
+1. 修{U+9970}{U+53D8}量，{U+8BF4}明{U+8BE5}{U+53D8}量不可以被改{U+53D8}；
+2. 修{U+9970}指{U+9488}，分{U+4E3A}指向常量的指{U+9488}和指{U+9488}常量；
+3. 常量引用，{U+7ECF}常用於形{U+53C2}{U+7C7B}型，即避免了拷{U+8D1D}，又避免了函{U+6570}{U+5BF9}值的修改；
+4. 修{U+9970}成{U+5458}函{U+6570}，{U+8BF4}明{U+8BE5}成{U+5458}函{U+6570}{U+5185}不能修改成{U+5458}{U+53D8}量。
 
 #### 使用
 
 <details><summary>const 使用</summary> 
 
 ```cpp
-// 类
+// {U+7C7B}
 class A
 {
 private:
-    const int a;                // 常对象成员，只能在初始化列表赋值
+    const int a;                // 常{U+5BF9}象成{U+5458}，只能在初始化列表{U+8D4B}值
 
 public:
-    // 构造函数
+    // 構造函{U+6570}
     A() { };
     A(int x) : a(x) { };        // 初始化列表
 
-    // const可用于对重载函数的区分
-    int getValue();             // 普通成员函数
-    int getValue() const;       // 常成员函数，不得修改类中的任何数据成员的值
+    // const可用於{U+5BF9}重{U+8F7D}函{U+6570}的{U+533A}分
+    int getValue();             // 普通成{U+5458}函{U+6570}
+    int getValue() const;       // 常成{U+5458}函{U+6570}，不得修改{U+7C7B}中的任何{U+6570}據成{U+5458}的值
 };
 
 void function()
 {
-    // 对象
-    A b;                        // 普通对象，可以调用全部成员函数
-    const A a;                  // 常对象，只能调用常成员函数、更新常成员变量
-    const A *p = &a;            // 常指针
+    // {U+5BF9}象
+    A b;                        // 普通{U+5BF9}象，可以{U+8C03}用全部成{U+5458}函{U+6570}
+    const A a;                  // 常{U+5BF9}象，只能{U+8C03}用常成{U+5458}函{U+6570}、更新常成{U+5458}{U+53D8}量
+    const A *p = &a;            // 常指{U+9488}
     const A &q = a;             // 常引用
 
-    // 指针
+    // 指{U+9488}
     char greeting[] = "Hello";
-    char* p1 = greeting;                // 指针变量，指向字符数组变量
-    const char* p2 = greeting;          // 指针变量，指向字符数组常量
-    char* const p3 = greeting;          // 常指针，指向字符数组变量
-    const char* const p4 = greeting;    // 常指针，指向字符数组常量
+    char* p1 = greeting;                // 指{U+9488}{U+53D8}量，指向字符{U+6570}{U+7EC4}{U+53D8}量
+    const char* p2 = greeting;          // 指{U+9488}{U+53D8}量，指向字符{U+6570}{U+7EC4}常量
+    char* const p3 = greeting;          // 常指{U+9488}，指向字符{U+6570}{U+7EC4}{U+53D8}量
+    const char* const p4 = greeting;    // 常指{U+9488}，指向字符{U+6570}{U+7EC4}常量
 }
 
-// 函数
-void function1(const int Var);           // 传递过来的参数在函数内不可变
-void function2(const char* Var);         // 参数指针所指内容为常量
-void function3(char* const Var);         // 参数指针为常指针
-void function4(const int& Var);          // 引用参数在函数内为常量
+// 函{U+6570}
+void function1(const int Var);           // {U+4F20}{U+9012}{U+8FC7}{U+6765}的{U+53C2}{U+6570}在函{U+6570}{U+5185}不可{U+53D8}
+void function2(const char* Var);         // {U+53C2}{U+6570}指{U+9488}所指{U+5185}容{U+4E3A}常量
+void function3(char* const Var);         // {U+53C2}{U+6570}指{U+9488}{U+4E3A}常指{U+9488}
+void function4(const int& Var);          // 引用{U+53C2}{U+6570}在函{U+6570}{U+5185}{U+4E3A}常量
 
-// 函数返回值
-const int function5();      // 返回一个常数
-const int* function6();     // 返回一个指向常量的指针变量，使用：const int *p = function6();
-int* const function7();     // 返回一个指向变量的常指针，使用：int* const p = function7();
+// 函{U+6570}返回值
+const int function5();      // 返回一{U+4E2A}常{U+6570}
+const int* function6();     // 返回一{U+4E2A}指向常量的指{U+9488}{U+53D8}量，使用：const int *p = function6();
+int* const function7();     // 返回一{U+4E2A}指向{U+53D8}量的常指{U+9488}，使用：int* const p = function7();
 ```
 
 </details>
@@ -96,32 +96,32 @@ int* const function7();     // 返回一个指向变量的常指针，使用：i
 
 #### 作用
 
-1. 修饰普通变量，修改变量的存储区域和生命周期，使变量存储在静态区，在 main 函数运行前就分配了空间，如果有初始值就用初始值初始化它，如果没有初始值系统用默认值初始化它。
-2. 修饰普通函数，表明函数的作用范围，仅在定义该函数的文件内才能使用。在多人开发项目时，为了防止与他人命令函数重名，可以将函数定位为 static。
-3. 修饰成员变量，修饰成员变量使所有的对象只保存一个该变量，而且不需要生成对象就可以访问该成员。
-4. 修饰成员函数，修饰成员函数使得不需要生成对象就可以访问该函数，但是在 static 函数内不能访问非静态成员。
+1. 修{U+9970}普通{U+53D8}量，修改{U+53D8}量的存{U+50A8}{U+533A}域和生命周期，使{U+53D8}量存{U+50A8}在{U+9759}{U+6001}{U+533A}，在 main 函{U+6570}{U+8FD0}行前就分配了空{U+95F4}，如果有初始值就用初始值初始化它，如果{U+6CA1}有初始值系{U+7EDF}用默{U+8BA4}值初始化它。
+2. 修{U+9970}普通函{U+6570}，表明函{U+6570}的作用範{U+56F4}，{U+4EC5}在定{U+4E49}{U+8BE5}函{U+6570}的文件{U+5185}才能使用。在多人{U+5F00}{U+53D1}{U+9879}目{U+65F6}，{U+4E3A}了防止與他人命令函{U+6570}重名，可以{U+5C06}函{U+6570}定位{U+4E3A} static。
+3. 修{U+9970}成{U+5458}{U+53D8}量，修{U+9970}成{U+5458}{U+53D8}量使所有的{U+5BF9}象只保存一{U+4E2A}{U+8BE5}{U+53D8}量，而且不需要生成{U+5BF9}象就可以{U+8BBF}{U+95EE}{U+8BE5}成{U+5458}。
+4. 修{U+9970}成{U+5458}函{U+6570}，修{U+9970}成{U+5458}函{U+6570}使得不需要生成{U+5BF9}象就可以{U+8BBF}{U+95EE}{U+8BE5}函{U+6570}，但是在 static 函{U+6570}{U+5185}不能{U+8BBF}{U+95EE}非{U+9759}{U+6001}成{U+5458}。
 
-### this 指针
+### this 指{U+9488}
 
-1. `this` 指针是一个隐含于每一个非静态成员函数中的特殊指针。它指向正在被该成员函数操作的那个对象。
-2. 当对一个对象调用成员函数时，编译程序先将对象的地址赋给 `this` 指针，然后调用成员函数，每次成员函数存取数据成员时，由隐含使用 `this` 指针。
-3. 当一个成员函数被调用时，自动向它传递一个隐含的参数，该参数是一个指向这个成员函数所在的对象的指针。
-4. `this` 指针被隐含地声明为: `ClassName *const this`，这意味着不能给 `this` 指针赋值；在 `ClassName` 类的 `const` 成员函数中，`this` 指针的类型为：`const ClassName* const`，这说明不能对 `this` 指针所指向的这种对象是不可修改的（即不能对这种对象的数据成员进行赋值操作）；
-5. `this` 并不是一个常规变量，而是个右值，所以不能取得 `this` 的地址（不能 `&this`）。
-6. 在以下场景中，经常需要显式引用 `this` 指针：
-    1. 为实现对象的链式引用；
-    2. 为避免对同一对象进行赋值操作；
-    3. 在实现一些数据结构时，如 `list`。
+1. `this` 指{U+9488}是一{U+4E2A}{U+9690}含於每一{U+4E2A}非{U+9759}{U+6001}成{U+5458}函{U+6570}中的特殊指{U+9488}。它指向正在被{U+8BE5}成{U+5458}函{U+6570}操作的那{U+4E2A}{U+5BF9}象。
+2. {U+5F53}{U+5BF9}一{U+4E2A}{U+5BF9}象{U+8C03}用成{U+5458}函{U+6570}{U+65F6}，{U+7F16}{U+8BD1}程序先{U+5C06}{U+5BF9}象的地址{U+8D4B}{U+7ED9} `this` 指{U+9488}，然後{U+8C03}用成{U+5458}函{U+6570}，每次成{U+5458}函{U+6570}存取{U+6570}據成{U+5458}{U+65F6}，由{U+9690}含使用 `this` 指{U+9488}。
+3. {U+5F53}一{U+4E2A}成{U+5458}函{U+6570}被{U+8C03}用{U+65F6}，自{U+52A8}向它{U+4F20}{U+9012}一{U+4E2A}{U+9690}含的{U+53C2}{U+6570}，{U+8BE5}{U+53C2}{U+6570}是一{U+4E2A}指向{U+8FD9}{U+4E2A}成{U+5458}函{U+6570}所在的{U+5BF9}象的指{U+9488}。
+4. `this` 指{U+9488}被{U+9690}含地{U+58F0}明{U+4E3A}: `ClassName *const this`，{U+8FD9}意味{U+7740}不能{U+7ED9} `this` 指{U+9488}{U+8D4B}值；在 `ClassName` {U+7C7B}的 `const` 成{U+5458}函{U+6570}中，`this` 指{U+9488}的{U+7C7B}型{U+4E3A}：`const ClassName* const`，{U+8FD9}{U+8BF4}明不能{U+5BF9} `this` 指{U+9488}所指向的{U+8FD9}種{U+5BF9}象是不可修改的（即不能{U+5BF9}{U+8FD9}種{U+5BF9}象的{U+6570}據成{U+5458}{U+8FDB}行{U+8D4B}值操作）；
+5. `this` 並不是一{U+4E2A}常{U+89C4}{U+53D8}量，而是{U+4E2A}右值，所以不能取得 `this` 的地址（不能 `&this`）。
+6. 在以下{U+573A}景中，{U+7ECF}常需要{U+663E}式引用 `this` 指{U+9488}：
+    1. {U+4E3A}{U+5B9E}{U+73B0}{U+5BF9}象的{U+94FE}式引用；
+    2. {U+4E3A}避免{U+5BF9}同一{U+5BF9}象{U+8FDB}行{U+8D4B}值操作；
+    3. 在{U+5B9E}{U+73B0}一些{U+6570}據{U+7ED3}構{U+65F6}，如 `list`。
 
-### inline 内联函数
+### inline {U+5185}{U+8054}函{U+6570}
 
 #### 特征
 
-* 相当于把内联函数里面的内容写在调用内联函数处；
-* 相当于不用执行进入函数的步骤，直接执行函数体；
-* 相当于宏，却比宏多了类型检查，真正具有函数特性；
-* 不能包含循环、递归、switch 等复杂操作；
-* 在类声明中定义的函数，除了虚函数的其他函数都会自动隐式地当成内联函数。
+* 相{U+5F53}於把{U+5185}{U+8054}函{U+6570}裏面的{U+5185}容{U+5199}在{U+8C03}用{U+5185}{U+8054}函{U+6570}{U+5904}；
+* 相{U+5F53}於不用{U+6267}行{U+8FDB}入函{U+6570}的步{U+9AA4}，直接{U+6267}行函{U+6570}體；
+* 相{U+5F53}於宏，{U+5374}比宏多了{U+7C7B}型{U+68C0}查，真正具有函{U+6570}特性；
+* 不能包含循{U+73AF}、{U+9012}{U+5F52}、switch 等複{U+6742}操作；
+* 在{U+7C7B}{U+58F0}明中定{U+4E49}的函{U+6570}，除了{U+865A}函{U+6570}的其他函{U+6570}都{U+4F1A}自{U+52A8}{U+9690}式地{U+5F53}成{U+5185}{U+8054}函{U+6570}。
 
 #### 使用
 
@@ -129,60 +129,60 @@ int* const function7();     // 返回一个指向变量的常指针，使用：i
 
 
 ```cpp
-// 声明1（加 inline，建议使用）
+// {U+58F0}明1（加 inline，建{U+8BAE}使用）
 inline int functionName(int first, int secend,...);
 
-// 声明2（不加 inline）
+// {U+58F0}明2（不加 inline）
 int functionName(int first, int secend,...);
 
-// 定义
+// 定{U+4E49}
 inline int functionName(int first, int secend,...) {/****/};
 
-// 类内定义，隐式内联
+// {U+7C7B}{U+5185}定{U+4E49}，{U+9690}式{U+5185}{U+8054}
 class A {
-    int doA() { return 0; }         // 隐式内联
+    int doA() { return 0; }         // {U+9690}式{U+5185}{U+8054}
 }
 
-// 类外定义，需要显式内联
+// {U+7C7B}外定{U+4E49}，需要{U+663E}式{U+5185}{U+8054}
 class A {
     int doA();
 }
-inline int A::doA() { return 0; }   // 需要显式内联
+inline int A::doA() { return 0; }   // 需要{U+663E}式{U+5185}{U+8054}
 ```
 
 </details>
 
-#### 编译器对 inline 函数的处理步骤
+#### {U+7F16}{U+8BD1}器{U+5BF9} inline 函{U+6570}的{U+5904}理步{U+9AA4}
 
-1. 将 inline 函数体复制到 inline 函数调用点处； 
-2. 为所用 inline 函数中的局部变量分配内存空间； 
-3. 将 inline 函数的的输入参数和返回值映射到调用方法的局部变量空间中； 
-4. 如果 inline 函数有多个返回点，将其转变为 inline 函数代码块末尾的分支（使用 GOTO）。
+1. {U+5C06} inline 函{U+6570}體複制到 inline 函{U+6570}{U+8C03}用{U+70B9}{U+5904}； 
+2. {U+4E3A}所用 inline 函{U+6570}中的局部{U+53D8}量分配{U+5185}存空{U+95F4}； 
+3. {U+5C06} inline 函{U+6570}的的{U+8F93}入{U+53C2}{U+6570}和返回值映射到{U+8C03}用方法的局部{U+53D8}量空{U+95F4}中； 
+4. 如果 inline 函{U+6570}有多{U+4E2A}返回{U+70B9}，{U+5C06}其{U+8F6C}{U+53D8}{U+4E3A} inline 函{U+6570}代{U+7801}{U+5757}末尾的分支（使用 GOTO）。
 
-#### 优缺点
+#### 優缺{U+70B9}
 
-优点
+優{U+70B9}
 
-1. 内联函数同宏函数一样将在被调用处进行代码展开，省去了参数压栈、栈帧开辟与回收，结果返回等，从而提高程序运行速度。
-2. 内联函数相比宏函数来说，在代码展开时，会做安全检查或自动类型转换（同普通函数），而宏定义则不会。 
-3. 在类中声明同时定义的成员函数，自动转化为内联函数，因此内联函数可以访问类的成员变量，宏定义则不能。
-4. 内联函数在运行时可调试，而宏定义不可以。
+1. {U+5185}{U+8054}函{U+6570}同宏函{U+6570}一{U+6837}{U+5C06}在被{U+8C03}用{U+5904}{U+8FDB}行代{U+7801}展{U+5F00}，省去了{U+53C2}{U+6570}{U+538B}{U+6808}、{U+6808}{U+5E27}{U+5F00}辟與回收，{U+7ED3}果返回等，{U+4ECE}而提高程序{U+8FD0}行速度。
+2. {U+5185}{U+8054}函{U+6570}相比宏函{U+6570}{U+6765}{U+8BF4}，在代{U+7801}展{U+5F00}{U+65F6}，{U+4F1A}做安全{U+68C0}查或自{U+52A8}{U+7C7B}型{U+8F6C}{U+6362}（同普通函{U+6570}），而宏定{U+4E49}{U+5219}不{U+4F1A}。 
+3. 在{U+7C7B}中{U+58F0}明同{U+65F6}定{U+4E49}的成{U+5458}函{U+6570}，自{U+52A8}{U+8F6C}化{U+4E3A}{U+5185}{U+8054}函{U+6570}，因此{U+5185}{U+8054}函{U+6570}可以{U+8BBF}{U+95EE}{U+7C7B}的成{U+5458}{U+53D8}量，宏定{U+4E49}{U+5219}不能。
+4. {U+5185}{U+8054}函{U+6570}在{U+8FD0}行{U+65F6}可{U+8C03}{U+8BD5}，而宏定{U+4E49}不可以。
 
-缺点
+缺{U+70B9}
 
-1. 代码膨胀。内联是以代码膨胀（复制）为代价，消除函数调用带来的开销。如果执行函数体内代码的时间，相比于函数调用的开销较大，那么效率的收获会很少。另一方面，每一处内联函数的调用都要复制代码，将使程序的总代码量增大，消耗更多的内存空间。
-2. inline 函数无法随着函数库升级而升级。inline函数的改变需要重新编译，不像 non-inline 可以直接链接。
-3. 是否内联，程序员不可控。内联函数只是对编译器的建议，是否对函数内联，决定权在于编译器。
+1. 代{U+7801}膨{U+80C0}。{U+5185}{U+8054}是以代{U+7801}膨{U+80C0}（複制）{U+4E3A}代價，消除函{U+6570}{U+8C03}用{U+5E26}{U+6765}的{U+5F00}{U+9500}。如果{U+6267}行函{U+6570}體{U+5185}代{U+7801}的{U+65F6}{U+95F4}，相比於函{U+6570}{U+8C03}用的{U+5F00}{U+9500}{U+8F83}大，那麼效率的收{U+83B7}{U+4F1A}很少。另一方面，每一{U+5904}{U+5185}{U+8054}函{U+6570}的{U+8C03}用都要複制代{U+7801}，{U+5C06}使程序的{U+603B}代{U+7801}量增大，消耗更多的{U+5185}存空{U+95F4}。
+2. inline 函{U+6570}{U+65E0}法{U+968F}{U+7740}函{U+6570}{U+5E93}升{U+7EA7}而升{U+7EA7}。inline函{U+6570}的改{U+53D8}需要重新{U+7F16}{U+8BD1}，不像 non-inline 可以直接{U+94FE}接。
+3. 是否{U+5185}{U+8054}，程序{U+5458}不可控。{U+5185}{U+8054}函{U+6570}只是{U+5BF9}{U+7F16}{U+8BD1}器的建{U+8BAE}，是否{U+5BF9}函{U+6570}{U+5185}{U+8054}，{U+51B3}定{U+6743}在於{U+7F16}{U+8BD1}器。
 
-#### 虚函数（virtual）可以是内联函数（inline）吗？
+#### {U+865A}函{U+6570}（virtual）可以是{U+5185}{U+8054}函{U+6570}（inline）{U+5417}？
 
 [Are "inline virtual" member functions ever actually "inlined"?](http://www.cs.technion.ac.il/users/yechiel/c++-faq/inline-virtuals.html)
 
-* 虚函数可以是内联函数，内联是可以修饰虚函数的，但是当虚函数表现多态性的时候不能内联。
-* 内联是在编译器建议编译器内联，而虚函数的多态性在运行期，编译器无法知道运行期调用哪个代码，因此虚函数表现为多态性时（运行期）不可以内联。
-* `inline virtual` 唯一可以内联的时候是：编译器知道所调用的对象是哪个类（如 `Base::who()`），这只有在编译器具有实际对象而不是对象的指针或引用时才会发生。
+* {U+865A}函{U+6570}可以是{U+5185}{U+8054}函{U+6570}，{U+5185}{U+8054}是可以修{U+9970}{U+865A}函{U+6570}的，但是{U+5F53}{U+865A}函{U+6570}表{U+73B0}多{U+6001}性的{U+65F6}候不能{U+5185}{U+8054}。
+* {U+5185}{U+8054}是在{U+7F16}{U+8BD1}器建{U+8BAE}{U+7F16}{U+8BD1}器{U+5185}{U+8054}，而{U+865A}函{U+6570}的多{U+6001}性在{U+8FD0}行期，{U+7F16}{U+8BD1}器{U+65E0}法知道{U+8FD0}行期{U+8C03}用哪{U+4E2A}代{U+7801}，因此{U+865A}函{U+6570}表{U+73B0}{U+4E3A}多{U+6001}性{U+65F6}（{U+8FD0}行期）不可以{U+5185}{U+8054}。
+* `inline virtual` 唯一可以{U+5185}{U+8054}的{U+65F6}候是：{U+7F16}{U+8BD1}器知道所{U+8C03}用的{U+5BF9}象是哪{U+4E2A}{U+7C7B}（如 `Base::who()`），{U+8FD9}只有在{U+7F16}{U+8BD1}器具有{U+5B9E}{U+9645}{U+5BF9}象而不是{U+5BF9}象的指{U+9488}或引用{U+65F6}才{U+4F1A}{U+53D1}生。
 
-<details><summary>虚函数内联使用</summary> 
+<details><summary>{U+865A}函{U+6570}{U+5185}{U+8054}使用</summary> 
 
 
 ```cpp
@@ -200,7 +200,7 @@ public:
 class Derived : public Base
 {
 public:
-	inline void who()  // 不写inline时隐式内联
+	inline void who()  // 不{U+5199}inline{U+65F6}{U+9690}式{U+5185}{U+8054}
 	{
 		cout << "I am Derived\n";
 	}
@@ -208,15 +208,15 @@ public:
 
 int main()
 {
-	// 此处的虚函数 who()，是通过类（Base）的具体对象（b）来调用的，编译期间就能确定了，所以它可以是内联的，但最终是否内联取决于编译器。 
+	// 此{U+5904}的{U+865A}函{U+6570} who()，是通{U+8FC7}{U+7C7B}（Base）的具體{U+5BF9}象（b）{U+6765}{U+8C03}用的，{U+7F16}{U+8BD1}期{U+95F4}就能確定了，所以它可以是{U+5185}{U+8054}的，但最{U+7EC8}是否{U+5185}{U+8054}取{U+51B3}於{U+7F16}{U+8BD1}器。 
 	Base b;
 	b.who();
 
-	// 此处的虚函数是通过指针调用的，呈现多态性，需要在运行时期间才能确定，所以不能为内联。  
+	// 此{U+5904}的{U+865A}函{U+6570}是通{U+8FC7}指{U+9488}{U+8C03}用的，呈{U+73B0}多{U+6001}性，需要在{U+8FD0}行{U+65F6}期{U+95F4}才能確定，所以不能{U+4E3A}{U+5185}{U+8054}。  
 	Base *ptr = new Derived();
 	ptr->who();
 
-	// 因为Base有虚析构函数（virtual ~Base() {}），所以 delete 时，会先调用派生类（Derived）析构函数，再调用基类（Base）析构函数，防止内存泄漏。
+	// 因{U+4E3A}Base有{U+865A}析構函{U+6570}（virtual ~Base() {}），所以 delete {U+65F6}，{U+4F1A}先{U+8C03}用派生{U+7C7B}（Derived）析構函{U+6570}，再{U+8C03}用基{U+7C7B}（Base）析構函{U+6570}，防止{U+5185}存泄漏。
 	delete ptr;
 	ptr = nullptr;
 
@@ -229,12 +229,12 @@ int main()
 
 ### assert()
 
-断言，是宏，而非函数。assert 宏的原型定义在 `<assert.h>`（C）、`<cassert>`（C++）中，其作用是如果它的条件返回错误，则终止程序执行。可以通过定义 `NDEBUG` 来关闭 assert，但是需要在源代码的开头，`include <assert.h>` 之前。
+{U+65AD}言，是宏，而非函{U+6570}。assert 宏的原型定{U+4E49}在 `<assert.h>`（C）、`<cassert>`（C++）中，其作用是如果它的{U+6761}件返回{U+9519}{U+8BEF}，{U+5219}{U+7EC8}止程序{U+6267}行。可以通{U+8FC7}定{U+4E49} `NDEBUG` {U+6765}{U+5173}{U+95ED} assert，但是需要在源代{U+7801}的{U+5F00}{U+5934}，`include <assert.h>` 之前。
 
 <details><summary>assert() 使用</summary> 
 
 ```cpp
-#define NDEBUG          // 加上这行，则 assert 不可用
+#define NDEBUG          // 加上{U+8FD9}行，{U+5219} assert 不可用
 #include <assert.h>
 
 assert( p != NULL );    // assert 不可用
@@ -244,19 +244,19 @@ assert( p != NULL );    // assert 不可用
 
 ### sizeof()
 
-* sizeof 对数组，得到整个数组所占空间大小。
-* sizeof 对指针，得到指针本身所占空间大小。
+* sizeof {U+5BF9}{U+6570}{U+7EC4}，得到整{U+4E2A}{U+6570}{U+7EC4}所占空{U+95F4}大小。
+* sizeof {U+5BF9}指{U+9488}，得到指{U+9488}本身所占空{U+95F4}大小。
 
 ### #pragma pack(n)
 
-设定结构体、联合以及类成员变量以 n 字节方式对齐
+{U+8BBE}定{U+7ED3}構體、{U+8054}合以及{U+7C7B}成{U+5458}{U+53D8}量以 n 字{U+8282}方式{U+5BF9}{U+9F50}
 
 <details><summary>#pragma pack(n) 使用</summary> 
 
 
 ```cpp
-#pragma pack(push)  // 保存对齐状态
-#pragma pack(4)     // 设定为 4 字节对齐
+#pragma pack(push)  // 保存{U+5BF9}{U+9F50}{U+72B6}{U+6001}
+#pragma pack(4)     // {U+8BBE}定{U+4E3A} 4 字{U+8282}{U+5BF9}{U+9F50}
 
 struct test
 {
@@ -265,7 +265,7 @@ struct test
     int m3;
 };
 
-#pragma pack(pop)   // 恢复对齐状态
+#pragma pack(pop)   // 恢複{U+5BF9}{U+9F50}{U+72B6}{U+6001}
 ```
 
 </details>
@@ -276,11 +276,11 @@ struct test
 Bit mode: 2;    // mode 占 2 位
 ```
 
-类可以将其（非静态）数据成员定义为位域（bit-field），在一个位域中含有一定数量的二进制位。当一个程序需要向其他程序或硬件设备传递二进制数据时，通常会用到位域。
+{U+7C7B}可以{U+5C06}其（非{U+9759}{U+6001}）{U+6570}據成{U+5458}定{U+4E49}{U+4E3A}位域（bit-field），在一{U+4E2A}位域中含有一定{U+6570}量的二{U+8FDB}制位。{U+5F53}一{U+4E2A}程序需要向其他程序或硬件{U+8BBE}{U+5907}{U+4F20}{U+9012}二{U+8FDB}制{U+6570}據{U+65F6}，通常{U+4F1A}用到位域。
 
-* 位域在内存中的布局是与机器有关的
-* 位域的类型必须是整型或枚举类型，带符号类型中的位域的行为将因具体实现而定
-* 取地址运算符（&）不能作用于位域，任何指针都无法指向类的位域
+* 位域在{U+5185}存中的布局是與機器有{U+5173}的
+* 位域的{U+7C7B}型必{U+987B}是整型或枚{U+4E3E}{U+7C7B}型，{U+5E26}符{U+53F7}{U+7C7B}型中的位域的行{U+4E3A}{U+5C06}因具體{U+5B9E}{U+73B0}而定
+* 取地址{U+8FD0}算符（&）不能作用於位域，任何指{U+9488}都{U+65E0}法指向{U+7C7B}的位域
 
 ### volatile
 
@@ -288,17 +288,17 @@ Bit mode: 2;    // mode 占 2 位
 volatile int i = 10; 
 ```
 
-* volatile 关键字是一种类型修饰符，用它声明的类型变量表示可以被某些编译器未知的因素（操作系统、硬件、其它线程等）更改。所以使用 volatile 告诉编译器不应对这样的对象进行优化。
-* volatile 关键字声明的变量，每次访问时都必须从内存中取出值（没有被 volatile 修饰的变量，可能由于编译器的优化，从 CPU 寄存器中取值）
-* const 可以是 volatile （如只读的状态寄存器）
-* 指针可以是 volatile
+* volatile {U+5173}{U+952E}字是一種{U+7C7B}型修{U+9970}符，用它{U+58F0}明的{U+7C7B}型{U+53D8}量表示可以被某些{U+7F16}{U+8BD1}器未知的因素（操作系{U+7EDF}、硬件、其它{U+7EBF}程等）更改。所以使用 volatile 告{U+8BC9}{U+7F16}{U+8BD1}器不{U+5E94}{U+5BF9}{U+8FD9}{U+6837}的{U+5BF9}象{U+8FDB}行優化。
+* volatile {U+5173}{U+952E}字{U+58F0}明的{U+53D8}量，每次{U+8BBF}{U+95EE}{U+65F6}都必{U+987B}{U+4ECE}{U+5185}存中取出值（{U+6CA1}有被 volatile 修{U+9970}的{U+53D8}量，可能由於{U+7F16}{U+8BD1}器的優化，{U+4ECE} CPU 寄存器中取值）
+* const 可以是 volatile （如只{U+8BFB}的{U+72B6}{U+6001}寄存器）
+* 指{U+9488}可以是 volatile
 
 ### extern "C"
 
-* 被 extern 限定的函数或变量是 extern 类型的
-* 被 `extern "C"` 修饰的变量和函数是按照 C 语言方式编译和连接的
+* 被 extern 限定的函{U+6570}或{U+53D8}量是 extern {U+7C7B}型的
+* 被 `extern "C"` 修{U+9970}的{U+53D8}量和函{U+6570}是按照 C {U+8BED}言方式{U+7F16}{U+8BD1}和{U+8FDE}接的
 
-`extern "C"` 的作用是让 C++ 编译器将 `extern "C"` 声明的代码当作 C 语言代码处理，可以避免 C++ 因符号修饰导致代码不能和C语言库中的符号进行链接的问题。
+`extern "C"` 的作用是{U+8BA9} C++ {U+7F16}{U+8BD1}器{U+5C06} `extern "C"` {U+58F0}明的代{U+7801}{U+5F53}作 C {U+8BED}言代{U+7801}{U+5904}理，可以避免 C++ 因符{U+53F7}修{U+9970}{U+5BFC}致代{U+7801}不能和C{U+8BED}言{U+5E93}中的符{U+53F7}{U+8FDB}行{U+94FE}接的{U+95EE}{U+9898}。
 
 <details><summary>extern "C" 使用</summary> 
 
@@ -327,7 +327,7 @@ typedef struct Student {
 } S;
 ```
 
-等价于
+等價於
 
 ```c
 // c
@@ -338,17 +338,17 @@ struct Student {
 typedef struct Student S;
 ```
 
-此时 `S` 等价于 `struct Student`，但两个标识符名称空间不相同。
+此{U+65F6} `S` 等價於 `struct Student`，但{U+4E24}{U+4E2A}{U+6807}{U+8BC6}符名{U+79F0}空{U+95F4}不相同。
 
-另外还可以定义与 `struct Student` 不冲突的 `void Student() {}`。
+另外{U+8FD8}可以定{U+4E49}與 `struct Student` 不{U+51B2}突的 `void Student() {}`。
 
 #### C++ 中
 
-由于编译器定位符号的规则（搜索规则）改变，导致不同于C语言。
+由於{U+7F16}{U+8BD1}器定位符{U+53F7}的{U+89C4}{U+5219}（搜索{U+89C4}{U+5219}）改{U+53D8}，{U+5BFC}致不同於C{U+8BED}言。
 
-一、如果在类标识符空间定义了 `struct Student {...};`，使用 `Student me;` 时，编译器将搜索全局标识符表，`Student` 未找到，则在类标识符内搜索。
+一、如果在{U+7C7B}{U+6807}{U+8BC6}符空{U+95F4}定{U+4E49}了 `struct Student {...};`，使用 `Student me;` {U+65F6}，{U+7F16}{U+8BD1}器{U+5C06}搜索全局{U+6807}{U+8BC6}符表，`Student` 未找到，{U+5219}在{U+7C7B}{U+6807}{U+8BC6}符{U+5185}搜索。
 
-即表现为可以使用 `Student` 也可以使用 `struct Student`，如下：
+即表{U+73B0}{U+4E3A}可以使用 `Student` 也可以使用 `struct Student`，如下：
 
 ```cpp
 // cpp
@@ -356,19 +356,19 @@ struct Student {
     int age; 
 };
 
-void f( Student me );       // 正确，"struct" 关键字可省略
+void f( Student me );       // 正確，"struct" {U+5173}{U+952E}字可省略
 ```
 
-二、若定义了与 `Student` 同名函数之后，则 `Student` 只代表函数，不代表结构体，如下：
+二、若定{U+4E49}了與 `Student` 同名函{U+6570}之後，{U+5219} `Student` 只代表函{U+6570}，不代表{U+7ED3}構體，如下：
 
 ```cpp
 typedef struct Student { 
     int age; 
 } S;
 
-void Student() {}           // 正确，定义后 "Student" 只代表此函数
+void Student() {}           // 正確，定{U+4E49}後 "Student" 只代表此函{U+6570}
 
-//void S() {}               // 错误，符号 "S" 已经被定义为一个 "struct Student" 的别名
+//void S() {}               // {U+9519}{U+8BEF}，符{U+53F7} "S" 已{U+7ECF}被定{U+4E49}{U+4E3A}一{U+4E2A} "struct Student" 的{U+522B}名
 
 int main() {
     Student(); 
@@ -379,26 +379,26 @@ int main() {
 
 ### C++ 中 struct 和 class
 
-总的来说，struct 更适合看成是一个数据结构的实现体，class 更适合看成是一个对象的实现体。
+{U+603B}的{U+6765}{U+8BF4}，struct 更適合看成是一{U+4E2A}{U+6570}據{U+7ED3}構的{U+5B9E}{U+73B0}體，class 更適合看成是一{U+4E2A}{U+5BF9}象的{U+5B9E}{U+73B0}體。
 
-#### 区别
+#### {U+533A}{U+522B}
 
-* 最本质的一个区别就是默认的访问控制
-    1. 默认的继承访问权限。struct 是 public 的，class 是 private 的。  
-    2. struct 作为数据结构的实现体，它默认的数据访问控制是 public 的，而 class 作为对象的实现体，它默认的成员变量访问控制是 private 的。
+* 最本{U+8D28}的一{U+4E2A}{U+533A}{U+522B}就是默{U+8BA4}的{U+8BBF}{U+95EE}控制
+    1. 默{U+8BA4}的{U+7EE7}承{U+8BBF}{U+95EE}{U+6743}限。struct 是 public 的，class 是 private 的。  
+    2. struct 作{U+4E3A}{U+6570}據{U+7ED3}構的{U+5B9E}{U+73B0}體，它默{U+8BA4}的{U+6570}據{U+8BBF}{U+95EE}控制是 public 的，而 class 作{U+4E3A}{U+5BF9}象的{U+5B9E}{U+73B0}體，它默{U+8BA4}的成{U+5458}{U+53D8}量{U+8BBF}{U+95EE}控制是 private 的。
 
-### union 联合
+### union {U+8054}合
 
-联合（union）是一种节省空间的特殊的类，一个 union 可以有多个数据成员，但是在任意时刻只有一个数据成员可以有值。当某个成员被赋值后其他成员变为未定义状态。联合有如下特点：
+{U+8054}合（union）是一種{U+8282}省空{U+95F4}的特殊的{U+7C7B}，一{U+4E2A} union 可以有多{U+4E2A}{U+6570}據成{U+5458}，但是在任意{U+65F6}刻只有一{U+4E2A}{U+6570}據成{U+5458}可以有值。{U+5F53}某{U+4E2A}成{U+5458}被{U+8D4B}值後其他成{U+5458}{U+53D8}{U+4E3A}未定{U+4E49}{U+72B6}{U+6001}。{U+8054}合有如下特{U+70B9}：
 
-* 默认访问控制符为 public
-* 可以含有构造函数、析构函数
-* 不能含有引用类型的成员
-* 不能继承自其他类，不能作为基类
-* 不能含有虚函数
-* 匿名 union 在定义所在作用域可直接访问 union 成员
-* 匿名 union 不能包含 protected 成员或 private 成员
-* 全局匿名联合必须是静态（static）的
+* 默{U+8BA4}{U+8BBF}{U+95EE}控制符{U+4E3A} public
+* 可以含有構造函{U+6570}、析構函{U+6570}
+* 不能含有引用{U+7C7B}型的成{U+5458}
+* 不能{U+7EE7}承自其他{U+7C7B}，不能作{U+4E3A}基{U+7C7B}
+* 不能含有{U+865A}函{U+6570}
+* 匿名 union 在定{U+4E49}所在作用域可直接{U+8BBF}{U+95EE} union 成{U+5458}
+* 匿名 union 不能包含 protected 成{U+5458}或 private 成{U+5458}
+* 全局匿名{U+8054}合必{U+987B}是{U+9759}{U+6001}（static）的
 
 <details><summary>union 使用</summary> 
 
@@ -424,13 +424,13 @@ int main() {
         double d;
     };
 
-    std::cout << u.i << std::endl;  // 输出 UnionTest 联合的 10
+    std::cout << u.i << std::endl;  // {U+8F93}出 UnionTest {U+8054}合的 10
 
     ::i = 20;
-    std::cout << ::i << std::endl;  // 输出全局静态匿名联合的 20
+    std::cout << ::i << std::endl;  // {U+8F93}出全局{U+9759}{U+6001}匿名{U+8054}合的 20
 
     i = 30;
-    std::cout << i << std::endl;    // 输出局部匿名联合的 30
+    std::cout << i << std::endl;    // {U+8F93}出局部匿名{U+8054}合的 30
 
     return 0;
 }
@@ -438,13 +438,13 @@ int main() {
 
 </details>
 
-### C 实现 C++ 类
+### C {U+5B9E}{U+73B0} C++ {U+7C7B}
 
-[C 语言实现封装、继承和多态](http://dongxicheng.org/cpp/ooc/)
+[C {U+8BED}言{U+5B9E}{U+73B0}封{U+88C5}、{U+7EE7}承和多{U+6001}](http://dongxicheng.org/cpp/ooc/)
 
-### explicit（显式）构造函数
+### explicit（{U+663E}式）構造函{U+6570}
 
-explicit 修饰的构造函数可用来防止隐式转换
+explicit 修{U+9970}的構造函{U+6570}可用{U+6765}防止{U+9690}式{U+8F6C}{U+6362}
 
 <details><summary>explicit 使用</summary> 
 
@@ -452,7 +452,7 @@ explicit 修饰的构造函数可用来防止隐式转换
 class Test1
 {
 public:
-    Test1(int n)            // 普通构造函数
+    Test1(int n)            // 普通構造函{U+6570}
     {
         num=n;
     }
@@ -463,7 +463,7 @@ private:
 class Test2
 {
 public:
-    explicit Test2(int n)   // explicit（显式）构造函数
+    explicit Test2(int n)   // explicit（{U+663E}式）構造函{U+6570}
     {
         num=n;
     }
@@ -473,36 +473,36 @@ private:
 
 int main()
 {
-    Test1 t1=12;            // 隐式调用其构造函数，成功
-    Test2 t2=12;            // 编译错误，不能隐式调用其构造函数
-    Test2 t2(12);           // 显式调用成功
+    Test1 t1=12;            // {U+9690}式{U+8C03}用其構造函{U+6570}，成功
+    Test2 t2=12;            // {U+7F16}{U+8BD1}{U+9519}{U+8BEF}，不能{U+9690}式{U+8C03}用其構造函{U+6570}
+    Test2 t2(12);           // {U+663E}式{U+8C03}用成功
     return 0;
 }
 ```
 
 </details>
 
-### friend 友元类和友元函数
+### friend 友元{U+7C7B}和友元函{U+6570}
 
-* 能访问私有成员  
-* 破坏封装性
-* 友元关系不可传递
-* 友元关系的单向性
-* 友元声明的形式及数量不受限制
+* 能{U+8BBF}{U+95EE}私有成{U+5458}  
+* 破壞封{U+88C5}性
+* 友元{U+5173}系不可{U+4F20}{U+9012}
+* 友元{U+5173}系的{U+5355}向性
+* 友元{U+58F0}明的形式及{U+6570}量不受限制
 
 ### using
 
-#### using 声明
+#### using {U+58F0}明
 
-一条 `using 声明` 语句一次只引入命名空间的一个成员。它使得我们可以清楚知道程序中所引用的到底是哪个名字。如：
+一{U+6761} `using {U+58F0}明` {U+8BED}句一次只引入命名空{U+95F4}的一{U+4E2A}成{U+5458}。它使得我{U+4EEC}可以清楚知道程序中所引用的到底是哪{U+4E2A}名字。如：
 
 ```cpp
 using namespace_name::name;
 ```
 
-#### 构造函数的 using 声明【C++11】
+#### 構造函{U+6570}的 using {U+58F0}明【C++11】
 
-在 C++11 中，派生类能够重用其直接基类定义的构造函数。
+在 C++11 中，派生{U+7C7B}能{U+591F}重用其直接基{U+7C7B}定{U+4E49}的構造函{U+6570}。
 
 ```cpp
 class Derived : Base {
@@ -512,7 +512,7 @@ public:
 };
 ```
 
-如上 using 声明，对于基类的每个构造函数，编译器都生成一个与之对应（形参列表完全相同）的派生类构造函数。生成如下类型构造函数：
+如上 using {U+58F0}明，{U+5BF9}於基{U+7C7B}的每{U+4E2A}構造函{U+6570}，{U+7F16}{U+8BD1}器都生成一{U+4E2A}與之{U+5BF9}{U+5E94}（形{U+53C2}列表完全相同）的派生{U+7C7B}構造函{U+6570}。生成如下{U+7C7B}型構造函{U+6570}：
 
 ```cpp
 derived(parms) : base(args) { }
@@ -520,25 +520,25 @@ derived(parms) : base(args) { }
 
 #### using 指示
 
-`using 指示` 使得某个特定命名空间中所有名字都可见，这样我们就无需再为它们添加任何前缀限定符了。如：
+`using 指示` 使得某{U+4E2A}特定命名空{U+95F4}中所有名字都可{U+89C1}，{U+8FD9}{U+6837}我{U+4EEC}就{U+65E0}需再{U+4E3A}它{U+4EEC}添加任何前{U+7F00}限定符了。如：
 
 ```cpp
 using namespace_name name;
 ```
 
-#### 尽量少使用 `using 指示` 污染命名空间
+#### {U+5C3D}量少使用 `using 指示` 汙染命名空{U+95F4}
 
-> 一般说来，使用 using 命令比使用 using 编译命令更安全，这是由于它**只导入了制定的名称**。如果该名称与局部名称发生冲突，编译器将**发出指示**。using编译命令导入所有的名称，包括可能并不需要的名称。如果与局部名称发生冲突，则**局部名称将覆盖名称空间版本**，而编译器**并不会发出警告**。另外，名称空间的开放性意味着名称空间的名称可能分散在多个地方，这使得难以准确知道添加了哪些名称。
+> 一般{U+8BF4}{U+6765}，使用 using 命令比使用 using {U+7F16}{U+8BD1}命令更安全，{U+8FD9}是由於它**只{U+5BFC}入了制定的名{U+79F0}**。如果{U+8BE5}名{U+79F0}與局部名{U+79F0}{U+53D1}生{U+51B2}突，{U+7F16}{U+8BD1}器{U+5C06}**{U+53D1}出指示**。using{U+7F16}{U+8BD1}命令{U+5BFC}入所有的名{U+79F0}，包括可能並不需要的名{U+79F0}。如果與局部名{U+79F0}{U+53D1}生{U+51B2}突，{U+5219}**局部名{U+79F0}{U+5C06}覆{U+76D6}名{U+79F0}空{U+95F4}版本**，而{U+7F16}{U+8BD1}器**並不{U+4F1A}{U+53D1}出警告**。另外，名{U+79F0}空{U+95F4}的{U+5F00}放性意味{U+7740}名{U+79F0}空{U+95F4}的名{U+79F0}可能分散在多{U+4E2A}地方，{U+8FD9}使得{U+96BE}以准確知道添加了哪些名{U+79F0}。
 
 <details><summary>using 使用</summary> 
 
-尽量少使用 `using 指示`
+{U+5C3D}量少使用 `using 指示`
 
 ```cpp
 using namespace std;
 ```
 
-应该多使用 `using 声明`
+{U+5E94}{U+8BE5}多使用 `using {U+58F0}明`
 
 ```cpp
 int x;
@@ -559,13 +559,13 @@ cout << x << endl;
 
 </details>
 
-### :: 范围解析运算符
+### :: 範{U+56F4}解析{U+8FD0}算符
 
-#### 分类
+#### 分{U+7C7B}
 
-1. 全局作用域符（`::name`）：用于类型名称（类、类成员、成员函数、变量等）前，表示作用域为全局命名空间
-2. 类作用域符（`class::name`）：用于表示指定类型的作用域范围是具体某个类的
-3. 命名空间作用域符（`namespace::name`）:用于表示指定类型的作用域范围是具体某个命名空间的
+1. 全局作用域符（`::name`）：用於{U+7C7B}型名{U+79F0}（{U+7C7B}、{U+7C7B}成{U+5458}、成{U+5458}函{U+6570}、{U+53D8}量等）前，表示作用域{U+4E3A}全局命名空{U+95F4}
+2. {U+7C7B}作用域符（`class::name`）：用於表示指定{U+7C7B}型的作用域範{U+56F4}是具體某{U+4E2A}{U+7C7B}的
+3. 命名空{U+95F4}作用域符（`namespace::name`）:用於表示指定{U+7C7B}型的作用域範{U+56F4}是具體某{U+4E2A}命名空{U+95F4}的
 
 <details><summary>:: 使用</summary> 
 
@@ -574,16 +574,16 @@ int count = 0;        // 全局（::）的 count
 
 class A {
 public:
-    static int count; // 类 A 的 count（A::count）
+    static int count; // {U+7C7B} A 的 count（A::count）
 };
 
 int main() {
-    ::count = 1;      // 设置全局的 count 的值为 1
+    ::count = 1;      // {U+8BBE}置全局的 count 的值{U+4E3A} 1
 
-    A::count = 2;     // 设置类 A 的 count 为 2
+    A::count = 2;     // {U+8BBE}置{U+7C7B} A 的 count {U+4E3A} 2
 
     int count = 0;    // 局部的 count
-    count = 3;        // 设置局部的 count 的值为 3
+    count = 3;        // {U+8BBE}置局部的 count 的值{U+4E3A} 3
 
     return 0;
 }
@@ -591,15 +591,15 @@ int main() {
 
 </details>
 
-### enum 枚举类型
+### enum 枚{U+4E3E}{U+7C7B}型
 
-#### 限定作用域的枚举类型
+#### 限定作用域的枚{U+4E3E}{U+7C7B}型
 
 ```cpp
 enum class open_modes { input, output, append };
 ```
 
-#### 不限定作用域的枚举类型
+#### 不限定作用域的枚{U+4E3E}{U+7C7B}型
 
 ```cpp
 enum color { red, yellow, green };
@@ -608,7 +608,7 @@ enum { floatPrec = 6, doublePrec = 10 };
 
 ### decltype
 
-decltype 关键字用于检查实体的声明类型或表达式的类型及值分类。语法：
+decltype {U+5173}{U+952E}字用於{U+68C0}查{U+5B9E}體的{U+58F0}明{U+7C7B}型或表{U+8FBE}式的{U+7C7B}型及值分{U+7C7B}。{U+8BED}法：
 
 ```cpp
 decltype ( expression )
@@ -617,19 +617,19 @@ decltype ( expression )
 <details><summary>decltype 使用</summary> 
 
 ```cpp
-// 尾置返回允许我们在参数列表之后声明返回类型
+// 尾置返回允{U+8BB8}我{U+4EEC}在{U+53C2}{U+6570}列表之後{U+58F0}明返回{U+7C7B}型
 template <typename It>
 auto fcn(It beg, It end) -> decltype(*beg)
 {
-    // 处理序列
-    return *beg;    // 返回序列中一个元素的引用
+    // {U+5904}理序列
+    return *beg;    // 返回序列中一{U+4E2A}元素的引用
 }
-// 为了使用模板参数成员，必须用 typename
+// {U+4E3A}了使用模板{U+53C2}{U+6570}成{U+5458}，必{U+987B}用 typename
 template <typename It>
 auto fcn2(It beg, It end) -> typename remove_reference<decltype(*beg)>::type
 {
-    // 处理序列
-    return *beg;    // 返回序列中一个元素的拷贝
+    // {U+5904}理序列
+    return *beg;    // 返回序列中一{U+4E2A}元素的拷{U+8D1D}
 }
 ```
 
@@ -639,39 +639,39 @@ auto fcn2(It beg, It end) -> typename remove_reference<decltype(*beg)>::type
 
 #### 左值引用
 
-常规引用，一般表示对象的身份。
+常{U+89C4}引用，一般表示{U+5BF9}象的身份。
 
 #### 右值引用
 
-右值引用就是必须绑定到右值（一个临时对象、将要销毁的对象）的引用，一般表示对象的值。
+右值引用就是必{U+987B}{U+7ED1}定到右值（一{U+4E2A}{U+4E34}{U+65F6}{U+5BF9}象、{U+5C06}要{U+9500}{U+6BC1}的{U+5BF9}象）的引用，一般表示{U+5BF9}象的值。
 
-右值引用可实现转移语义（Move Sementics）和精确传递（Perfect Forwarding），它的主要目的有两个方面：
+右值引用可{U+5B9E}{U+73B0}{U+8F6C}移{U+8BED}{U+4E49}（Move Sementics）和精確{U+4F20}{U+9012}（Perfect Forwarding），它的主要目的有{U+4E24}{U+4E2A}方面：
 
-* 消除两个对象交互时不必要的对象拷贝，节省运算存储资源，提高效率。
-* 能够更简洁明确地定义泛型函数。
+* 消除{U+4E24}{U+4E2A}{U+5BF9}象交互{U+65F6}不必要的{U+5BF9}象拷{U+8D1D}，{U+8282}省{U+8FD0}算存{U+50A8}{U+8D44}源，提高效率。
+* 能{U+591F}更{U+7B80}潔明確地定{U+4E49}泛型函{U+6570}。
 
-#### 引用折叠
+#### 引用折{U+53E0}
 
-* `X& &`、`X& &&`、`X&& &` 可折叠成 `X&`
-* `X&& &&` 可折叠成 `X&&`
+* `X& &`、`X& &&`、`X&& &` 可折{U+53E0}成 `X&`
+* `X&& &&` 可折{U+53E0}成 `X&&`
 
 ### 宏
 
-* 宏定义可以实现类似于函数的功能，但是它终归不是函数，而宏定义中括弧中的“参数”也不是真的参数，在宏展开的时候对 “参数” 进行的是一对一的替换。
+* 宏定{U+4E49}可以{U+5B9E}{U+73B0}{U+7C7B}似於函{U+6570}的功能，但是它{U+7EC8}{U+5F52}不是函{U+6570}，而宏定{U+4E49}中括弧中的「{U+53C2}{U+6570}」也不是真的{U+53C2}{U+6570}，在宏展{U+5F00}的{U+65F6}候{U+5BF9} 「{U+53C2}{U+6570}」 {U+8FDB}行的是一{U+5BF9}一的替{U+6362}。
 
-### 成员初始化列表
+### 成{U+5458}初始化列表
 
-好处
+好{U+5904}
 
-* 更高效：少了一次调用默认构造函数的过程。
-* 有些场合必须要用初始化列表：
-  1. 常量成员，因为常量只能初始化不能赋值，所以必须放在初始化列表里面
-  2. 引用类型，引用必须在定义的时候初始化，并且不能重新赋值，所以也要写在初始化列表里面
-  3. 没有默认构造函数的类类型，因为使用初始化列表可以不必调用默认构造函数来初始化，而是直接调用拷贝构造函数初始化。
+* 更高效：少了一次{U+8C03}用默{U+8BA4}構造函{U+6570}的{U+8FC7}程。
+* 有些{U+573A}合必{U+987B}要用初始化列表：
+  1. 常量成{U+5458}，因{U+4E3A}常量只能初始化不能{U+8D4B}值，所以必{U+987B}放在初始化列表裏面
+  2. 引用{U+7C7B}型，引用必{U+987B}在定{U+4E49}的{U+65F6}候初始化，並且不能重新{U+8D4B}值，所以也要{U+5199}在初始化列表裏面
+  3. {U+6CA1}有默{U+8BA4}構造函{U+6570}的{U+7C7B}{U+7C7B}型，因{U+4E3A}使用初始化列表可以不必{U+8C03}用默{U+8BA4}構造函{U+6570}{U+6765}初始化，而是直接{U+8C03}用拷{U+8D1D}構造函{U+6570}初始化。
 
 ### initializer_list 列表初始化【C++11】
 
-用花括号初始化器列表列表初始化一个对象，其中对应构造函数接受一个 `std::initializer_list` 参数.
+用花括{U+53F7}初始化器列表列表初始化一{U+4E2A}{U+5BF9}象，其中{U+5BF9}{U+5E94}構造函{U+6570}接受一{U+4E2A} `std::initializer_list` {U+53C2}{U+6570}.
 
 <details><summary>initializer_list 使用</summary> 
 
@@ -690,8 +690,8 @@ struct S {
         v.insert(v.end(), l.begin(), l.end());
     }
     std::pair<const T*, std::size_t> c_arr() const {
-        return {&v[0], v.size()};  // 在 return 语句中复制列表初始化
-                                   // 这不使用 std::initializer_list
+        return {&v[0], v.size()};  // 在 return {U+8BED}句中複制列表初始化
+                                   // {U+8FD9}不使用 std::initializer_list
     }
 };
  
@@ -700,8 +700,8 @@ void templated_fn(T) {}
  
 int main()
 {
-    S<int> s = {1, 2, 3, 4, 5}; // 复制初始化
-    s.append({6, 7, 8});      // 函数调用中的列表初始化
+    S<int> s = {1, 2, 3, 4, 5}; // 複制初始化
+    s.append({6, 7, 8});      // 函{U+6570}{U+8C03}用中的列表初始化
  
     std::cout << "The vector size is now " << s.c_arr().second << " ints:\n";
  
@@ -711,16 +711,16 @@ int main()
  
     std::cout << "Range-for over brace-init-list: \n";
  
-    for (int x : {-1, -2, -3}) // auto 的规则令此带范围 for 工作
+    for (int x : {-1, -2, -3}) // auto 的{U+89C4}{U+5219}令此{U+5E26}範{U+56F4} for 工作
         std::cout << x << ' ';
     std::cout << '\n';
  
-    auto al = {10, 11, 12};   // auto 的特殊规则
+    auto al = {10, 11, 12};   // auto 的特殊{U+89C4}{U+5219}
  
     std::cout << "The list bound to auto has size() = " << al.size() << '\n';
  
-//    templated_fn({1, 2, 3}); // 编译错误！“ {1, 2, 3} ”不是表达式，
-                             // 它无类型，故 T 无法推导
+//    templated_fn({1, 2, 3}); // {U+7F16}{U+8BD1}{U+9519}{U+8BEF}！「 {1, 2, 3} 」不是表{U+8FBE}式，
+                             // 它{U+65E0}{U+7C7B}型，故 T {U+65E0}法推{U+5BFC}
     templated_fn<std::initializer_list<int>>({1, 2, 3}); // OK
     templated_fn<std::vector<int>>({1, 2, 3});           // 也 OK
 }
@@ -728,39 +728,39 @@ int main()
 
 </details>
 
-### 面向对象
+### 面向{U+5BF9}象
 
-面向对象程序设计（Object-oriented programming，OOP）是种具有对象概念的程序编程典范，同时也是一种程序开发的抽象方针。
+面向{U+5BF9}象程序{U+8BBE}{U+8BA1}（Object-oriented programming，OOP）是種具有{U+5BF9}象概念的程序{U+7F16}程典範，同{U+65F6}也是一種程序{U+5F00}{U+53D1}的抽象方{U+9488}。
 
-![面向对象特征](http://img.my.csdn.net/uploads/201211/22/1353564524_6375.png)
+![面向{U+5BF9}象特征](http://img.my.csdn.net/uploads/201211/22/1353564524_6375.png)
 
-面向对象三大特征 —— 封装、继承、多态
+面向{U+5BF9}象三大特征 —— 封{U+88C5}、{U+7EE7}承、多{U+6001}
 
-### 封装
+### 封{U+88C5}
 
-* 把客观事物封装成抽象的类，并且类可以把自己的数据和方法只让可信的类或者对象操作，对不可信的进行信息隐藏。
-* 关键字：public, protected, friendly, private。不写默认为 friendly。
+* 把客{U+89C2}事物封{U+88C5}成抽象的{U+7C7B}，並且{U+7C7B}可以把自己的{U+6570}據和方法只{U+8BA9}可信的{U+7C7B}或者{U+5BF9}象操作，{U+5BF9}不可信的{U+8FDB}行信息{U+9690}藏。
+* {U+5173}{U+952E}字：public, protected, friendly, private。不{U+5199}默{U+8BA4}{U+4E3A} friendly。
 
-| 关键字 | 当前类 | 包内 | 子孙类 | 包外 |
+| {U+5173}{U+952E}字 | {U+5F53}前{U+7C7B} | 包{U+5185} | 子{U+5B59}{U+7C7B} | 包外 |
 | --- | --- | --- | --- | --- |
 | public | √ | √ | √ | √ |
 | protected | √ | √ | √ | × |
 | friendly | √ | √ | × | × |
 | private | √ | × | × | × |
 
-### 继承
+### {U+7EE7}承
 
-* 基类（父类）——&gt; 派生类（子类）
+* 基{U+7C7B}（父{U+7C7B}）——&gt; 派生{U+7C7B}（子{U+7C7B}）
 
-### 多态
+### 多{U+6001}
 
-* 多态，即多种状态，在面向对象语言中，接口的多种不同的实现方式即为多态。
-* C++ 多态有两种：静态多态（早绑定）、动态多态（晚绑定）。静态多态是通过函数重载实现的；动态多态是通过虚函数实现的。
-* 多态是以封装和继承为基础的。
+* 多{U+6001}，即多種{U+72B6}{U+6001}，在面向{U+5BF9}象{U+8BED}言中，接口的多種不同的{U+5B9E}{U+73B0}方式即{U+4E3A}多{U+6001}。
+* C++ 多{U+6001}有{U+4E24}種：{U+9759}{U+6001}多{U+6001}（早{U+7ED1}定）、{U+52A8}{U+6001}多{U+6001}（晚{U+7ED1}定）。{U+9759}{U+6001}多{U+6001}是通{U+8FC7}函{U+6570}重{U+8F7D}{U+5B9E}{U+73B0}的；{U+52A8}{U+6001}多{U+6001}是通{U+8FC7}{U+865A}函{U+6570}{U+5B9E}{U+73B0}的。
+* 多{U+6001}是以封{U+88C5}和{U+7EE7}承{U+4E3A}基{U+7840}的。
 
-#### 静态多态（早绑定）
+#### {U+9759}{U+6001}多{U+6001}（早{U+7ED1}定）
 
-函数重载
+函{U+6570}重{U+8F7D}
 
 ```cpp
 class A
@@ -771,21 +771,21 @@ public:
 };
 ```
 
-#### 动态多态（晚绑定）
+#### {U+52A8}{U+6001}多{U+6001}（晚{U+7ED1}定）
 
-* 虚函数：用 virtual 修饰成员函数，使其成为虚函数
+* {U+865A}函{U+6570}：用 virtual 修{U+9970}成{U+5458}函{U+6570}，使其成{U+4E3A}{U+865A}函{U+6570}
 
 **注意：**
 
-* 普通函数（非类成员函数）不能是虚函数
-* 静态函数（static）不能是虚函数
-* 构造函数不能是虚函数（因为在调用构造函数时，虚表指针并没有在对象的内存空间中，必须要构造函数调用完成后才会形成虚表指针）
-* 内联函数不能是表现多态性时的虚函数，解释见：[虚函数（virtual）可以是内联函数（inline）吗？](https://github.com/huihut/interview#%E8%99%9A%E5%87%BD%E6%95%B0virtual%E5%8F%AF%E4%BB%A5%E6%98%AF%E5%86%85%E8%81%94%E5%87%BD%E6%95%B0inline%E5%90%97)
+* 普通函{U+6570}（非{U+7C7B}成{U+5458}函{U+6570}）不能是{U+865A}函{U+6570}
+* {U+9759}{U+6001}函{U+6570}（static）不能是{U+865A}函{U+6570}
+* 構造函{U+6570}不能是{U+865A}函{U+6570}（因{U+4E3A}在{U+8C03}用構造函{U+6570}{U+65F6}，{U+865A}表指{U+9488}並{U+6CA1}有在{U+5BF9}象的{U+5185}存空{U+95F4}中，必{U+987B}要構造函{U+6570}{U+8C03}用完成後才{U+4F1A}形成{U+865A}表指{U+9488}）
+* {U+5185}{U+8054}函{U+6570}不能是表{U+73B0}多{U+6001}性{U+65F6}的{U+865A}函{U+6570}，解{U+91CA}{U+89C1}：[{U+865A}函{U+6570}（virtual）可以是{U+5185}{U+8054}函{U+6570}（inline）{U+5417}？](https://github.com/huihut/interview#%E8%99%9A%E5%87%BD%E6%95%B0virtual%E5%8F%AF%E4%BB%A5%E6%98%AF%E5%86%85%E8%81%94%E5%87%BD%E6%95%B0inline%E5%90%97)
 
-<details><summary>动态多态使用</summary> 
+<details><summary>{U+52A8}{U+6001}多{U+6001}使用</summary> 
 
 ```cpp
-class Shape                     // 形状类
+class Shape                     // 形{U+72B6}{U+7C7B}
 {
 public:
     virtual double calcArea()
@@ -794,13 +794,13 @@ public:
     }
     virtual ~Shape();
 };
-class Circle : public Shape     // 圆形类
+class Circle : public Shape     // {U+5706}形{U+7C7B}
 {
 public:
     virtual double calcArea();
     ...
 };
-class Rect : public Shape       // 矩形类
+class Rect : public Shape       // 矩形{U+7C7B}
 {
 public:
     virtual double calcArea();
@@ -810,8 +810,8 @@ int main()
 {
     Shape * shape1 = new Circle(4.0);
     Shape * shape2 = new Rect(5.0, 6.0);
-    shape1->calcArea();         // 调用圆形类里面的方法
-    shape2->calcArea();         // 调用矩形类里面的方法
+    shape1->calcArea();         // {U+8C03}用{U+5706}形{U+7C7B}裏面的方法
+    shape2->calcArea();         // {U+8C03}用矩形{U+7C7B}裏面的方法
     delete shape1;
     shape1 = nullptr;
     delete shape2;
@@ -822,21 +822,21 @@ int main()
 
 </details>
 
-### 虚析构函数
+### {U+865A}析構函{U+6570}
 
-虚析构函数是为了解决基类的指针指向派生类对象，并用基类的指针删除派生类对象。
+{U+865A}析構函{U+6570}是{U+4E3A}了解{U+51B3}基{U+7C7B}的指{U+9488}指向派生{U+7C7B}{U+5BF9}象，並用基{U+7C7B}的指{U+9488}{U+5220}除派生{U+7C7B}{U+5BF9}象。
 
-<details><summary>虚析构函数使用</summary> 
+<details><summary>{U+865A}析構函{U+6570}使用</summary> 
 
 ```cpp
 class Shape
 {
 public:
-    Shape();                    // 构造函数不能是虚函数
+    Shape();                    // 構造函{U+6570}不能是{U+865A}函{U+6570}
     virtual double calcArea();
-    virtual ~Shape();           // 虚析构函数
+    virtual ~Shape();           // {U+865A}析構函{U+6570}
 };
-class Circle : public Shape     // 圆形类
+class Circle : public Shape     // {U+5706}形{U+7C7B}
 {
 public:
     virtual double calcArea();
@@ -846,7 +846,7 @@ int main()
 {
     Shape * shape1 = new Circle(4.0);
     shape1->calcArea();    
-    delete shape1;  // 因为Shape有虚析构函数，所以delete释放内存时，先调用子类析构函数，再调用基类析构函数，防止内存泄漏。
+    delete shape1;  // 因{U+4E3A}Shape有{U+865A}析構函{U+6570}，所以delete{U+91CA}放{U+5185}存{U+65F6}，先{U+8C03}用子{U+7C7B}析構函{U+6570}，再{U+8C03}用基{U+7C7B}析構函{U+6570}，防止{U+5185}存泄漏。
     shape1 = NULL;
     return 0；
 }
@@ -854,85 +854,85 @@ int main()
 
 </details>
 
-### 纯虚函数
+### {U+7EAF}{U+865A}函{U+6570}
 
-纯虚函数是一种特殊的虚函数，在基类中不能对虚函数给出有意义的实现，而把它声明为纯虚函数，它的实现留给该基类的派生类去做。
+{U+7EAF}{U+865A}函{U+6570}是一種特殊的{U+865A}函{U+6570}，在基{U+7C7B}中不能{U+5BF9}{U+865A}函{U+6570}{U+7ED9}出有意{U+4E49}的{U+5B9E}{U+73B0}，而把它{U+58F0}明{U+4E3A}{U+7EAF}{U+865A}函{U+6570}，它的{U+5B9E}{U+73B0}留{U+7ED9}{U+8BE5}基{U+7C7B}的派生{U+7C7B}去做。
 
 ```cpp
 virtual int A() = 0;
 ```
 
-### 虚函数、纯虚函数
+### {U+865A}函{U+6570}、{U+7EAF}{U+865A}函{U+6570}
 
-[CSDN . C++ 中的虚函数、纯虚函数区别和联系](https://blog.csdn.net/u012260238/article/details/53610462)
+[CSDN . C++ 中的{U+865A}函{U+6570}、{U+7EAF}{U+865A}函{U+6570}{U+533A}{U+522B}和{U+8054}系](https://blog.csdn.net/u012260238/article/details/53610462)
 
-* 类里如果声明了虚函数，这个函数是实现的，哪怕是空实现，它的作用就是为了能让这个函数在它的子类里面可以被覆盖，这样的话，这样编译器就可以使用后期绑定来达到多态了。纯虚函数只是一个接口，是个函数的声明而已，它要留到子类里去实现。 
-* 虚函数在子类里面也可以不重载的；但纯虚函数必须在子类去实现。
-* 虚函数的类用于 “实作继承”，继承接口的同时也继承了父类的实现。当然大家也可以完成自己的实现。纯虚函数关注的是接口的统一性，实现由子类完成。 
-* 带纯虚函数的类叫虚基类，这种基类不能直接生成对象，而只有被继承，并重写其虚函数后，才能使用。这样的类也叫抽象类。抽象类和大家口头常说的虚基类还是有区别的，在 C# 中用 abstract 定义抽象类，而在 C++ 中有抽象类的概念，但是没有这个关键字。抽象类被继承后，子类可以继续是抽象类，也可以是普通类，而虚基类，是含有纯虚函数的类，它如果被继承，那么子类就必须实现虚基类里面的所有纯虚函数，其子类不能是抽象类。
+* {U+7C7B}裏如果{U+58F0}明了{U+865A}函{U+6570}，{U+8FD9}{U+4E2A}函{U+6570}是{U+5B9E}{U+73B0}的，哪怕是空{U+5B9E}{U+73B0}，它的作用就是{U+4E3A}了能{U+8BA9}{U+8FD9}{U+4E2A}函{U+6570}在它的子{U+7C7B}裏面可以被覆{U+76D6}，{U+8FD9}{U+6837}的{U+8BDD}，{U+8FD9}{U+6837}{U+7F16}{U+8BD1}器就可以使用後期{U+7ED1}定{U+6765}{U+8FBE}到多{U+6001}了。{U+7EAF}{U+865A}函{U+6570}只是一{U+4E2A}接口，是{U+4E2A}函{U+6570}的{U+58F0}明而已，它要留到子{U+7C7B}裏去{U+5B9E}{U+73B0}。 
+* {U+865A}函{U+6570}在子{U+7C7B}裏面也可以不重{U+8F7D}的；但{U+7EAF}{U+865A}函{U+6570}必{U+987B}在子{U+7C7B}去{U+5B9E}{U+73B0}。
+* {U+865A}函{U+6570}的{U+7C7B}用於 「{U+5B9E}作{U+7EE7}承」，{U+7EE7}承接口的同{U+65F6}也{U+7EE7}承了父{U+7C7B}的{U+5B9E}{U+73B0}。{U+5F53}然大家也可以完成自己的{U+5B9E}{U+73B0}。{U+7EAF}{U+865A}函{U+6570}{U+5173}注的是接口的{U+7EDF}一性，{U+5B9E}{U+73B0}由子{U+7C7B}完成。 
+* {U+5E26}{U+7EAF}{U+865A}函{U+6570}的{U+7C7B}叫{U+865A}基{U+7C7B}，{U+8FD9}種基{U+7C7B}不能直接生成{U+5BF9}象，而只有被{U+7EE7}承，並重{U+5199}其{U+865A}函{U+6570}後，才能使用。{U+8FD9}{U+6837}的{U+7C7B}也叫抽象{U+7C7B}。抽象{U+7C7B}和大家口{U+5934}常{U+8BF4}的{U+865A}基{U+7C7B}{U+8FD8}是有{U+533A}{U+522B}的，在 C# 中用 abstract 定{U+4E49}抽象{U+7C7B}，而在 C++ 中有抽象{U+7C7B}的概念，但是{U+6CA1}有{U+8FD9}{U+4E2A}{U+5173}{U+952E}字。抽象{U+7C7B}被{U+7EE7}承後，子{U+7C7B}可以{U+7EE7}{U+7EED}是抽象{U+7C7B}，也可以是普通{U+7C7B}，而{U+865A}基{U+7C7B}，是含有{U+7EAF}{U+865A}函{U+6570}的{U+7C7B}，它如果被{U+7EE7}承，那麼子{U+7C7B}就必{U+987B}{U+5B9E}{U+73B0}{U+865A}基{U+7C7B}裏面的所有{U+7EAF}{U+865A}函{U+6570}，其子{U+7C7B}不能是抽象{U+7C7B}。
 
-### 虚函数指针、虚函数表
+### {U+865A}函{U+6570}指{U+9488}、{U+865A}函{U+6570}表
 
-* 虚函数指针：在含有虚函数类的对象中，指向虚函数表，在运行时确定。
-* 虚函数表：在程序只读数据段（`.rodata section`，见：[目标文件存储结构](#%E7%9B%AE%E6%A0%87%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84)），存放虚函数指针，如果派生类实现了基类的某个虚函数，则在虚表中覆盖原本基类的那个虚函数指针，在编译时根据类的声明创建。
+* {U+865A}函{U+6570}指{U+9488}：在含有{U+865A}函{U+6570}{U+7C7B}的{U+5BF9}象中，指向{U+865A}函{U+6570}表，在{U+8FD0}行{U+65F6}確定。
+* {U+865A}函{U+6570}表：在程序只{U+8BFB}{U+6570}據段（`.rodata section`，{U+89C1}：[目{U+6807}文件存{U+50A8}{U+7ED3}構](#%E7%9B%AE%E6%A0%87%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84)），存放{U+865A}函{U+6570}指{U+9488}，如果派生{U+7C7B}{U+5B9E}{U+73B0}了基{U+7C7B}的某{U+4E2A}{U+865A}函{U+6570}，{U+5219}在{U+865A}表中覆{U+76D6}原本基{U+7C7B}的那{U+4E2A}{U+865A}函{U+6570}指{U+9488}，在{U+7F16}{U+8BD1}{U+65F6}根據{U+7C7B}的{U+58F0}明{U+521B}建。
 
-### 虚继承
+### {U+865A}{U+7EE7}承
 
-虚继承用于解决多继承条件下的菱形继承问题（浪费存储空间、存在二义性）。
+{U+865A}{U+7EE7}承用於解{U+51B3}多{U+7EE7}承{U+6761}件下的菱形{U+7EE7}承{U+95EE}{U+9898}（浪{U+8D39}存{U+50A8}空{U+95F4}、存在二{U+4E49}性）。
 
-底层实现原理与编译器相关，一般通过**虚基类指针**和**虚基类表**实现，每个虚继承的子类都有一个虚基类指针（占用一个指针的存储空间，4字节）和虚基类表（不占用类对象的存储空间）（需要强调的是，虚基类依旧会在子类里面存在拷贝，只是仅仅最多存在一份而已，并不是不在子类里面了）；当虚继承的子类被当做父类继承时，虚基类指针也会被继承。
+底{U+5C42}{U+5B9E}{U+73B0}原理與{U+7F16}{U+8BD1}器相{U+5173}，一般通{U+8FC7}**{U+865A}基{U+7C7B}指{U+9488}**和**{U+865A}基{U+7C7B}表**{U+5B9E}{U+73B0}，每{U+4E2A}{U+865A}{U+7EE7}承的子{U+7C7B}都有一{U+4E2A}{U+865A}基{U+7C7B}指{U+9488}（占用一{U+4E2A}指{U+9488}的存{U+50A8}空{U+95F4}，4字{U+8282}）和{U+865A}基{U+7C7B}表（不占用{U+7C7B}{U+5BF9}象的存{U+50A8}空{U+95F4}）（需要{U+5F3A}{U+8C03}的是，{U+865A}基{U+7C7B}依{U+65E7}{U+4F1A}在子{U+7C7B}裏面存在拷{U+8D1D}，只是{U+4EC5}{U+4EC5}最多存在一份而已，並不是不在子{U+7C7B}裏面了）；{U+5F53}{U+865A}{U+7EE7}承的子{U+7C7B}被{U+5F53}做父{U+7C7B}{U+7EE7}承{U+65F6}，{U+865A}基{U+7C7B}指{U+9488}也{U+4F1A}被{U+7EE7}承。
 
-实际上，vbptr 指的是虚基类表指针（virtual base table pointer），该指针指向了一个虚基类表（virtual table），虚表中记录了虚基类与本类的偏移地址；通过偏移地址，这样就找到了虚基类成员，而虚继承也不用像普通多继承那样维持着公共基类（虚基类）的两份同样的拷贝，节省了存储空间。
+{U+5B9E}{U+9645}上，vbptr 指的是{U+865A}基{U+7C7B}表指{U+9488}（virtual base table pointer），{U+8BE5}指{U+9488}指向了一{U+4E2A}{U+865A}基{U+7C7B}表（virtual table），{U+865A}表中{U+8BB0}{U+5F55}了{U+865A}基{U+7C7B}與本{U+7C7B}的偏移地址；通{U+8FC7}偏移地址，{U+8FD9}{U+6837}就找到了{U+865A}基{U+7C7B}成{U+5458}，而{U+865A}{U+7EE7}承也不用像普通多{U+7EE7}承那{U+6837}{U+7EF4}持{U+7740}公共基{U+7C7B}（{U+865A}基{U+7C7B}）的{U+4E24}份同{U+6837}的拷{U+8D1D}，{U+8282}省了存{U+50A8}空{U+95F4}。
 
-### 虚继承、虚函数
+### {U+865A}{U+7EE7}承、{U+865A}函{U+6570}
 
-* 相同之处：都利用了虚指针（均占用类的存储空间）和虚表（均不占用类的存储空间）
-* 不同之处：
-    * 虚继承
-        * 虚基类依旧存在继承类中，只占用存储空间
-        * 虚基类表存储的是虚基类相对直接继承类的偏移
-    * 虚函数
-        * 虚函数不占用存储空间
-        * 虚函数表存储的是虚函数地址
+* 相同之{U+5904}：都利用了{U+865A}指{U+9488}（均占用{U+7C7B}的存{U+50A8}空{U+95F4}）和{U+865A}表（均不占用{U+7C7B}的存{U+50A8}空{U+95F4}）
+* 不同之{U+5904}：
+    * {U+865A}{U+7EE7}承
+        * {U+865A}基{U+7C7B}依{U+65E7}存在{U+7EE7}承{U+7C7B}中，只占用存{U+50A8}空{U+95F4}
+        * {U+865A}基{U+7C7B}表存{U+50A8}的是{U+865A}基{U+7C7B}相{U+5BF9}直接{U+7EE7}承{U+7C7B}的偏移
+    * {U+865A}函{U+6570}
+        * {U+865A}函{U+6570}不占用存{U+50A8}空{U+95F4}
+        * {U+865A}函{U+6570}表存{U+50A8}的是{U+865A}函{U+6570}地址
 
-### 模板类、成员模板、虚函数
+### 模板{U+7C7B}、成{U+5458}模板、{U+865A}函{U+6570}
 
-* 模板类中可以使用虚函数
-* 一个类（无论是普通类还是类模板）的成员模板（本身是模板的成员函数）不能是虚函数
+* 模板{U+7C7B}中可以使用{U+865A}函{U+6570}
+* 一{U+4E2A}{U+7C7B}（{U+65E0}{U+8BBA}是普通{U+7C7B}{U+8FD8}是{U+7C7B}模板）的成{U+5458}模板（本身是模板的成{U+5458}函{U+6570}）不能是{U+865A}函{U+6570}
 
-### 抽象类、接口类、聚合类
+### 抽象{U+7C7B}、接口{U+7C7B}、聚合{U+7C7B}
 
-* 抽象类：含有纯虚函数的类
-* 接口类：仅含有纯虚函数的抽象类
-* 聚合类：用户可以直接访问其成员，并且具有特殊的初始化语法形式。满足如下特点：
-    * 所有成员都是 public
-    * 没有有定于任何构造函数
-    * 没有类内初始化
-    * 没有基类，也没有 virtual 函数
+* 抽象{U+7C7B}：含有{U+7EAF}{U+865A}函{U+6570}的{U+7C7B}
+* 接口{U+7C7B}：{U+4EC5}含有{U+7EAF}{U+865A}函{U+6570}的抽象{U+7C7B}
+* 聚合{U+7C7B}：用{U+6237}可以直接{U+8BBF}{U+95EE}其成{U+5458}，並且具有特殊的初始化{U+8BED}法形式。{U+6EE1}足如下特{U+70B9}：
+    * 所有成{U+5458}都是 public
+    * {U+6CA1}有有定於任何構造函{U+6570}
+    * {U+6CA1}有{U+7C7B}{U+5185}初始化
+    * {U+6CA1}有基{U+7C7B}，也{U+6CA1}有 virtual 函{U+6570}
 
-### 内存分配和管理
+### {U+5185}存分配和管理
 
 #### malloc、calloc、realloc、alloca
 
-1. malloc：申请指定字节数的内存。申请到的内存中的初始值不确定。
-2. calloc：为指定长度的对象，分配能容纳其指定个数的内存。申请到的内存的每一位（bit）都初始化为 0。
-3. realloc：更改以前分配的内存长度（增加或减少）。当增加长度时，可能需将以前分配区的内容移到另一个足够大的区域，而新增区域内的初始值则不确定。
-4. alloca：在栈上申请内存。程序在出栈的时候，会自动释放内存。但是需要注意的是，alloca 不具可移植性, 而且在没有传统堆栈的机器上很难实现。alloca 不宜使用在必须广泛移植的程序中。C99 中支持变长数组 (VLA)，可以用来替代 alloca。
+1. malloc：申{U+8BF7}指定字{U+8282}{U+6570}的{U+5185}存。申{U+8BF7}到的{U+5185}存中的初始值不確定。
+2. calloc：{U+4E3A}指定{U+957F}度的{U+5BF9}象，分配能容{U+7EB3}其指定{U+4E2A}{U+6570}的{U+5185}存。申{U+8BF7}到的{U+5185}存的每一位（bit）都初始化{U+4E3A} 0。
+3. realloc：更改以前分配的{U+5185}存{U+957F}度（增加或{U+51CF}少）。{U+5F53}增加{U+957F}度{U+65F6}，可能需{U+5C06}以前分配{U+533A}的{U+5185}容移到另一{U+4E2A}足{U+591F}大的{U+533A}域，而新增{U+533A}域{U+5185}的初始值{U+5219}不確定。
+4. alloca：在{U+6808}上申{U+8BF7}{U+5185}存。程序在出{U+6808}的{U+65F6}候，{U+4F1A}自{U+52A8}{U+91CA}放{U+5185}存。但是需要注意的是，alloca 不具可移植性, 而且在{U+6CA1}有{U+4F20}{U+7EDF}堆{U+6808}的機器上很{U+96BE}{U+5B9E}{U+73B0}。alloca 不宜使用在必{U+987B}{U+5E7F}泛移植的程序中。C99 中支持{U+53D8}{U+957F}{U+6570}{U+7EC4} (VLA)，可以用{U+6765}替代 alloca。
 
 #### malloc、free
 
-用于分配、释放内存
+用於分配、{U+91CA}放{U+5185}存
 
 <details><summary>malloc、free 使用</summary> 
 
-申请内存，确认是否申请成功
+申{U+8BF7}{U+5185}存，確{U+8BA4}是否申{U+8BF7}成功
 
 ```cpp
 char *str = (char*) malloc(100);
 assert(str != nullptr);
 ```
 
-释放内存后指针置空
+{U+91CA}放{U+5185}存後指{U+9488}置空
 
 ```cpp
 free(p); 
@@ -943,19 +943,19 @@ p = nullptr;
 
 #### new、delete
 
-1. new / new[]：完成两件事，先底层调用 malloc 分了配内存，然后调用构造函数（创建对象）。
-2. delete/delete[]：也完成两件事，先调用析构函数（清理资源），然后底层调用 free 释放空间。
-3. new 在申请内存时会自动计算所需字节数，而 malloc 则需我们自己输入申请内存空间的字节数。
+1. new / new[]：完成{U+4E24}件事，先底{U+5C42}{U+8C03}用 malloc 分了配{U+5185}存，然後{U+8C03}用構造函{U+6570}（{U+521B}建{U+5BF9}象）。
+2. delete/delete[]：也完成{U+4E24}件事，先{U+8C03}用析構函{U+6570}（清理{U+8D44}源），然後底{U+5C42}{U+8C03}用 free {U+91CA}放空{U+95F4}。
+3. new 在申{U+8BF7}{U+5185}存{U+65F6}{U+4F1A}自{U+52A8}{U+8BA1}算所需字{U+8282}{U+6570}，而 malloc {U+5219}需我{U+4EEC}自己{U+8F93}入申{U+8BF7}{U+5185}存空{U+95F4}的字{U+8282}{U+6570}。
 
 <details><summary>new、delete 使用</summary> 
 
-申请内存，确认是否申请成功
+申{U+8BF7}{U+5185}存，確{U+8BA4}是否申{U+8BF7}成功
 
 ```cpp
 int main()
 {
-    T* t = new T();     // 先内存分配 ，再构造函数
-    delete t;           // 先析构函数，再内存释放
+    T* t = new T();     // 先{U+5185}存分配 ，再構造函{U+6570}
+    delete t;           // 先析構函{U+6570}，再{U+5185}存{U+91CA}放
     return 0;
 }
 ```
@@ -964,7 +964,7 @@ int main()
 
 #### 定位 new
 
-定位 new（placement new）允许我们向 new 传递额外的参数。
+定位 new（placement new）允{U+8BB8}我{U+4EEC}向 new {U+4F20}{U+9012}{U+989D}外的{U+53C2}{U+6570}。
 
 ```cpp
 new (palce_address) type
@@ -973,41 +973,41 @@ new (palce_address) type [size]
 new (palce_address) type [size] { braced initializer list }
 ```
 
-* `palce_address` 是个指针
-* `initializers` 提供一个（可能为空的）以逗号分隔的初始值列表
+* `palce_address` 是{U+4E2A}指{U+9488}
+* `initializers` 提供一{U+4E2A}（可能{U+4E3A}空的）以逗{U+53F7}分隔的初始值列表
 
-### delete this 合法吗？
+### delete this 合法{U+5417}？
 
 [Is it legal (and moral) for a member function to say delete this?](https://isocpp.org/wiki/faq/freestore-mgmt#delete-this)
 
 合法，但：
 
-1. 必须保证 this 对象是通过 `new`（不是 `new[]`、不是 placement new、不是栈上、不是全局、不是其他对象成员）分配的
-2. 必须保证调用 `delete this` 的成员函数是最后一个调用 this 的成员函数
-3. 必须保证成员函数的 `delete this ` 后面没有调用 this 了
-4. 必须保证 `delete this` 后没有人使用了
+1. 必{U+987B}保{U+8BC1} this {U+5BF9}象是通{U+8FC7} `new`（不是 `new[]`、不是 placement new、不是{U+6808}上、不是全局、不是其他{U+5BF9}象成{U+5458}）分配的
+2. 必{U+987B}保{U+8BC1}{U+8C03}用 `delete this` 的成{U+5458}函{U+6570}是最後一{U+4E2A}{U+8C03}用 this 的成{U+5458}函{U+6570}
+3. 必{U+987B}保{U+8BC1}成{U+5458}函{U+6570}的 `delete this ` 後面{U+6CA1}有{U+8C03}用 this 了
+4. 必{U+987B}保{U+8BC1} `delete this` 後{U+6CA1}有人使用了
 
-### 如何定义一个只能在堆上（栈上）生成对象的类？
+### 如何定{U+4E49}一{U+4E2A}只能在堆上（{U+6808}上）生成{U+5BF9}象的{U+7C7B}？
 
-[如何定义一个只能在堆上（栈上）生成对象的类?](https://www.nowcoder.com/questionTerminal/0a584aa13f804f3ea72b442a065a7618)
+[如何定{U+4E49}一{U+4E2A}只能在堆上（{U+6808}上）生成{U+5BF9}象的{U+7C7B}?](https://www.nowcoder.com/questionTerminal/0a584aa13f804f3ea72b442a065a7618)
 
 #### 只能在堆上
 
-方法：将析构函数设置为私有
+方法：{U+5C06}析構函{U+6570}{U+8BBE}置{U+4E3A}私有
 
-原因：C++ 是静态绑定语言，编译器管理栈上对象的生命周期，编译器在为类对象分配栈空间时，会先检查类的析构函数的访问性。若析构函数不可访问，则不能在栈上创建对象。
+原因：C++ 是{U+9759}{U+6001}{U+7ED1}定{U+8BED}言，{U+7F16}{U+8BD1}器管理{U+6808}上{U+5BF9}象的生命周期，{U+7F16}{U+8BD1}器在{U+4E3A}{U+7C7B}{U+5BF9}象分配{U+6808}空{U+95F4}{U+65F6}，{U+4F1A}先{U+68C0}查{U+7C7B}的析構函{U+6570}的{U+8BBF}{U+95EE}性。若析構函{U+6570}不可{U+8BBF}{U+95EE}，{U+5219}不能在{U+6808}上{U+521B}建{U+5BF9}象。
 
-#### 只能在栈上
+#### 只能在{U+6808}上
 
-方法：将 new 和 delete 重载为私有
+方法：{U+5C06} new 和 delete 重{U+8F7D}{U+4E3A}私有
 
-原因：在堆上生成对象，使用 new 关键词操作，其过程分为两阶段：第一阶段，使用 new 在堆上寻找可用内存，分配给对象；第二阶段，调用构造函数生成对象。将 new 操作设置为私有，那么第一阶段就无法完成，就不能够在堆上生成对象。
+原因：在堆上生成{U+5BF9}象，使用 new {U+5173}{U+952E}{U+8BCD}操作，其{U+8FC7}程分{U+4E3A}{U+4E24}{U+9636}段：第一{U+9636}段，使用 new 在堆上{U+5BFB}找可用{U+5185}存，分配{U+7ED9}{U+5BF9}象；第二{U+9636}段，{U+8C03}用構造函{U+6570}生成{U+5BF9}象。{U+5C06} new 操作{U+8BBE}置{U+4E3A}私有，那麼第一{U+9636}段就{U+65E0}法完成，就不能{U+591F}在堆上生成{U+5BF9}象。
 
-### 智能指针
+### 智能指{U+9488}
 
-#### C++ 标准库（STL）中
+#### C++ {U+6807}准{U+5E93}（STL）中
 
-头文件：`#include <memory>`
+{U+5934}文件：`#include <memory>`
 
 #### C++ 98
 
@@ -1020,75 +1020,75 @@ std::auto_ptr<std::string> ps (new std::string(str))；
 1. shared_ptr
 2. unique_ptr
 3. weak_ptr
-4. auto_ptr（被 C++11 弃用）
+4. auto_ptr（被 C++11 {U+5F03}用）
 
-* Class shared_ptr 实现共享式拥有（shared ownership）概念。多个智能指针指向相同对象，该对象和其相关资源会在 “最后一个 reference 被销毁” 时被释放。为了在结构较复杂的情景中执行上述工作，标准库提供 weak_ptr、bad_weak_ptr 和 enable_shared_from_this 等辅助类。
-* Class unique_ptr 实现独占式拥有（exclusive ownership）或严格拥有（strict ownership）概念，保证同一时间内只有一个智能指针可以指向该对象。你可以移交拥有权。它对于避免内存泄漏（resource leak）——如 new 后忘记 delete ——特别有用。
+* Class shared_ptr {U+5B9E}{U+73B0}共享式{U+62E5}有（shared ownership）概念。多{U+4E2A}智能指{U+9488}指向相同{U+5BF9}象，{U+8BE5}{U+5BF9}象和其相{U+5173}{U+8D44}源{U+4F1A}在 「最後一{U+4E2A} reference 被{U+9500}{U+6BC1}」 {U+65F6}被{U+91CA}放。{U+4E3A}了在{U+7ED3}構{U+8F83}複{U+6742}的情景中{U+6267}行上述工作，{U+6807}准{U+5E93}提供 weak_ptr、bad_weak_ptr 和 enable_shared_from_this 等{U+8F85}助{U+7C7B}。
+* Class unique_ptr {U+5B9E}{U+73B0}{U+72EC}占式{U+62E5}有（exclusive ownership）或{U+4E25}格{U+62E5}有（strict ownership）概念，保{U+8BC1}同一{U+65F6}{U+95F4}{U+5185}只有一{U+4E2A}智能指{U+9488}可以指向{U+8BE5}{U+5BF9}象。你可以移交{U+62E5}有{U+6743}。它{U+5BF9}於避免{U+5185}存泄漏（resource leak）——如 new 後忘{U+8BB0} delete ——特{U+522B}有用。
 
 ##### shared_ptr
 
-多个智能指针可以共享同一个对象，对象的最末一个拥有着有责任销毁对象，并清理与该对象相关的所有资源。
+多{U+4E2A}智能指{U+9488}可以共享同一{U+4E2A}{U+5BF9}象，{U+5BF9}象的最末一{U+4E2A}{U+62E5}有{U+7740}有{U+8D23}任{U+9500}{U+6BC1}{U+5BF9}象，並清理與{U+8BE5}{U+5BF9}象相{U+5173}的所有{U+8D44}源。
 
-* 支持定制型删除器（custom deleter），可防范 Cross-DLL 问题（对象在动态链接库（DLL）中被 new 创建，却在另一个 DLL 内被 delete 销毁）、自动解除互斥锁
+* 支持定制型{U+5220}除器（custom deleter），可防範 Cross-DLL {U+95EE}{U+9898}（{U+5BF9}象在{U+52A8}{U+6001}{U+94FE}接{U+5E93}（DLL）中被 new {U+521B}建，{U+5374}在另一{U+4E2A} DLL {U+5185}被 delete {U+9500}{U+6BC1}）、自{U+52A8}解除互斥{U+9501}
 
 ##### weak_ptr
 
-weak_ptr 允许你共享但不拥有某对象，一旦最末一个拥有该对象的智能指针失去了所有权，任何 weak_ptr 都会自动成空（empty）。因此，在 default 和 copy 构造函数之外，weak_ptr 只提供 “接受一个 shared_ptr” 的构造函数。
+weak_ptr 允{U+8BB8}你共享但不{U+62E5}有某{U+5BF9}象，一旦最末一{U+4E2A}{U+62E5}有{U+8BE5}{U+5BF9}象的智能指{U+9488}失去了所有{U+6743}，任何 weak_ptr 都{U+4F1A}自{U+52A8}成空（empty）。因此，在 default 和 copy 構造函{U+6570}之外，weak_ptr 只提供 「接受一{U+4E2A} shared_ptr」 的構造函{U+6570}。
 
-* 可打破环状引用（cycles of references，两个其实已经没有被使用的对象彼此互指，使之看似还在 “被使用” 的状态）的问题
+* 可打破{U+73AF}{U+72B6}引用（cycles of references，{U+4E24}{U+4E2A}其{U+5B9E}已{U+7ECF}{U+6CA1}有被使用的{U+5BF9}象彼此互指，使之看似{U+8FD8}在 「被使用」 的{U+72B6}{U+6001}）的{U+95EE}{U+9898}
 
 ##### unique_ptr
 
-unique_ptr 是 C++11 才开始提供的类型，是一种在异常时可以帮助避免资源泄漏的智能指针。采用独占式拥有，意味着可以确保一个对象和其相应的资源同一时间只被一个 pointer 拥有。一旦拥有着被销毁或编程 empty，或开始拥有另一个对象，先前拥有的那个对象就会被销毁，其任何相应资源亦会被释放。
+unique_ptr 是 C++11 才{U+5F00}始提供的{U+7C7B}型，是一種在異常{U+65F6}可以{U+5E2E}助避免{U+8D44}源泄漏的智能指{U+9488}。采用{U+72EC}占式{U+62E5}有，意味{U+7740}可以確保一{U+4E2A}{U+5BF9}象和其相{U+5E94}的{U+8D44}源同一{U+65F6}{U+95F4}只被一{U+4E2A} pointer {U+62E5}有。一旦{U+62E5}有{U+7740}被{U+9500}{U+6BC1}或{U+7F16}程 empty，或{U+5F00}始{U+62E5}有另一{U+4E2A}{U+5BF9}象，先前{U+62E5}有的那{U+4E2A}{U+5BF9}象就{U+4F1A}被{U+9500}{U+6BC1}，其任何相{U+5E94}{U+8D44}源亦{U+4F1A}被{U+91CA}放。
 
-* unique_ptr 用于取代 auto_ptr
+* unique_ptr 用於取代 auto_ptr
 
 ##### auto_ptr
 
-被 c++11 弃用，原因是缺乏语言特性如 “针对构造和赋值” 的 `std::move` 语义，以及其他瑕疵。
+被 c++11 {U+5F03}用，原因是缺乏{U+8BED}言特性如 「{U+9488}{U+5BF9}構造和{U+8D4B}值」 的 `std::move` {U+8BED}{U+4E49}，以及其他瑕疵。
 
-##### auto_ptr 与 unique_ptr 比较
+##### auto_ptr 與 unique_ptr 比{U+8F83}
 
-* auto_ptr 可以赋值拷贝，复制拷贝后所有权转移；unqiue_ptr 无拷贝赋值语义，但实现了`move` 语义；
-* auto_ptr 对象不能管理数组（析构调用 `delete`），unique_ptr 可以管理数组（析构调用 `delete[]` ）；
+* auto_ptr 可以{U+8D4B}值拷{U+8D1D}，複制拷{U+8D1D}後所有{U+6743}{U+8F6C}移；unqiue_ptr {U+65E0}拷{U+8D1D}{U+8D4B}值{U+8BED}{U+4E49}，但{U+5B9E}{U+73B0}了`move` {U+8BED}{U+4E49}；
+* auto_ptr {U+5BF9}象不能管理{U+6570}{U+7EC4}（析構{U+8C03}用 `delete`），unique_ptr 可以管理{U+6570}{U+7EC4}（析構{U+8C03}用 `delete[]` ）；
 
-### 强制类型转换运算符
+### {U+5F3A}制{U+7C7B}型{U+8F6C}{U+6362}{U+8FD0}算符
 
-[MSDN . 强制转换运算符](https://msdn.microsoft.com/zh-CN/library/5f6c9f8h.aspx)
+[MSDN . {U+5F3A}制{U+8F6C}{U+6362}{U+8FD0}算符](https://msdn.microsoft.com/zh-CN/library/5f6c9f8h.aspx)
 
 #### static_cast
 
-* 用于非多态类型的转换
-* 不执行运行时类型检查（转换安全性不如 dynamic_cast）
-* 通常用于转换数值数据类型（如 float -> int）
-* 可以在整个类层次结构中移动指针，子类转化为父类安全（向上转换），父类转化为子类不安全（因为子类可能有不在父类的字段或方法）
+* 用於非多{U+6001}{U+7C7B}型的{U+8F6C}{U+6362}
+* 不{U+6267}行{U+8FD0}行{U+65F6}{U+7C7B}型{U+68C0}查（{U+8F6C}{U+6362}安全性不如 dynamic_cast）
+* 通常用於{U+8F6C}{U+6362}{U+6570}值{U+6570}據{U+7C7B}型（如 float -> int）
+* 可以在整{U+4E2A}{U+7C7B}{U+5C42}次{U+7ED3}構中移{U+52A8}指{U+9488}，子{U+7C7B}{U+8F6C}化{U+4E3A}父{U+7C7B}安全（向上{U+8F6C}{U+6362}），父{U+7C7B}{U+8F6C}化{U+4E3A}子{U+7C7B}不安全（因{U+4E3A}子{U+7C7B}可能有不在父{U+7C7B}的字段或方法）
 
-> 向上转换是一种隐式转换。
+> 向上{U+8F6C}{U+6362}是一種{U+9690}式{U+8F6C}{U+6362}。
 
 #### dynamic_cast
 
-* 用于多态类型的转换
-* 执行行运行时类型检查
-* 只适用于指针或引用
-* 对不明确的指针的转换将失败（返回 nullptr），但不引发异常
-* 可以在整个类层次结构中移动指针，包括向上转换、向下转换
+* 用於多{U+6001}{U+7C7B}型的{U+8F6C}{U+6362}
+* {U+6267}行行{U+8FD0}行{U+65F6}{U+7C7B}型{U+68C0}查
+* 只適用於指{U+9488}或引用
+* {U+5BF9}不明確的指{U+9488}的{U+8F6C}{U+6362}{U+5C06}失{U+8D25}（返回 nullptr），但不引{U+53D1}異常
+* 可以在整{U+4E2A}{U+7C7B}{U+5C42}次{U+7ED3}構中移{U+52A8}指{U+9488}，包括向上{U+8F6C}{U+6362}、向下{U+8F6C}{U+6362}
 
 #### const_cast 
 
-* 用于删除 const、volatile 和 __unaligned 特性（如将 const int 类型转换为 int 类型 ）
+* 用於{U+5220}除 const、volatile 和 __unaligned 特性（如{U+5C06} const int {U+7C7B}型{U+8F6C}{U+6362}{U+4E3A} int {U+7C7B}型 ）
 
 #### reinterpret_cast
 
-* 用于位的简单重新解释
-* 滥用 reinterpret_cast 运算符可能很容易带来风险。 除非所需转换本身是低级别的，否则应使用其他强制转换运算符之一。
-* 允许将任何指针转换为任何其他指针类型（如 `char*` 到 `int*` 或 `One_class*` 到 `Unrelated_class*` 之类的转换，但其本身并不安全）
-* 也允许将任何整数类型转换为任何指针类型以及反向转换。
-* reinterpret_cast 运算符不能丢掉 const、volatile 或 __unaligned 特性。 
-* reinterpret_cast 的一个实际用途是在哈希函数中，即，通过让两个不同的值几乎不以相同的索引结尾的方式将值映射到索引。
+* 用於位的{U+7B80}{U+5355}重新解{U+91CA}
+* {U+6EE5}用 reinterpret_cast {U+8FD0}算符可能很容易{U+5E26}{U+6765}{U+98CE}{U+9669}。 除非所需{U+8F6C}{U+6362}本身是低{U+7EA7}{U+522B}的，否{U+5219}{U+5E94}使用其他{U+5F3A}制{U+8F6C}{U+6362}{U+8FD0}算符之一。
+* 允{U+8BB8}{U+5C06}任何指{U+9488}{U+8F6C}{U+6362}{U+4E3A}任何其他指{U+9488}{U+7C7B}型（如 `char*` 到 `int*` 或 `One_class*` 到 `Unrelated_class*` 之{U+7C7B}的{U+8F6C}{U+6362}，但其本身並不安全）
+* 也允{U+8BB8}{U+5C06}任何整{U+6570}{U+7C7B}型{U+8F6C}{U+6362}{U+4E3A}任何指{U+9488}{U+7C7B}型以及反向{U+8F6C}{U+6362}。
+* reinterpret_cast {U+8FD0}算符不能{U+4E22}掉 const、volatile 或 __unaligned 特性。 
+* reinterpret_cast 的一{U+4E2A}{U+5B9E}{U+9645}用途是在哈希函{U+6570}中，即，通{U+8FC7}{U+8BA9}{U+4E24}{U+4E2A}不同的值幾乎不以相同的索引{U+7ED3}尾的方式{U+5C06}值映射到索引。
 
 #### bad_cast
 
-* 由于强制转换为引用类型失败，dynamic_cast 运算符引发 bad_cast 异常。
+* 由於{U+5F3A}制{U+8F6C}{U+6362}{U+4E3A}引用{U+7C7B}型失{U+8D25}，dynamic_cast {U+8FD0}算符引{U+53D1} bad_cast 異常。
 
 <details><summary>bad_cast 使用</summary> 
 
@@ -1103,44 +1103,44 @@ catch (bad_cast b) {
 
 </details>
 
-### 运行时类型信息 (RTTI) 
+### {U+8FD0}行{U+65F6}{U+7C7B}型信息 (RTTI) 
 
 #### dynamic_cast
 
-* 用于多态类型的转换
+* 用於多{U+6001}{U+7C7B}型的{U+8F6C}{U+6362}
 
 #### typeid
 
-* typeid 运算符允许在运行时确定对象的类型
-* type\_id 返回一个 type\_info 对象的引用
-* 如果想通过基类的指针获得派生类的数据类型，基类必须带有虚函数
-* 只能获取对象的实际类型
+* typeid {U+8FD0}算符允{U+8BB8}在{U+8FD0}行{U+65F6}確定{U+5BF9}象的{U+7C7B}型
+* type\_id 返回一{U+4E2A} type\_info {U+5BF9}象的引用
+* 如果想通{U+8FC7}基{U+7C7B}的指{U+9488}{U+83B7}得派生{U+7C7B}的{U+6570}據{U+7C7B}型，基{U+7C7B}必{U+987B}{U+5E26}有{U+865A}函{U+6570}
+* 只能{U+83B7}取{U+5BF9}象的{U+5B9E}{U+9645}{U+7C7B}型
 
 #### type_info
 
-* type_info 类描述编译器在程序中生成的类型信息。 此类的对象可以有效存储指向类型的名称的指针。 type_info 类还可存储适合比较两个类型是否相等或比较其排列顺序的编码值。 类型的编码规则和排列顺序是未指定的，并且可能因程序而异。
-* 头文件：`typeinfo`
+* type_info {U+7C7B}描述{U+7F16}{U+8BD1}器在程序中生成的{U+7C7B}型信息。 此{U+7C7B}的{U+5BF9}象可以有效存{U+50A8}指向{U+7C7B}型的名{U+79F0}的指{U+9488}。 type_info {U+7C7B}{U+8FD8}可存{U+50A8}適合比{U+8F83}{U+4E24}{U+4E2A}{U+7C7B}型是否相等或比{U+8F83}其排列{U+987A}序的{U+7F16}{U+7801}值。 {U+7C7B}型的{U+7F16}{U+7801}{U+89C4}{U+5219}和排列{U+987A}序是未指定的，並且可能因程序而異。
+* {U+5934}文件：`typeinfo`
 
 <details><summary>typeid、type_info 使用</summary>
 
 ```cpp
-class Flyable                       // 能飞的
+class Flyable                       // 能{U+98DE}的
 {
 public:
-    virtual void takeoff() = 0;     // 起飞
+    virtual void takeoff() = 0;     // 起{U+98DE}
     virtual void land() = 0;        // 降落
 };
-class Bird : public Flyable         // 鸟
+class Bird : public Flyable         // {U+9E1F}
 {
 public:
-    void foraging() {...}           // 觅食
+    void foraging() {...}           // {U+89C5}食
     virtual void takeoff() {...}
     virtual void land() {...}
 };
-class Plane : public Flyable        // 飞机
+class Plane : public Flyable        // {U+98DE}機
 {
 public:
-    void carry() {...}              // 运输
+    void carry() {...}              // {U+8FD0}{U+8F93}
     virtual void take off() {...}
     virtual void land() {...}
 };
@@ -1161,11 +1161,11 @@ class doSomething(Flyable *obj)                 // 做些事情
 {
     obj->takeoff();
 
-    cout << typeid(*obj).name() << endl;        // 输出传入对象类型（"class Bird" or "class Plane"）
+    cout << typeid(*obj).name() << endl;        // {U+8F93}出{U+4F20}入{U+5BF9}象{U+7C7B}型（"class Bird" or "class Plane"）
 
-    if(typeid(*obj) == typeid(Bird))            // 判断对象类型
+    if(typeid(*obj) == typeid(Bird))            // 判{U+65AD}{U+5BF9}象{U+7C7B}型
     {
-        Bird *bird = dynamic_cast<Bird *>(obj); // 对象转化
+        Bird *bird = dynamic_cast<Bird *>(obj); // {U+5BF9}象{U+8F6C}化
         bird->foraging();
     }
 
@@ -1177,53 +1177,53 @@ class doSomething(Flyable *obj)                 // 做些事情
 
 ### Effective C++
 
-1. 视 C++ 为一个语言联邦（C、Object-Oriented C++、Template C++、STL）
-2. 宁可以编译器替换预处理器（尽量以 `const`、`enum`、`inline` 替换 `#define`）
-3. 尽可能使用 const
-4. 确定对象被使用前已先被初始化（构造时赋值（copy 构造函数）比 default 构造后赋值（copy assignment）效率高）
-5. 了解 C++ 默默编写并调用哪些函数（编译器暗自为 class 创建 default 构造函数、copy 构造函数、copy assignment 操作符、析构函数）
-6. 若不想使用编译器自动生成的函数，就应该明确拒绝（将不想使用的成员函数声明为 private，并且不予实现）
-7. 为多态基类声明 virtual 析构函数（如果 class 带有任何 virtual 函数，它就应该拥有一个 virtual 析构函数）
-8. 别让异常逃离析构函数（析构函数应该吞下不传播异常，或者结束程序，而不是吐出异常；如果要处理异常应该在非析构的普通函数处理）
-9. 绝不在构造和析构过程中调用 virtual 函数（因为这类调用从不下降至 derived class）
-10. 令 `operator=` 返回一个 `reference to *this` （用于连锁赋值）
-11. 在 `operator=` 中处理 “自我赋值”
-12. 赋值对象时应确保复制 “对象内的所有成员变量” 及 “所有 base class 成分”（调用基类复制构造函数）
-13. 以对象管理资源（资源在构造函数获得，在析构函数释放，建议使用智能指针，资源取得时机便是初始化时机（Resource Acquisition Is Initialization，RAII））
-14. 在资源管理类中小心 copying 行为（普遍的 RAII class copying 行为是：抑制 copying、引用计数、深度拷贝、转移底部资源拥有权（类似 auto_ptr））
-15. 在资源管理类中提供对原始资源（raw resources）的访问（对原始资源的访问可能经过显式转换或隐式转换，一般而言显示转换比较安全，隐式转换对客户比较方便）
-16. 成对使用 new 和 delete 时要采取相同形式（`new` 中使用 `[]` 则 `delete []`，`new` 中不使用 `[]` 则 `delete`）
-17. 以独立语句将 newed 对象存储于（置入）智能指针（如果不这样做，可能会因为编译器优化，导致难以察觉的资源泄漏）
-18. 让接口容易被正确使用，不易被误用（促进正常使用的办法：接口的一致性、内置类型的行为兼容；阻止误用的办法：建立新类型，限制类型上的操作，约束对象值、消除客户的资源管理责任）
-19. 设计 class 犹如设计 type，需要考虑对象创建、销毁、初始化、赋值、值传递、合法值、继承关系、转换、一般化等等。
-20. 宁以 pass-by-reference-to-const 替换 pass-by-value （前者通常更高效、避免切割问题（slicing problem），但不适用于内置类型、STL迭代器、函数对象）
-21. 必须返回对象时，别妄想返回其 reference（绝不返回 pointer 或 reference 指向一个 local stack 对象，或返回 reference 指向一个 heap-allocated 对象，或返回 pointer 或 reference 指向一个 local static 对象而有可能同时需要多个这样的对象。）
-22. 将成员变量声明为 private（为了封装、一致性、对其读写精确控制等）
-23. 宁以 non-member、non-friend 替换 member 函数（可增加封装性、包裹弹性（packaging flexibility）、机能扩充性）
-24. 若所有参数（包括被this指针所指的那个隐喻参数）皆须要类型转换，请为此采用 non-member 函数
-25. 考虑写一个不抛异常的 swap 函数
-26. 尽可能延后变量定义式的出现时间（可增加程序清晰度并改善程序效率）
-27. 尽量少做转型动作（旧式：`(T)expression`、`T(expression)`；新式：`const_cast<T>(expression)`、`dynamic_cast<T>(expression)`、`reinterpret_cast<T>(expression)`、`static_cast<T>(expression)`、；尽量避免转型、注重效率避免 dynamic_casts、尽量设计成无需转型、可把转型封装成函数、宁可用新式转型）
-28. 避免使用 handles（包括 引用、指针、迭代器）指向对象内部（以增加封装性、使 const 成员函数的行为更像 const、降低 “虚吊号码牌”（dangling handles，如悬空指针等）的可能性）
-29. 为 “异常安全” 而努力是值得的（异常安全函数（Exception-safe functions）即使发生异常也不会泄露资源或允许任何数据结构败坏，分为三种可能的保证：基本型、强列型、不抛异常型）
-30. 透彻了解 inlining 的里里外外（inlining 在大多数 C++ 程序中是编译期的行为；inline 函数是否真正 inline，取决于编译器；大部分编译器拒绝太过复杂（如带有循环或递归）的函数 inlining，而所有对 virtual 函数的调用（除非是最平淡无奇的）也都会使 inlining 落空；inline 造成的代码膨胀可能带来效率损失；inline 函数无法随着程序库的升级而升级）
-31. 将文件间的编译依存关系降至最低（如果使用 object references 或 object pointers 可以完成任务，就不要使用 objects；如果能过够，尽量以 class 声明式替换 class 定义式；为声明式和定义式提供不同的头文件）
-32. 确定你的 public 继承塑模出 is-a 关系（适用于 base classes 身上的每一件事情一定适用于 derived classes 身上，因为每一个 derived class 对象也都是一个 base class 对象）
-33. 避免遮掩继承而来的名字（可使用 using 声明式或转交函数（forwarding functions）来让被遮掩的名字再见天日）
-34. 区分接口继承和实现继承（在 public 继承之下，derived classes 总是继承 base class 的接口；pure virtual 函数只具体指定接口继承；非纯 impure virtual 函数具体指定接口继承及缺省实现继承；non-virtual 函数具体指定接口继承以及强制性实现继承）
-35. 考虑 virtual 函数以外的其他选择（如 Template Method 设计模式的 non-virtual interface（NVI）手法，将 virtual 函数替换为 “函数指针成员变量”，以 `tr1::function` 成员变量替换 virtual 函数，将继承体系内的 virtual 函数替换为另一个继承体系内的 virtual 函数）
-36. 绝不重新定义继承而来的 non-virtual 函数
-37. 绝不重新定义继承而来的缺省参数值，因为缺省参数值是静态绑定（statically bound），而 virtual 函数却是动态绑定（dynamically bound）
+1. {U+89C6} C++ {U+4E3A}一{U+4E2A}{U+8BED}言{U+8054}邦（C、Object-Oriented C++、Template C++、STL）
+2. 寧可以{U+7F16}{U+8BD1}器替{U+6362}{U+9884}{U+5904}理器（{U+5C3D}量以 `const`、`enum`、`inline` 替{U+6362} `#define`）
+3. {U+5C3D}可能使用 const
+4. 確定{U+5BF9}象被使用前已先被初始化（構造{U+65F6}{U+8D4B}值（copy 構造函{U+6570}）比 default 構造後{U+8D4B}值（copy assignment）效率高）
+5. 了解 C++ 默默{U+7F16}{U+5199}並{U+8C03}用哪些函{U+6570}（{U+7F16}{U+8BD1}器暗自{U+4E3A} class {U+521B}建 default 構造函{U+6570}、copy 構造函{U+6570}、copy assignment 操作符、析構函{U+6570}）
+6. 若不想使用{U+7F16}{U+8BD1}器自{U+52A8}生成的函{U+6570}，就{U+5E94}{U+8BE5}明確拒{U+7EDD}（{U+5C06}不想使用的成{U+5458}函{U+6570}{U+58F0}明{U+4E3A} private，並且不予{U+5B9E}{U+73B0}）
+7. {U+4E3A}多{U+6001}基{U+7C7B}{U+58F0}明 virtual 析構函{U+6570}（如果 class {U+5E26}有任何 virtual 函{U+6570}，它就{U+5E94}{U+8BE5}{U+62E5}有一{U+4E2A} virtual 析構函{U+6570}）
+8. {U+522B}{U+8BA9}異常逃離析構函{U+6570}（析構函{U+6570}{U+5E94}{U+8BE5}吞下不{U+4F20}播異常，或者{U+7ED3}束程序，而不是吐出異常；如果要{U+5904}理異常{U+5E94}{U+8BE5}在非析構的普通函{U+6570}{U+5904}理）
+9. {U+7EDD}不在構造和析構{U+8FC7}程中{U+8C03}用 virtual 函{U+6570}（因{U+4E3A}{U+8FD9}{U+7C7B}{U+8C03}用{U+4ECE}不下降至 derived class）
+10. 令 `operator=` 返回一{U+4E2A} `reference to *this` （用於{U+8FDE}{U+9501}{U+8D4B}值）
+11. 在 `operator=` 中{U+5904}理 「自我{U+8D4B}值」
+12. {U+8D4B}值{U+5BF9}象{U+65F6}{U+5E94}確保複制 「{U+5BF9}象{U+5185}的所有成{U+5458}{U+53D8}量」 及 「所有 base class 成分」（{U+8C03}用基{U+7C7B}複制構造函{U+6570}）
+13. 以{U+5BF9}象管理{U+8D44}源（{U+8D44}源在構造函{U+6570}{U+83B7}得，在析構函{U+6570}{U+91CA}放，建{U+8BAE}使用智能指{U+9488}，{U+8D44}源取得{U+65F6}機便是初始化{U+65F6}機（Resource Acquisition Is Initialization，RAII））
+14. 在{U+8D44}源管理{U+7C7B}中小心 copying 行{U+4E3A}（普遍的 RAII class copying 行{U+4E3A}是：抑制 copying、引用{U+8BA1}{U+6570}、深度拷{U+8D1D}、{U+8F6C}移底部{U+8D44}源{U+62E5}有{U+6743}（{U+7C7B}似 auto_ptr））
+15. 在{U+8D44}源管理{U+7C7B}中提供{U+5BF9}原始{U+8D44}源（raw resources）的{U+8BBF}{U+95EE}（{U+5BF9}原始{U+8D44}源的{U+8BBF}{U+95EE}可能{U+7ECF}{U+8FC7}{U+663E}式{U+8F6C}{U+6362}或{U+9690}式{U+8F6C}{U+6362}，一般而言{U+663E}示{U+8F6C}{U+6362}比{U+8F83}安全，{U+9690}式{U+8F6C}{U+6362}{U+5BF9}客{U+6237}比{U+8F83}方便）
+16. 成{U+5BF9}使用 new 和 delete {U+65F6}要采取相同形式（`new` 中使用 `[]` {U+5219} `delete []`，`new` 中不使用 `[]` {U+5219} `delete`）
+17. 以{U+72EC}立{U+8BED}句{U+5C06} newed {U+5BF9}象存{U+50A8}於（置入）智能指{U+9488}（如果不{U+8FD9}{U+6837}做，可能{U+4F1A}因{U+4E3A}{U+7F16}{U+8BD1}器優化，{U+5BFC}致{U+96BE}以察{U+89C9}的{U+8D44}源泄漏）
+18. {U+8BA9}接口容易被正確使用，不易被{U+8BEF}用（促{U+8FDB}正常使用的{U+529E}法：接口的一致性、{U+5185}置{U+7C7B}型的行{U+4E3A}兼容；阻止{U+8BEF}用的{U+529E}法：建立新{U+7C7B}型，限制{U+7C7B}型上的操作，{U+7EA6}束{U+5BF9}象值、消除客{U+6237}的{U+8D44}源管理{U+8D23}任）
+19. {U+8BBE}{U+8BA1} class {U+72B9}如{U+8BBE}{U+8BA1} type，需要考{U+8651}{U+5BF9}象{U+521B}建、{U+9500}{U+6BC1}、初始化、{U+8D4B}值、值{U+4F20}{U+9012}、合法值、{U+7EE7}承{U+5173}系、{U+8F6C}{U+6362}、一般化等等。
+20. 寧以 pass-by-reference-to-const 替{U+6362} pass-by-value （前者通常更高效、避免切割{U+95EE}{U+9898}（slicing problem），但不適用於{U+5185}置{U+7C7B}型、STL迭代器、函{U+6570}{U+5BF9}象）
+21. 必{U+987B}返回{U+5BF9}象{U+65F6}，{U+522B}妄想返回其 reference（{U+7EDD}不返回 pointer 或 reference 指向一{U+4E2A} local stack {U+5BF9}象，或返回 reference 指向一{U+4E2A} heap-allocated {U+5BF9}象，或返回 pointer 或 reference 指向一{U+4E2A} local static {U+5BF9}象而有可能同{U+65F6}需要多{U+4E2A}{U+8FD9}{U+6837}的{U+5BF9}象。）
+22. {U+5C06}成{U+5458}{U+53D8}量{U+58F0}明{U+4E3A} private（{U+4E3A}了封{U+88C5}、一致性、{U+5BF9}其{U+8BFB}{U+5199}精確控制等）
+23. 寧以 non-member、non-friend 替{U+6362} member 函{U+6570}（可增加封{U+88C5}性、包裹{U+5F39}性（packaging flexibility）、機能{U+6269}充性）
+24. 若所有{U+53C2}{U+6570}（包括被this指{U+9488}所指的那{U+4E2A}{U+9690}喻{U+53C2}{U+6570}）皆{U+987B}要{U+7C7B}型{U+8F6C}{U+6362}，{U+8BF7}{U+4E3A}此采用 non-member 函{U+6570}
+25. 考{U+8651}{U+5199}一{U+4E2A}不{U+629B}異常的 swap 函{U+6570}
+26. {U+5C3D}可能延後{U+53D8}量定{U+4E49}式的出{U+73B0}{U+65F6}{U+95F4}（可增加程序清晰度並改善程序效率）
+27. {U+5C3D}量少做{U+8F6C}型{U+52A8}作（{U+65E7}式：`(T)expression`、`T(expression)`；新式：`const_cast<T>(expression)`、`dynamic_cast<T>(expression)`、`reinterpret_cast<T>(expression)`、`static_cast<T>(expression)`、；{U+5C3D}量避免{U+8F6C}型、注重效率避免 dynamic_casts、{U+5C3D}量{U+8BBE}{U+8BA1}成{U+65E0}需{U+8F6C}型、可把{U+8F6C}型封{U+88C5}成函{U+6570}、寧可用新式{U+8F6C}型）
+28. 避免使用 handles（包括 引用、指{U+9488}、迭代器）指向{U+5BF9}象{U+5185}部（以增加封{U+88C5}性、使 const 成{U+5458}函{U+6570}的行{U+4E3A}更像 const、降低 「{U+865A}吊{U+53F7}{U+7801}牌」（dangling handles，如{U+60AC}空指{U+9488}等）的可能性）
+29. {U+4E3A} 「異常安全」 而努力是值得的（異常安全函{U+6570}（Exception-safe functions）即使{U+53D1}生異常也不{U+4F1A}泄露{U+8D44}源或允{U+8BB8}任何{U+6570}據{U+7ED3}構{U+8D25}壞，分{U+4E3A}三種可能的保{U+8BC1}：基本型、{U+5F3A}列型、不{U+629B}異常型）
+30. 透{U+5F7B}了解 inlining 的裏裏外外（inlining 在大多{U+6570} C++ 程序中是{U+7F16}{U+8BD1}期的行{U+4E3A}；inline 函{U+6570}是否真正 inline，取{U+51B3}於{U+7F16}{U+8BD1}器；大部分{U+7F16}{U+8BD1}器拒{U+7EDD}太{U+8FC7}複{U+6742}（如{U+5E26}有循{U+73AF}或{U+9012}{U+5F52}）的函{U+6570} inlining，而所有{U+5BF9} virtual 函{U+6570}的{U+8C03}用（除非是最平淡{U+65E0}奇的）也都{U+4F1A}使 inlining 落空；inline 造成的代{U+7801}膨{U+80C0}可能{U+5E26}{U+6765}效率{U+635F}失；inline 函{U+6570}{U+65E0}法{U+968F}{U+7740}程序{U+5E93}的升{U+7EA7}而升{U+7EA7}）
+31. {U+5C06}文件{U+95F4}的{U+7F16}{U+8BD1}依存{U+5173}系降至最低（如果使用 object references 或 object pointers 可以完成任{U+52A1}，就不要使用 objects；如果能{U+8FC7}{U+591F}，{U+5C3D}量以 class {U+58F0}明式替{U+6362} class 定{U+4E49}式；{U+4E3A}{U+58F0}明式和定{U+4E49}式提供不同的{U+5934}文件）
+32. 確定你的 public {U+7EE7}承塑模出 is-a {U+5173}系（適用於 base classes 身上的每一件事情一定適用於 derived classes 身上，因{U+4E3A}每一{U+4E2A} derived class {U+5BF9}象也都是一{U+4E2A} base class {U+5BF9}象）
+33. 避免遮掩{U+7EE7}承而{U+6765}的名字（可使用 using {U+58F0}明式或{U+8F6C}交函{U+6570}（forwarding functions）{U+6765}{U+8BA9}被遮掩的名字再{U+89C1}天日）
+34. {U+533A}分接口{U+7EE7}承和{U+5B9E}{U+73B0}{U+7EE7}承（在 public {U+7EE7}承之下，derived classes {U+603B}是{U+7EE7}承 base class 的接口；pure virtual 函{U+6570}只具體指定接口{U+7EE7}承；非{U+7EAF} impure virtual 函{U+6570}具體指定接口{U+7EE7}承及缺省{U+5B9E}{U+73B0}{U+7EE7}承；non-virtual 函{U+6570}具體指定接口{U+7EE7}承以及{U+5F3A}制性{U+5B9E}{U+73B0}{U+7EE7}承）
+35. 考{U+8651} virtual 函{U+6570}以外的其他{U+9009}{U+62E9}（如 Template Method {U+8BBE}{U+8BA1}模式的 non-virtual interface（NVI）手法，{U+5C06} virtual 函{U+6570}替{U+6362}{U+4E3A} 「函{U+6570}指{U+9488}成{U+5458}{U+53D8}量」，以 `tr1::function` 成{U+5458}{U+53D8}量替{U+6362} virtual 函{U+6570}，{U+5C06}{U+7EE7}承體系{U+5185}的 virtual 函{U+6570}替{U+6362}{U+4E3A}另一{U+4E2A}{U+7EE7}承體系{U+5185}的 virtual 函{U+6570}）
+36. {U+7EDD}不重新定{U+4E49}{U+7EE7}承而{U+6765}的 non-virtual 函{U+6570}
+37. {U+7EDD}不重新定{U+4E49}{U+7EE7}承而{U+6765}的缺省{U+53C2}{U+6570}值，因{U+4E3A}缺省{U+53C2}{U+6570}值是{U+9759}{U+6001}{U+7ED1}定（statically bound），而 virtual 函{U+6570}{U+5374}是{U+52A8}{U+6001}{U+7ED1}定（dynamically bound）
 
 ### Google C++ Style Guide
 
 > 英文：[Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)  
-> 中文：[C++ 风格指南](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/contents/)
-<details><summary>Google C++ Style Guide 图</summary>
+> 中文：[C++ {U+98CE}格指南](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/contents/)
+<details><summary>Google C++ Style Guide {U+56FE}</summary>
 
 ![Google C++ Style Guide](images/GoogleCppStyleGuide.png)
 
-> 图片来源于：[CSDN . 一张图总结Google C++编程规范(Google C++ Style Guide)](https://blog.csdn.net/voidccc/article/details/37599203)
+> {U+56FE}片{U+6765}源於：[CSDN . 一{U+5F20}{U+56FE}{U+603B}{U+7ED3}Google C++{U+7F16}程{U+89C4}範(Google C++ Style Guide)](https://blog.csdn.net/voidccc/article/details/37599203)
 
 </details>
 
@@ -1231,44 +1231,44 @@ class doSomething(Flyable *obj)                 // 做些事情
 
 ### 索引
 
-[STL 方法含义](https://github.com/huihut/interview/tree/master/STL)
+[STL 方法含{U+4E49}](https://github.com/huihut/interview/tree/master/STL)
 
 ### 容器
 
-容器 | 底层数据结构 | 时间复杂度 | 有无序 | 可不可重复 | 其他
+容器 | 底{U+5C42}{U+6570}據{U+7ED3}構 | {U+65F6}{U+95F4}複{U+6742}度 | 有{U+65E0}序 | 可不可重複 | 其他
 ---|---|---|---|---|---
-[array](https://github.com/huihut/interview/tree/master/STL#array)|数组|随机读改 O(1)|无序|可重复|支持快速随机访问
-[vector](https://github.com/huihut/interview/tree/master/STL#vector)|数组|随机读改、尾部插入、尾部删除 O(1)<br/>头部插入、头部删除 O(n)|无序|可重复|支持快速随机访问
-[list](https://github.com/huihut/interview/tree/master/STL#list)|双向链表|插入、删除 O(1)<br/>随机读改 O(n)|无序|可重复|支持快速增删
-[deque](https://github.com/huihut/interview/tree/master/STL#deque)|双端队列|头尾插入、头尾删除 O(1)|无序|可重复|一个中央控制器 + 多个缓冲区，支持首尾快速增删，支持随机访问
-[stack](https://github.com/huihut/interview/tree/master/STL#stack)|deque / list|顶部插入、顶部删除 O(1)|无序|可重复|deque 或 list 封闭头端开口，不用 vector 的原因应该是容量大小有限制，扩容耗时
-[queue](https://github.com/huihut/interview/tree/master/STL#queue)|deque / list|尾部插入、头部删除 O(1)|无序|可重复|deque 或 list 封闭头端开口，不用 vector 的原因应该是容量大小有限制，扩容耗时
-[priority_queue](https://github.com/huihut/interview/tree/master/STL#priority_queue)|vector + max-heap|插入、删除 O(log<sub>2</sub>n)|有序|可重复|vector容器+heap处理规则
-[set](https://github.com/huihut/interview/tree/master/STL#set)|红黑树|插入、删除、查找 O(log<sub>2</sub>n)|有序|不可重复|
-[multiset](https://github.com/huihut/interview/tree/master/STL#multiset)|红黑树|插入、删除、查找 O(log<sub>2</sub>n)|有序|可重复|
-[map](https://github.com/huihut/interview/tree/master/STL#map)|红黑树|插入、删除、查找 O(log<sub>2</sub>n)|有序|不可重复|
-[multimap](https://github.com/huihut/interview/tree/master/STL#multimap)|红黑树|插入、删除、查找 O(log<sub>2</sub>n)|有序|可重复|
-hash_set|哈希表|插入、删除、查找 O(1) 最差 O(n)|无序|不可重复|
-hash_multiset|哈希表|插入、删除、查找 O(1) 最差 O(n)|无序|可重复|
-hash_map|哈希表|插入、删除、查找 O(1) 最差 O(n)|无序|不可重复|
-hash_multimap|哈希表|插入、删除、查找 O(1) 最差 O(n)|无序|可重复|
+[array](https://github.com/huihut/interview/tree/master/STL#array)|{U+6570}{U+7EC4}|{U+968F}機{U+8BFB}改 O(1)|{U+65E0}序|可重複|支持快速{U+968F}機{U+8BBF}{U+95EE}
+[vector](https://github.com/huihut/interview/tree/master/STL#vector)|{U+6570}{U+7EC4}|{U+968F}機{U+8BFB}改、尾部插入、尾部{U+5220}除 O(1)<br/>{U+5934}部插入、{U+5934}部{U+5220}除 O(n)|{U+65E0}序|可重複|支持快速{U+968F}機{U+8BBF}{U+95EE}
+[list](https://github.com/huihut/interview/tree/master/STL#list)|{U+53CC}向{U+94FE}表|插入、{U+5220}除 O(1)<br/>{U+968F}機{U+8BFB}改 O(n)|{U+65E0}序|可重複|支持快速增{U+5220}
+[deque](https://github.com/huihut/interview/tree/master/STL#deque)|{U+53CC}端{U+961F}列|{U+5934}尾插入、{U+5934}尾{U+5220}除 O(1)|{U+65E0}序|可重複|一{U+4E2A}中央控制器 + 多{U+4E2A}{U+7F13}{U+51B2}{U+533A}，支持首尾快速增{U+5220}，支持{U+968F}機{U+8BBF}{U+95EE}
+[stack](https://github.com/huihut/interview/tree/master/STL#stack)|deque / list|{U+9876}部插入、{U+9876}部{U+5220}除 O(1)|{U+65E0}序|可重複|deque 或 list 封{U+95ED}{U+5934}端{U+5F00}口，不用 vector 的原因{U+5E94}{U+8BE5}是容量大小有限制，{U+6269}容耗{U+65F6}
+[queue](https://github.com/huihut/interview/tree/master/STL#queue)|deque / list|尾部插入、{U+5934}部{U+5220}除 O(1)|{U+65E0}序|可重複|deque 或 list 封{U+95ED}{U+5934}端{U+5F00}口，不用 vector 的原因{U+5E94}{U+8BE5}是容量大小有限制，{U+6269}容耗{U+65F6}
+[priority_queue](https://github.com/huihut/interview/tree/master/STL#priority_queue)|vector + max-heap|插入、{U+5220}除 O(log<sub>2</sub>n)|有序|可重複|vector容器+heap{U+5904}理{U+89C4}{U+5219}
+[set](https://github.com/huihut/interview/tree/master/STL#set)|{U+7EA2}黑{U+6811}|插入、{U+5220}除、查找 O(log<sub>2</sub>n)|有序|不可重複|
+[multiset](https://github.com/huihut/interview/tree/master/STL#multiset)|{U+7EA2}黑{U+6811}|插入、{U+5220}除、查找 O(log<sub>2</sub>n)|有序|可重複|
+[map](https://github.com/huihut/interview/tree/master/STL#map)|{U+7EA2}黑{U+6811}|插入、{U+5220}除、查找 O(log<sub>2</sub>n)|有序|不可重複|
+[multimap](https://github.com/huihut/interview/tree/master/STL#multimap)|{U+7EA2}黑{U+6811}|插入、{U+5220}除、查找 O(log<sub>2</sub>n)|有序|可重複|
+hash_set|哈希表|插入、{U+5220}除、查找 O(1) 最差 O(n)|{U+65E0}序|不可重複|
+hash_multiset|哈希表|插入、{U+5220}除、查找 O(1) 最差 O(n)|{U+65E0}序|可重複|
+hash_map|哈希表|插入、{U+5220}除、查找 O(1) 最差 O(n)|{U+65E0}序|不可重複|
+hash_multimap|哈希表|插入、{U+5220}除、查找 O(1) 最差 O(n)|{U+65E0}序|可重複|
 
 ### 算法
 
-算法 | 底层算法 | 时间复杂度 | 可不可重复
+算法 | 底{U+5C42}算法 | {U+65F6}{U+95F4}複{U+6742}度 | 可不可重複
 ---|---|---|---
-[find](http://www.cplusplus.com/reference/algorithm/find/)|顺序查找|O(n)|可重复
-[sort](https://github.com/gcc-mirror/gcc/blob/master/libstdc++-v3/include/bits/stl_algo.h#L4808)|[内省排序](https://en.wikipedia.org/wiki/Introsort)|O(n*log<sub>2</sub>n)|可重复
+[find](http://www.cplusplus.com/reference/algorithm/find/)|{U+987A}序查找|O(n)|可重複
+[sort](https://github.com/gcc-mirror/gcc/blob/master/libstdc++-v3/include/bits/stl_algo.h#L4808)|[{U+5185}省排序](https://en.wikipedia.org/wiki/Introsort)|O(n*log<sub>2</sub>n)|可重複
 
-## 数据结构
+## {U+6570}據{U+7ED3}構
 
-### 顺序结构
+### {U+987A}序{U+7ED3}構
 
-#### 顺序栈（Sequence Stack）
+#### {U+987A}序{U+6808}（Sequence Stack）
 
 [SqStack.cpp](DataStructure/SqStack.cpp)
 
-<details><summary>顺序栈数据结构和图片</summary>
+<details><summary>{U+987A}序{U+6808}{U+6570}據{U+7ED3}構和{U+56FE}片</summary>
 
 ```cpp
 typedef struct {
@@ -1283,9 +1283,9 @@ typedef struct {
 
 </details>
 
-#### 队列（Sequence Queue）
+#### {U+961F}列（Sequence Queue）
 
-<details><summary>队列数据结构</summary>
+<details><summary>{U+961F}列{U+6570}據{U+7ED3}構</summary>
 
 ```cpp
 typedef struct {
@@ -1298,9 +1298,9 @@ typedef struct {
 
 </details>
 
-##### 非循环队列
+##### 非循{U+73AF}{U+961F}列
 
-<details><summary>非循环队列图片</summary>
+<details><summary>非循{U+73AF}{U+961F}列{U+56FE}片</summary>
 
 ![](images/SqQueue.png)
 
@@ -1308,9 +1308,9 @@ typedef struct {
 
 </details>
 
-##### 循环队列
+##### 循{U+73AF}{U+961F}列
 
-<details><summary>循环队列图片</summary>
+<details><summary>循{U+73AF}{U+961F}列{U+56FE}片</summary>
 
 ![](images/SqLoopStack.png)
 
@@ -1318,11 +1318,11 @@ typedef struct {
 
 </details>
 
-#### 顺序表（Sequence List）
+#### {U+987A}序表（Sequence List）
 
 [SqList.cpp](DataStructure/SqList.cpp)
 
-<details><summary>顺序表数据结构和图片</summary>
+<details><summary>{U+987A}序表{U+6570}據{U+7ED3}構和{U+56FE}片</summary>
 
 ```cpp
 typedef struct {
@@ -1338,13 +1338,13 @@ typedef struct {
 </details>
 
 
-### 链式结构
+### {U+94FE}式{U+7ED3}構
 
 [LinkList.cpp](DataStructure/LinkList.cpp)
 
 [LinkList_with_head.cpp](DataStructure/LinkList_with_head.cpp)
 
-<details><summary>链式数据结构</summary>
+<details><summary>{U+94FE}式{U+6570}據{U+7ED3}構</summary>
 
 ```cpp
 typedef struct LNode {
@@ -1355,36 +1355,36 @@ typedef struct LNode {
 
 </details>
 
-#### 链队列（Link Queue）
+#### {U+94FE}{U+961F}列（Link Queue）
 
-<details><summary>链队列图片</summary>
+<details><summary>{U+94FE}{U+961F}列{U+56FE}片</summary>
 
 ![](images/LinkQueue.png)
 
 </details>
 
-#### 线性表的链式表示
+#### {U+7EBF}性表的{U+94FE}式表示
 
-##### 单链表（Link List）
+##### {U+5355}{U+94FE}表（Link List）
 
-<details><summary>单链表图片</summary>
+<details><summary>{U+5355}{U+94FE}表{U+56FE}片</summary>
 
 ![](images/LinkList.png)
 
 </details>
 
 
-##### 双向链表（Du-Link-List）
+##### {U+53CC}向{U+94FE}表（Du-Link-List）
 
-<details><summary>双向链表图片</summary>
+<details><summary>{U+53CC}向{U+94FE}表{U+56FE}片</summary>
 
 ![](images/DuLinkList.png)
 
 </details>
 
-##### 循环链表（Cir-Link-List）
+##### 循{U+73AF}{U+94FE}表（Cir-Link-List）
 
-<details><summary>循环链表图片</summary>
+<details><summary>循{U+73AF}{U+94FE}表{U+56FE}片</summary>
 
 ![](images/CirLinkList.png)
 
@@ -1396,27 +1396,27 @@ typedef struct LNode {
 
 #### 概念
 
-哈希函数：`H(key): K -> D , key ∈ K`
+哈希函{U+6570}：`H(key): K -> D , key {U+2208} K`
 
-#### 构造方法
+#### 構造方法
 
 * 直接定址法
-* 除留余数法
-* 数字分析法
-* 折叠法
+* 除留餘{U+6570}法
+* {U+6570}字分析法
+* 折{U+53E0}法
 * 平方取中法
 
-#### 冲突处理方法
+#### {U+51B2}突{U+5904}理方法
 
-* 链地址法：key 相同的用单链表链接
-* 开放定址法
-    * 线性探测法：key 相同 -> 放到 key 的下一个位置，`Hi = (H(key) + i) % m`
-    * 二次探测法：key 相同 -> 放到 `Di = 1^2, -1^2, ..., ±（k)^2,(k<=m/2）`
-    * 随机探测法：`H = (H(key) + 伪随机数) % m`
+* {U+94FE}地址法：key 相同的用{U+5355}{U+94FE}表{U+94FE}接
+* {U+5F00}放定址法
+    * {U+7EBF}性探{U+6D4B}法：key 相同 -> 放到 key 的下一{U+4E2A}位置，`Hi = (H(key) + i) % m`
+    * 二次探{U+6D4B}法：key 相同 -> 放到 `Di = 1^2, -1^2, ..., ±（k)^2,(k<=m/2）`
+    * {U+968F}機探{U+6D4B}法：`H = (H(key) + {U+4F2A}{U+968F}機{U+6570}) % m`
 
-#### 线性探测的哈希表数据结构
+#### {U+7EBF}性探{U+6D4B}的哈希表{U+6570}據{U+7ED3}構
 
-<details><summary>线性探测的哈希表数据结构和图片</summary>
+<details><summary>{U+7EBF}性探{U+6D4B}的哈希表{U+6570}據{U+7ED3}構和{U+56FE}片</summary>
 
 ```cpp
 typedef char KeyType;
@@ -1438,48 +1438,48 @@ typedef struct {
 </details>
 
 
-### 递归
+### {U+9012}{U+5F52}
 
 #### 概念
 
-函数直接或间接地调用自身
+函{U+6570}直接或{U+95F4}接地{U+8C03}用自身
 
-#### 递归与分治
+#### {U+9012}{U+5F52}與分治
 
 * 分治法
-    * 问题的分解
-    * 问题规模的分解
-* 折半查找（递归）
-* 归并查找（递归）
-* 快速排序（递归）
+    * {U+95EE}{U+9898}的分解
+    * {U+95EE}{U+9898}{U+89C4}模的分解
+* 折半查找（{U+9012}{U+5F52}）
+* {U+5F52}並查找（{U+9012}{U+5F52}）
+* 快速排序（{U+9012}{U+5F52}）
 
-#### 递归与迭代
+#### {U+9012}{U+5F52}與迭代
 
-* 迭代：反复利用变量旧值推出新值
+* 迭代：反複利用{U+53D8}量{U+65E7}值推出新值
 * 折半查找（迭代）
-* 归并查找（迭代）
+* {U+5F52}並查找（迭代）
 
-#### 广义表
+#### {U+5E7F}{U+4E49}表
 
-##### 头尾链表存储表示
+##### {U+5934}尾{U+94FE}表存{U+50A8}表示
 
-<details><summary>广义表的头尾链表存储表示和图片</summary>
+<details><summary>{U+5E7F}{U+4E49}表的{U+5934}尾{U+94FE}表存{U+50A8}表示和{U+56FE}片</summary>
 
 ```cpp
-// 广义表的头尾链表存储表示
+// {U+5E7F}{U+4E49}表的{U+5934}尾{U+94FE}表存{U+50A8}表示
 typedef enum {ATOM, LIST} ElemTag;
 // ATOM==0：原子，LIST==1：子表
 typedef struct GLNode {
     ElemTag tag;
-    // 公共部分，用于区分原子结点和表结点
+    // 公共部分，用於{U+533A}分原子{U+7ED3}{U+70B9}和表{U+7ED3}{U+70B9}
     union {
-        // 原子结点和表结点的联合部分
+        // 原子{U+7ED3}{U+70B9}和表{U+7ED3}{U+70B9}的{U+8054}合部分
         AtomType atom;
-        // atom 是原子结点的值域，AtomType 由用户定义
+        // atom 是原子{U+7ED3}{U+70B9}的值域，AtomType 由用{U+6237}定{U+4E49}
         struct {
             struct GLNode *hp, *tp;
         } ptr;
-        // ptr 是表结点的指针域，prt.hp 和 ptr.tp 分别指向表头和表尾
+        // ptr 是表{U+7ED3}{U+70B9}的指{U+9488}域，prt.hp 和 ptr.tp 分{U+522B}指向表{U+5934}和表尾
     } a;
 } *GList, GLNode;
 ```
@@ -1488,24 +1488,24 @@ typedef struct GLNode {
 
 </details>
 
-##### 扩展线性链表存储表示
+##### {U+6269}展{U+7EBF}性{U+94FE}表存{U+50A8}表示
 
-<details><summary>扩展线性链表存储表示和图片</summary>
+<details><summary>{U+6269}展{U+7EBF}性{U+94FE}表存{U+50A8}表示和{U+56FE}片</summary>
 
 ```cpp
-// 广义表的扩展线性链表存储表示
+// {U+5E7F}{U+4E49}表的{U+6269}展{U+7EBF}性{U+94FE}表存{U+50A8}表示
 typedef enum {ATOM, LIST} ElemTag;
 // ATOM==0：原子，LIST==1：子表
 typedef struct GLNode1 {
     ElemTag tag;
-    // 公共部分，用于区分原子结点和表结点
+    // 公共部分，用於{U+533A}分原子{U+7ED3}{U+70B9}和表{U+7ED3}{U+70B9}
     union {
-        // 原子结点和表结点的联合部分
-        AtomType atom; // 原子结点的值域
-        struct GLNode1 *hp; // 表结点的表头指针
+        // 原子{U+7ED3}{U+70B9}和表{U+7ED3}{U+70B9}的{U+8054}合部分
+        AtomType atom; // 原子{U+7ED3}{U+70B9}的值域
+        struct GLNode1 *hp; // 表{U+7ED3}{U+70B9}的表{U+5934}指{U+9488}
     } a;
     struct GLNode1 *tp;
-    // 相当于线性链表的 next，指向下一个元素结点
+    // 相{U+5F53}於{U+7EBF}性{U+94FE}表的 next，指向下一{U+4E2A}元素{U+7ED3}{U+70B9}
 } *GList1, GLNode1;
 ```
 
@@ -1513,24 +1513,24 @@ typedef struct GLNode1 {
 
 </details>
 
-### 二叉树
+### 二叉{U+6811}
 
 [BinaryTree.cpp](DataStructure/BinaryTree.cpp)
 
-#### 性质
+#### 性{U+8D28}
 
-1. 非空二叉树第 i 层最多 2<sup>(i-1)</sup> 个结点 （i >= 1）
-2. 深度为 k 的二叉树最多 2<sup>k</sup> - 1 个结点 （k >= 1）
-3. 度为 0 的结点数为 n<sub>0</sub>，度为 2 的结点数为 n<sub>2</sub>，则 n<sub>0</sub> = n<sub>2</sub> + 1
-4. 有 n 个结点的完全二叉树深度 k = ⌊ log<sub>2</sub>(n) ⌋ + 1 
-5. 对于含 n 个结点的完全二叉树中编号为 i （1 <= i <= n） 的结点
-    1. 若 i = 1，为根，否则双亲为 ⌊ i / 2 ⌋
-    2. 若 2i > n，则 i 结点没有左孩子，否则孩子编号为 2i
-    3. 若 2i + 1 > n，则 i 结点没有右孩子，否则孩子编号为 2i + 1
+1. 非空二叉{U+6811}第 i {U+5C42}最多 2<sup>(i-1)</sup> {U+4E2A}{U+7ED3}{U+70B9} （i >= 1）
+2. 深度{U+4E3A} k 的二叉{U+6811}最多 2<sup>k</sup> - 1 {U+4E2A}{U+7ED3}{U+70B9} （k >= 1）
+3. 度{U+4E3A} 0 的{U+7ED3}{U+70B9}{U+6570}{U+4E3A} n<sub>0</sub>，度{U+4E3A} 2 的{U+7ED3}{U+70B9}{U+6570}{U+4E3A} n<sub>2</sub>，{U+5219} n<sub>0</sub> = n<sub>2</sub> + 1
+4. 有 n {U+4E2A}{U+7ED3}{U+70B9}的完全二叉{U+6811}深度 k = {U+230A} log<sub>2</sub>(n) {U+230B} + 1 
+5. {U+5BF9}於含 n {U+4E2A}{U+7ED3}{U+70B9}的完全二叉{U+6811}中{U+7F16}{U+53F7}{U+4E3A} i （1 <= i <= n） 的{U+7ED3}{U+70B9}
+    1. 若 i = 1，{U+4E3A}根，否{U+5219}{U+53CC}{U+4EB2}{U+4E3A} {U+230A} i / 2 {U+230B}
+    2. 若 2i > n，{U+5219} i {U+7ED3}{U+70B9}{U+6CA1}有左孩子，否{U+5219}孩子{U+7F16}{U+53F7}{U+4E3A} 2i
+    3. 若 2i + 1 > n，{U+5219} i {U+7ED3}{U+70B9}{U+6CA1}有右孩子，否{U+5219}孩子{U+7F16}{U+53F7}{U+4E3A} 2i + 1
 
-#### 存储结构
+#### 存{U+50A8}{U+7ED3}構
 
-<details><summary>二叉树数据结构</summary>
+<details><summary>二叉{U+6811}{U+6570}據{U+7ED3}構</summary>
 
 ```cpp
 typedef struct BiTNode
@@ -1543,418 +1543,418 @@ typedef struct BiTNode
 </details>
 
 
-##### 顺序存储
+##### {U+987A}序存{U+50A8}
 
-<details><summary>二叉树顺序存储图片</summary>
+<details><summary>二叉{U+6811}{U+987A}序存{U+50A8}{U+56FE}片</summary>
 
 ![](images/SqBinaryTree.png)
 
 </details>
 
-##### 链式存储
+##### {U+94FE}式存{U+50A8}
 
-<details><summary>二叉树链式存储图片</summary>
+<details><summary>二叉{U+6811}{U+94FE}式存{U+50A8}{U+56FE}片</summary>
 
 ![](images/LinkBinaryTree.png)
 
 </details>
 
-#### 遍历方式
+#### 遍{U+5386}方式
 
-* 先序遍历
-* 中序遍历
-* 后续遍历
-* 层次遍历
+* 先序遍{U+5386}
+* 中序遍{U+5386}
+* 後{U+7EED}遍{U+5386}
+* {U+5C42}次遍{U+5386}
 
-#### 分类
+#### 分{U+7C7B}
 
-* 满二叉树
-* 完全二叉树（堆）
-    * 大顶堆：根 >= 左 && 根 >= 右
-    * 小顶堆：根 <= 左 && 根 <= 右
-* 二叉查找树（二叉排序树）：左 < 根 < 右
-* 平衡二叉树（AVL树）：| 左子树树高 - 右子树树高 | <= 1
-* 最小失衡树：平衡二叉树插入新结点导致失衡的子树：调整：
+* {U+6EE1}二叉{U+6811}
+* 完全二叉{U+6811}（堆）
+    * 大{U+9876}堆：根 >= 左 && 根 >= 右
+    * 小{U+9876}堆：根 <= 左 && 根 <= 右
+* 二叉查找{U+6811}（二叉排序{U+6811}）：左 < 根 < 右
+* 平衡二叉{U+6811}（AVL{U+6811}）：| 左子{U+6811}{U+6811}高 - 右子{U+6811}{U+6811}高 | <= 1
+* 最小失衡{U+6811}：平衡二叉{U+6811}插入新{U+7ED3}{U+70B9}{U+5BFC}致失衡的子{U+6811}：{U+8C03}整：
     * LL型：根的左孩子右旋
     * RR型：根的右孩子左旋
     * LR型：根的左孩子左旋，再右旋
-    * RL型：右孩子的左子树，先右旋，再左旋
+    * RL型：右孩子的左子{U+6811}，先右旋，再左旋
 
-### 其他树及森林
+### 其他{U+6811}及森林
 
-#### 树的存储结构
+#### {U+6811}的存{U+50A8}{U+7ED3}構
 
-* 双亲表示法
-* 双亲孩子表示法
+* {U+53CC}{U+4EB2}表示法
+* {U+53CC}{U+4EB2}孩子表示法
 * 孩子兄弟表示法
 
-#### 并查集
+#### 並查集
 
-一种不相交的子集所构成的集合 S = {S1, S2, ..., Sn}
+一種不相交的子集所構成的集合 S = {S1, S2, ..., Sn}
 
-#### 平衡二叉树（AVL树）
+#### 平衡二叉{U+6811}（AVL{U+6811}）
 
-##### 性质
+##### 性{U+8D28}
 
-* | 左子树树高 - 右子树树高 | <= 1
-* 平衡二叉树必定是二叉搜索树，反之则不一定
-* 最小二叉平衡树的节点的公式：`F(n)=F(n-1)+F(n-2)+1` （1 是根节点，F(n-1) 是左子树的节点数量，F(n-2) 是右子树的节点数量）
+* | 左子{U+6811}{U+6811}高 - 右子{U+6811}{U+6811}高 | <= 1
+* 平衡二叉{U+6811}必定是二叉搜索{U+6811}，反之{U+5219}不一定
+* 最小二叉平衡{U+6811}的{U+8282}{U+70B9}的公式：`F(n)=F(n-1)+F(n-2)+1` （1 是根{U+8282}{U+70B9}，F(n-1) 是左子{U+6811}的{U+8282}{U+70B9}{U+6570}量，F(n-2) 是右子{U+6811}的{U+8282}{U+70B9}{U+6570}量）
 
-<details><summary>平衡二叉树图片</summary>
+<details><summary>平衡二叉{U+6811}{U+56FE}片</summary>
 
 ![](images/Self-balancingBinarySearchTree.png)
 
 </details>
 
-##### 最小失衡树
+##### 最小失衡{U+6811}
 
-平衡二叉树插入新结点导致失衡的子树
+平衡二叉{U+6811}插入新{U+7ED3}{U+70B9}{U+5BFC}致失衡的子{U+6811}
 
-调整：
+{U+8C03}整：
 
 * LL 型：根的左孩子右旋
 * RR 型：根的右孩子左旋
 * LR 型：根的左孩子左旋，再右旋
-* RL 型：右孩子的左子树，先右旋，再左旋
+* RL 型：右孩子的左子{U+6811}，先右旋，再左旋
 
-#### 红黑树
+#### {U+7EA2}黑{U+6811}
 
-##### 红黑树的特征是什么？
+##### {U+7EA2}黑{U+6811}的特征是什麼？
 
-1. 节点是红色或黑色。
+1. {U+8282}{U+70B9}是{U+7EA2}色或黑色。
 2. 根是黑色。
-3. 所有叶子都是黑色（叶子是 NIL 节点）。
-4. 每个红色节点必须有两个黑色的子节点。（从每个叶子到根的所有路径上不能有两个连续的红色节点。）（新增节点的父节点必须相同）
-5. 从任一节点到其每个叶子的所有简单路径都包含相同数目的黑色节点。（新增节点必须为红）
+3. 所有{U+53F6}子都是黑色（{U+53F6}子是 NIL {U+8282}{U+70B9}）。
+4. 每{U+4E2A}{U+7EA2}色{U+8282}{U+70B9}必{U+987B}有{U+4E24}{U+4E2A}黑色的子{U+8282}{U+70B9}。（{U+4ECE}每{U+4E2A}{U+53F6}子到根的所有路{U+5F84}上不能有{U+4E24}{U+4E2A}{U+8FDE}{U+7EED}的{U+7EA2}色{U+8282}{U+70B9}。）（新增{U+8282}{U+70B9}的父{U+8282}{U+70B9}必{U+987B}相同）
+5. {U+4ECE}任一{U+8282}{U+70B9}到其每{U+4E2A}{U+53F6}子的所有{U+7B80}{U+5355}路{U+5F84}都包含相同{U+6570}目的黑色{U+8282}{U+70B9}。（新增{U+8282}{U+70B9}必{U+987B}{U+4E3A}{U+7EA2}）
 
-##### 调整
+##### {U+8C03}整
 
-1. 变色
+1. {U+53D8}色
 2. 左旋
 3. 右旋
 
-##### 应用
+##### {U+5E94}用
 
-* 关联数组：如 STL 中的 map、set
+* {U+5173}{U+8054}{U+6570}{U+7EC4}：如 STL 中的 map、set
 
-##### 红黑树、B 树、B+ 树的区别？
+##### {U+7EA2}黑{U+6811}、B {U+6811}、B+ {U+6811}的{U+533A}{U+522B}？
 
-* 红黑树的深度比较大，而 B 树和 B+ 树的深度则相对要小一些
-* B+ 树则将数据都保存在叶子节点，同时通过链表的形式将他们连接在一起。
+* {U+7EA2}黑{U+6811}的深度比{U+8F83}大，而 B {U+6811}和 B+ {U+6811}的深度{U+5219}相{U+5BF9}要小一些
+* B+ {U+6811}{U+5219}{U+5C06}{U+6570}據都保存在{U+53F6}子{U+8282}{U+70B9}，同{U+65F6}通{U+8FC7}{U+94FE}表的形式{U+5C06}他{U+4EEC}{U+8FDE}接在一起。
 
-#### B 树（B-tree）、B+ 树（B+-tree）
+#### B {U+6811}（B-tree）、B+ {U+6811}（B+-tree）
 
-<details><summary>B 树、B+ 树图片</summary>
+<details><summary>B {U+6811}、B+ {U+6811}{U+56FE}片</summary>
 
-![B 树（B-tree）、B+ 树（B+-tree）](https://i.stack.imgur.com/l6UyF.png)
+![B {U+6811}（B-tree）、B+ {U+6811}（B+-tree）](https://i.stack.imgur.com/l6UyF.png)
 
 </details>
 
-##### 特点
+##### 特{U+70B9}
 
-* 一般化的二叉查找树（binary search tree）
-* “矮胖”，内部（非叶子）节点可以拥有可变数量的子节点（数量范围预先定义好）
+* 一般化的二叉查找{U+6811}（binary search tree）
+* 「矮胖」，{U+5185}部（非{U+53F6}子）{U+8282}{U+70B9}可以{U+62E5}有可{U+53D8}{U+6570}量的子{U+8282}{U+70B9}（{U+6570}量範{U+56F4}{U+9884}先定{U+4E49}好）
 
-##### 应用
+##### {U+5E94}用
 
-* 大部分文件系统、数据库系统都采用B树、B+树作为索引结构
+* 大部分文件系{U+7EDF}、{U+6570}據{U+5E93}系{U+7EDF}都采用B{U+6811}、B+{U+6811}作{U+4E3A}索引{U+7ED3}構
 
-##### 区别
+##### {U+533A}{U+522B}
 
-* B+树中只有叶子节点会带有指向记录的指针（ROWID），而B树则所有节点都带有，在内部节点出现的索引项不会再出现在叶子节点中。
-* B+树中所有叶子节点都是通过指针连接在一起，而B树不会。
+* B+{U+6811}中只有{U+53F6}子{U+8282}{U+70B9}{U+4F1A}{U+5E26}有指向{U+8BB0}{U+5F55}的指{U+9488}（ROWID），而B{U+6811}{U+5219}所有{U+8282}{U+70B9}都{U+5E26}有，在{U+5185}部{U+8282}{U+70B9}出{U+73B0}的索引{U+9879}不{U+4F1A}再出{U+73B0}在{U+53F6}子{U+8282}{U+70B9}中。
+* B+{U+6811}中所有{U+53F6}子{U+8282}{U+70B9}都是通{U+8FC7}指{U+9488}{U+8FDE}接在一起，而B{U+6811}不{U+4F1A}。
 
-##### B树的优点
+##### B{U+6811}的優{U+70B9}
 
-对于在内部节点的数据，可直接得到，不必根据叶子节点来定位。
+{U+5BF9}於在{U+5185}部{U+8282}{U+70B9}的{U+6570}據，可直接得到，不必根據{U+53F6}子{U+8282}{U+70B9}{U+6765}定位。
 
-##### B+树的优点
+##### B+{U+6811}的優{U+70B9}
 
-* 非叶子节点不会带上 ROWID，这样，一个块中可以容纳更多的索引项，一是可以降低树的高度。二是一个内部节点可以定位更多的叶子节点。
-* 叶子节点之间通过指针来连接，范围扫描将十分简单，而对于B树来说，则需要在叶子节点和内部节点不停的往返移动。
+* 非{U+53F6}子{U+8282}{U+70B9}不{U+4F1A}{U+5E26}上 ROWID，{U+8FD9}{U+6837}，一{U+4E2A}{U+5757}中可以容{U+7EB3}更多的索引{U+9879}，一是可以降低{U+6811}的高度。二是一{U+4E2A}{U+5185}部{U+8282}{U+70B9}可以定位更多的{U+53F6}子{U+8282}{U+70B9}。
+* {U+53F6}子{U+8282}{U+70B9}之{U+95F4}通{U+8FC7}指{U+9488}{U+6765}{U+8FDE}接，範{U+56F4}{U+626B}描{U+5C06}十分{U+7B80}{U+5355}，而{U+5BF9}於B{U+6811}{U+6765}{U+8BF4}，{U+5219}需要在{U+53F6}子{U+8282}{U+70B9}和{U+5185}部{U+8282}{U+70B9}不停的往返移{U+52A8}。
 
-> B 树、B+ 树区别来自：[differences-between-b-trees-and-b-trees](https://stackoverflow.com/questions/870218/differences-between-b-trees-and-b-trees)、[B树和B+树的区别](https://www.cnblogs.com/ivictor/p/5849061.html)
+> B {U+6811}、B+ {U+6811}{U+533A}{U+522B}{U+6765}自：[differences-between-b-trees-and-b-trees](https://stackoverflow.com/questions/870218/differences-between-b-trees-and-b-trees)、[B{U+6811}和B+{U+6811}的{U+533A}{U+522B}](https://www.cnblogs.com/ivictor/p/5849061.html)
 
-#### 八叉树
+#### 八叉{U+6811}
 
-<details><summary>八叉树图片</summary>
+<details><summary>八叉{U+6811}{U+56FE}片</summary>
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Octree2.png/400px-Octree2.png)
 
 </details>
 
-八叉树（octree），或称八元树，是一种用于描述三维空间（划分空间）的树状数据结构。八叉树的每个节点表示一个正方体的体积元素，每个节点有八个子节点，这八个子节点所表示的体积元素加在一起就等于父节点的体积。一般中心点作为节点的分叉中心。
+八叉{U+6811}（octree），或{U+79F0}八元{U+6811}，是一種用於描述三{U+7EF4}空{U+95F4}（劃分空{U+95F4}）的{U+6811}{U+72B6}{U+6570}據{U+7ED3}構。八叉{U+6811}的每{U+4E2A}{U+8282}{U+70B9}表示一{U+4E2A}正方體的體{U+79EF}元素，每{U+4E2A}{U+8282}{U+70B9}有八{U+4E2A}子{U+8282}{U+70B9}，{U+8FD9}八{U+4E2A}子{U+8282}{U+70B9}所表示的體{U+79EF}元素加在一起就等於父{U+8282}{U+70B9}的體{U+79EF}。一般中心{U+70B9}作{U+4E3A}{U+8282}{U+70B9}的分叉中心。
 
 ##### 用途
 
-* 三维计算机图形
-* 最邻近搜索
+* 三{U+7EF4}{U+8BA1}算機{U+56FE}形
+* 最{U+90BB}近搜索
 
 ## 算法
 
 ### 排序
 
-排序算法 | 平均时间复杂度 | 最差时间复杂度 | 空间复杂度 | 数据对象稳定性
+排序算法 | 平均{U+65F6}{U+95F4}複{U+6742}度 | 最差{U+65F6}{U+95F4}複{U+6742}度 | 空{U+95F4}複{U+6742}度 | {U+6570}據{U+5BF9}象{U+7A33}定性
 ---|---|---|---|---
-[冒泡排序](Algorithm/BubbleSort.h) | O(n<sup>2</sup>)|O(n<sup>2</sup>)|O(1)|稳定
-[选择排序](Algorithm/SelectionSort.h) | O(n<sup>2</sup>)|O(n<sup>2</sup>)|O(1)|数组不稳定、链表稳定
-[插入排序](Algorithm/InsertSort.h) | O(n<sup>2</sup>)|O(n<sup>2</sup>)|O(1)|稳定
-[快速排序](Algorithm/QuickSort.h) | O(n*log<sub>2</sub>n) |  O(n<sup>2</sup>) | O(log<sub>2</sub>n) | 不稳定
-[堆排序](Algorithm/HeapSort.cpp) | O(n*log<sub>2</sub>n)|O(n*log<sub>2</sub>n)|O(1)|不稳定
-[归并排序](Algorithm/MergeSort.h) | O(n*log<sub>2</sub>n) | O(n*log<sub>2</sub>n)|O(n)|稳定
-[希尔排序](Algorithm/ShellSort.h) | O(n*log<sup>2</sup>n)|O(n<sup>2</sup>)|O(1)|不稳定
-[计数排序](Algorithm/CountSort.cpp) | O(n+m)|O(n+m)|O(n+m)|稳定
-[桶排序](Algorithm/BucketSort.cpp) | O(n)|O(n)|O(m)|稳定
-[基数排序](Algorithm/RadixSort.h) | O(k*n)|O(n<sup>2</sup>)| |稳定
+[冒泡排序](Algorithm/BubbleSort.h) | O(n<sup>2</sup>)|O(n<sup>2</sup>)|O(1)|{U+7A33}定
+[{U+9009}{U+62E9}排序](Algorithm/SelectionSort.h) | O(n<sup>2</sup>)|O(n<sup>2</sup>)|O(1)|{U+6570}{U+7EC4}不{U+7A33}定、{U+94FE}表{U+7A33}定
+[插入排序](Algorithm/InsertSort.h) | O(n<sup>2</sup>)|O(n<sup>2</sup>)|O(1)|{U+7A33}定
+[快速排序](Algorithm/QuickSort.h) | O(n*log<sub>2</sub>n) |  O(n<sup>2</sup>) | O(log<sub>2</sub>n) | 不{U+7A33}定
+[堆排序](Algorithm/HeapSort.cpp) | O(n*log<sub>2</sub>n)|O(n*log<sub>2</sub>n)|O(1)|不{U+7A33}定
+[{U+5F52}並排序](Algorithm/MergeSort.h) | O(n*log<sub>2</sub>n) | O(n*log<sub>2</sub>n)|O(n)|{U+7A33}定
+[希{U+5C14}排序](Algorithm/ShellSort.h) | O(n*log<sup>2</sup>n)|O(n<sup>2</sup>)|O(1)|不{U+7A33}定
+[{U+8BA1}{U+6570}排序](Algorithm/CountSort.cpp) | O(n+m)|O(n+m)|O(n+m)|{U+7A33}定
+[桶排序](Algorithm/BucketSort.cpp) | O(n)|O(n)|O(m)|{U+7A33}定
+[基{U+6570}排序](Algorithm/RadixSort.h) | O(k*n)|O(n<sup>2</sup>)| |{U+7A33}定
 
-> * 均按从小到大排列
-> * k：代表数值中的 “数位” 个数
-> * n：代表数据规模
-> * m：代表数据的最大值减最小值
-> * 来自：[wikipedia . 排序算法](https://zh.wikipedia.org/wiki/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95)
+> * 均按{U+4ECE}小到大排列
+> * k：代表{U+6570}值中的 「{U+6570}位」 {U+4E2A}{U+6570}
+> * n：代表{U+6570}據{U+89C4}模
+> * m：代表{U+6570}據的最大值{U+51CF}最小值
+> * {U+6765}自：[wikipedia . 排序算法](https://zh.wikipedia.org/wiki/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95)
 
 ### 查找
 
-查找算法 | 平均时间复杂度 | 空间复杂度 | 查找条件
+查找算法 | 平均{U+65F6}{U+95F4}複{U+6742}度 | 空{U+95F4}複{U+6742}度 | 查找{U+6761}件
 ---|---|---|---
-[顺序查找](Algorithm/SequentialSearch.h) | O(n) | O(1) | 无序或有序
+[{U+987A}序查找](Algorithm/SequentialSearch.h) | O(n) | O(1) | {U+65E0}序或有序
 [二分查找（折半查找）](Algorithm/BinarySearch.h) | O(log<sub>2</sub>n)| O(1) | 有序
 [插值查找](Algorithm/InsertionSearch.h) | O(log<sub>2</sub>(log<sub>2</sub>n)) | O(1) | 有序
 [斐波那契查找](Algorithm/FibonacciSearch.cpp) | O(log<sub>2</sub>n) | O(1) | 有序
-[哈希查找](DataStructure/HashTable.cpp) | O(1) | O(n) | 无序或有序
-[二叉查找树（二叉搜索树查找）](Algorithm/BSTSearch.h) |O(log<sub>2</sub>n) |   | 
-[红黑树](DataStructure/RedBlackTree.cpp) |O(log<sub>2</sub>n) | |
-2-3树 | O(log<sub>2</sub>n - log<sub>3</sub>n) |   | 
-B树/B+树 |O(log<sub>2</sub>n) |   | 
+[哈希查找](DataStructure/HashTable.cpp) | O(1) | O(n) | {U+65E0}序或有序
+[二叉查找{U+6811}（二叉搜索{U+6811}查找）](Algorithm/BSTSearch.h) |O(log<sub>2</sub>n) |   | 
+[{U+7EA2}黑{U+6811}](DataStructure/RedBlackTree.cpp) |O(log<sub>2</sub>n) | |
+2-3{U+6811} | O(log<sub>2</sub>n - log<sub>3</sub>n) |   | 
+B{U+6811}/B+{U+6811} |O(log<sub>2</sub>n) |   | 
 
-### 图搜索算法
+### {U+56FE}搜索算法
 
-图搜索算法 |数据结构| 遍历时间复杂度 | 空间复杂度
+{U+56FE}搜索算法 |{U+6570}據{U+7ED3}構| 遍{U+5386}{U+65F6}{U+95F4}複{U+6742}度 | 空{U+95F4}複{U+6742}度
 ---|---|---|---
-[BFS广度优先搜索](https://zh.wikipedia.org/wiki/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2)|邻接矩阵<br/>邻接链表|O(\|v\|<sup>2</sup>)<br/>O(\|v\|+\|E\|)|O(\|v\|<sup>2</sup>)<br/>O(\|v\|+\|E\|)
-[DFS深度优先搜索](https://zh.wikipedia.org/wiki/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2)|邻接矩阵<br/>邻接链表|O(\|v\|<sup>2</sup>)<br/>O(\|v\|+\|E\|)|O(\|v\|<sup>2</sup>)<br/>O(\|v\|+\|E\|)
+[BFS{U+5E7F}度優先搜索](https://zh.wikipedia.org/wiki/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2)|{U+90BB}接矩{U+9635}<br/>{U+90BB}接{U+94FE}表|O(\|v\|<sup>2</sup>)<br/>O(\|v\|+\|E\|)|O(\|v\|<sup>2</sup>)<br/>O(\|v\|+\|E\|)
+[DFS深度優先搜索](https://zh.wikipedia.org/wiki/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2)|{U+90BB}接矩{U+9635}<br/>{U+90BB}接{U+94FE}表|O(\|v\|<sup>2</sup>)<br/>O(\|v\|+\|E\|)|O(\|v\|<sup>2</sup>)<br/>O(\|v\|+\|E\|)
 
 ### 其他算法
 
-算法 |思想| 应用
+算法 |思想| {U+5E94}用
 ---|---|---
-[分治法](https://zh.wikipedia.org/wiki/%E5%88%86%E6%B2%BB%E6%B3%95)|把一个复杂的问题分成两个或更多的相同或相似的子问题，直到最后子问题可以简单的直接求解，原问题的解即子问题的解的合并|[循环赛日程安排问题](https://github.com/huihut/interview/tree/master/Problems/RoundRobinProblem)、排序算法（快速排序、归并排序）
-[动态规划](https://zh.wikipedia.org/wiki/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92)|通过把原问题分解为相对简单的子问题的方式求解复杂问题的方法，适用于有重叠子问题和最优子结构性质的问题|[背包问题](https://github.com/huihut/interview/tree/master/Problems/KnapsackProblem)、斐波那契数列
-[贪心法](https://zh.wikipedia.org/wiki/%E8%B4%AA%E5%BF%83%E6%B3%95)|一种在每一步选择中都采取在当前状态下最好或最优（即最有利）的选择，从而希望导致结果是最好或最优的算法|旅行推销员问题（最短路径问题）、最小生成树、哈夫曼编码
+[分治法](https://zh.wikipedia.org/wiki/%E5%88%86%E6%B2%BB%E6%B3%95)|把一{U+4E2A}複{U+6742}的{U+95EE}{U+9898}分成{U+4E24}{U+4E2A}或更多的相同或相似的子{U+95EE}{U+9898}，直到最後子{U+95EE}{U+9898}可以{U+7B80}{U+5355}的直接求解，原{U+95EE}{U+9898}的解即子{U+95EE}{U+9898}的解的合並|[循{U+73AF}{U+8D5B}日程安排{U+95EE}{U+9898}](https://github.com/huihut/interview/tree/master/Problems/RoundRobinProblem)、排序算法（快速排序、{U+5F52}並排序）
+[{U+52A8}{U+6001}{U+89C4}劃](https://zh.wikipedia.org/wiki/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92)|通{U+8FC7}把原{U+95EE}{U+9898}分解{U+4E3A}相{U+5BF9}{U+7B80}{U+5355}的子{U+95EE}{U+9898}的方式求解複{U+6742}{U+95EE}{U+9898}的方法，適用於有重{U+53E0}子{U+95EE}{U+9898}和最優子{U+7ED3}構性{U+8D28}的{U+95EE}{U+9898}|[背包{U+95EE}{U+9898}](https://github.com/huihut/interview/tree/master/Problems/KnapsackProblem)、斐波那契{U+6570}列
+[{U+8D2A}心法](https://zh.wikipedia.org/wiki/%E8%B4%AA%E5%BF%83%E6%B3%95)|一種在每一步{U+9009}{U+62E9}中都采取在{U+5F53}前{U+72B6}{U+6001}下最好或最優（即最有利）的{U+9009}{U+62E9}，{U+4ECE}而希望{U+5BFC}致{U+7ED3}果是最好或最優的算法|旅行推{U+9500}{U+5458}{U+95EE}{U+9898}（最短路{U+5F84}{U+95EE}{U+9898}）、最小生成{U+6811}、哈夫曼{U+7F16}{U+7801}
 
 ## Problems
 
 ### Single Problem
 
-* [Chessboard Coverage Problem（棋盘覆盖问题）](Problems/ChessboardCoverageProblem)
-* [Knapsack Problem（背包问题）](Problems/KnapsackProblem)
-* [Neumann Neighbor Problem（冯诺依曼邻居问题）](Problems/NeumannNeighborProblem)
-* [Round Robin Problem（循环赛日程安排问题）](Problems/RoundRobinProblem)
-* [Tubing Problem（输油管道问题）](Problems/TubingProblem)
+* [Chessboard Coverage Problem（棋{U+76D8}覆{U+76D6}{U+95EE}{U+9898}）](Problems/ChessboardCoverageProblem)
+* [Knapsack Problem（背包{U+95EE}{U+9898}）](Problems/KnapsackProblem)
+* [Neumann Neighbor Problem（{U+51AF}{U+8BFA}依曼{U+90BB}居{U+95EE}{U+9898}）](Problems/NeumannNeighborProblem)
+* [Round Robin Problem（循{U+73AF}{U+8D5B}日程安排{U+95EE}{U+9898}）](Problems/RoundRobinProblem)
+* [Tubing Problem（{U+8F93}油管道{U+95EE}{U+9898}）](Problems/TubingProblem)
 
 ### Leetcode Problems
 
 * [Github . haoel/leetcode](https://github.com/haoel/leetcode)
 * [Github . pezy/LeetCode](https://github.com/pezy/LeetCode)
 
-### 剑指 Offer
+### {U+5251}指 Offer
 
 * [Github . zhedahht/CodingInterviewChinese2](https://github.com/zhedahht/CodingInterviewChinese2)
 * [Github . gatieme/CodingInterviews](https://github.com/gatieme/CodingInterviews)
 
-### Cracking the Coding Interview 程序员面试金典
+### Cracking the Coding Interview 程序{U+5458}面{U+8BD5}金典
 
 * [Github . careercup/ctci](https://github.com/careercup/ctci)
-* [牛客网 . 程序员面试金典](https://www.nowcoder.com/ta/cracking-the-coding-interview)
+* [牛客網 . 程序{U+5458}面{U+8BD5}金典](https://www.nowcoder.com/ta/cracking-the-coding-interview)
 
-### 牛客网
+### 牛客網
 
-* [牛客网 . 在线编程专题](https://www.nowcoder.com/activity/oj)
+* [牛客網 . 在{U+7EBF}{U+7F16}程{U+4E13}{U+9898}](https://www.nowcoder.com/activity/oj)
 
-## 操作系统
+## 操作系{U+7EDF}
 
-### 进程与线程
+### {U+8FDB}程與{U+7EBF}程
 
-对于有线程系统：
-* 进程是资源分配的独立单位
-* 线程是资源调度的独立单位
+{U+5BF9}於有{U+7EBF}程系{U+7EDF}：
+* {U+8FDB}程是{U+8D44}源分配的{U+72EC}立{U+5355}位
+* {U+7EBF}程是{U+8D44}源{U+8C03}度的{U+72EC}立{U+5355}位
 
-对于无线程系统：
-* 进程是资源调度、分配的独立单位
+{U+5BF9}於{U+65E0}{U+7EBF}程系{U+7EDF}：
+* {U+8FDB}程是{U+8D44}源{U+8C03}度、分配的{U+72EC}立{U+5355}位
 
-#### 进程之间的通信方式以及优缺点
+#### {U+8FDB}程之{U+95F4}的通信方式以及優缺{U+70B9}
 
 * 管道（PIPE）
-    * 有名管道：一种半双工的通信方式，它允许无亲缘关系进程间的通信
-        * 优点：可以实现任意关系的进程间的通信
-        * 缺点：
-            1. 长期存于系统中，使用不当容易出错
-            2. 缓冲区有限
-    * 无名管道：一种半双工的通信方式，只能在具有亲缘关系的进程间使用（父子进程）
-        * 优点：简单方便
-        * 缺点：
-            1. 局限于单向通信 
-            2. 只能创建在它的进程以及其有亲缘关系的进程之间
-            3. 缓冲区有限
-* 信号量（Semaphore）：一个计数器，可以用来控制多个线程对共享资源的访问
-    * 优点：可以同步进程
-    * 缺点：信号量有限
-* 信号（Signal）：一种比较复杂的通信方式，用于通知接收进程某个事件已经发生
-* 消息队列（Message Queue）：是消息的链表，存放在内核中并由消息队列标识符标识
-    * 优点：可以实现任意进程间的通信，并通过系统调用函数来实现消息发送和接收之间的同步，无需考虑同步问题，方便
-    * 缺点：信息的复制需要额外消耗 CPU 的时间，不适宜于信息量大或操作频繁的场合
-* 共享内存（Shared Memory）：映射一段能被其他进程所访问的内存，这段共享内存由一个进程创建，但多个进程都可以访问
-    * 优点：无须复制，快捷，信息量大
-    * 缺点：
-        1. 通信是通过将共享空间缓冲区直接附加到进程的虚拟地址空间中来实现的，因此进程间的读写操作的同步问题
-        2. 利用内存缓冲区直接交换信息，内存的实体存在于计算机中，只能同一个计算机系统中的诸多进程共享，不方便网络通信
-* 套接字（Socket）：可用于不同及其间的进程通信
-    * 优点：
-        1. 传输数据为字节级，传输数据可自定义，数据量小效率高
-        2. 传输数据时间短，性能高
-        3. 适合于客户端和服务器端之间信息实时交互
-        4. 可以加密,数据安全性强
-    * 缺点：需对传输的数据进行解析，转化成应用级的数据。
+    * 有名管道：一種半{U+53CC}工的通信方式，它允{U+8BB8}{U+65E0}{U+4EB2}{U+7F18}{U+5173}系{U+8FDB}程{U+95F4}的通信
+        * 優{U+70B9}：可以{U+5B9E}{U+73B0}任意{U+5173}系的{U+8FDB}程{U+95F4}的通信
+        * 缺{U+70B9}：
+            1. {U+957F}期存於系{U+7EDF}中，使用不{U+5F53}容易出{U+9519}
+            2. {U+7F13}{U+51B2}{U+533A}有限
+    * {U+65E0}名管道：一種半{U+53CC}工的通信方式，只能在具有{U+4EB2}{U+7F18}{U+5173}系的{U+8FDB}程{U+95F4}使用（父子{U+8FDB}程）
+        * 優{U+70B9}：{U+7B80}{U+5355}方便
+        * 缺{U+70B9}：
+            1. 局限於{U+5355}向通信 
+            2. 只能{U+521B}建在它的{U+8FDB}程以及其有{U+4EB2}{U+7F18}{U+5173}系的{U+8FDB}程之{U+95F4}
+            3. {U+7F13}{U+51B2}{U+533A}有限
+* 信{U+53F7}量（Semaphore）：一{U+4E2A}{U+8BA1}{U+6570}器，可以用{U+6765}控制多{U+4E2A}{U+7EBF}程{U+5BF9}共享{U+8D44}源的{U+8BBF}{U+95EE}
+    * 優{U+70B9}：可以同步{U+8FDB}程
+    * 缺{U+70B9}：信{U+53F7}量有限
+* 信{U+53F7}（Signal）：一種比{U+8F83}複{U+6742}的通信方式，用於通知接收{U+8FDB}程某{U+4E2A}事件已{U+7ECF}{U+53D1}生
+* 消息{U+961F}列（Message Queue）：是消息的{U+94FE}表，存放在{U+5185}核中並由消息{U+961F}列{U+6807}{U+8BC6}符{U+6807}{U+8BC6}
+    * 優{U+70B9}：可以{U+5B9E}{U+73B0}任意{U+8FDB}程{U+95F4}的通信，並通{U+8FC7}系{U+7EDF}{U+8C03}用函{U+6570}{U+6765}{U+5B9E}{U+73B0}消息{U+53D1}送和接收之{U+95F4}的同步，{U+65E0}需考{U+8651}同步{U+95EE}{U+9898}，方便
+    * 缺{U+70B9}：信息的複制需要{U+989D}外消耗 CPU 的{U+65F6}{U+95F4}，不適宜於信息量大或操作{U+9891}繁的{U+573A}合
+* 共享{U+5185}存（Shared Memory）：映射一段能被其他{U+8FDB}程所{U+8BBF}{U+95EE}的{U+5185}存，{U+8FD9}段共享{U+5185}存由一{U+4E2A}{U+8FDB}程{U+521B}建，但多{U+4E2A}{U+8FDB}程都可以{U+8BBF}{U+95EE}
+    * 優{U+70B9}：{U+65E0}{U+987B}複制，快捷，信息量大
+    * 缺{U+70B9}：
+        1. 通信是通{U+8FC7}{U+5C06}共享空{U+95F4}{U+7F13}{U+51B2}{U+533A}直接附加到{U+8FDB}程的{U+865A}{U+62DF}地址空{U+95F4}中{U+6765}{U+5B9E}{U+73B0}的，因此{U+8FDB}程{U+95F4}的{U+8BFB}{U+5199}操作的同步{U+95EE}{U+9898}
+        2. 利用{U+5185}存{U+7F13}{U+51B2}{U+533A}直接交{U+6362}信息，{U+5185}存的{U+5B9E}體存在於{U+8BA1}算機中，只能同一{U+4E2A}{U+8BA1}算機系{U+7EDF}中的{U+8BF8}多{U+8FDB}程共享，不方便網{U+7EDC}通信
+* 套接字（Socket）：可用於不同及其{U+95F4}的{U+8FDB}程通信
+    * 優{U+70B9}：
+        1. {U+4F20}{U+8F93}{U+6570}據{U+4E3A}字{U+8282}{U+7EA7}，{U+4F20}{U+8F93}{U+6570}據可自定{U+4E49}，{U+6570}據量小效率高
+        2. {U+4F20}{U+8F93}{U+6570}據{U+65F6}{U+95F4}短，性能高
+        3. 適合於客{U+6237}端和服{U+52A1}器端之{U+95F4}信息{U+5B9E}{U+65F6}交互
+        4. 可以加密,{U+6570}據安全性{U+5F3A}
+    * 缺{U+70B9}：需{U+5BF9}{U+4F20}{U+8F93}的{U+6570}據{U+8FDB}行解析，{U+8F6C}化成{U+5E94}用{U+7EA7}的{U+6570}據。
 
-#### 线程之间的通信方式
+#### {U+7EBF}程之{U+95F4}的通信方式
 
-* 锁机制：包括互斥锁/量（mutex）、读写锁（reader-writer lock）、自旋锁（spin lock）、条件变量（condition）
-    * 互斥锁/量（mutex）：提供了以排他方式防止数据结构被并发修改的方法。
-    * 读写锁（reader-writer lock）：允许多个线程同时读共享数据，而对写操作是互斥的。
-    * 自旋锁（spin lock）与互斥锁类似，都是为了保护共享资源。互斥锁是当资源被占用，申请者进入睡眠状态；而自旋锁则循环检测保持着是否已经释放锁。
-    * 条件变量（condition）：可以以原子的方式阻塞进程，直到某个特定条件为真为止。对条件的测试是在互斥锁的保护下进行的。条件变量始终与互斥锁一起使用。
-* 信号量机制(Semaphore)
-    * 无名线程信号量
-    * 命名线程信号量
-* 信号机制(Signal)：类似进程间的信号处理
-* 屏障（barrier）：屏障允许每个线程等待，直到所有的合作线程都达到某一点，然后从该点继续执行。
+* {U+9501}機制：包括互斥{U+9501}/量（mutex）、{U+8BFB}{U+5199}{U+9501}（reader-writer lock）、自旋{U+9501}（spin lock）、{U+6761}件{U+53D8}量（condition）
+    * 互斥{U+9501}/量（mutex）：提供了以排他方式防止{U+6570}據{U+7ED3}構被並{U+53D1}修改的方法。
+    * {U+8BFB}{U+5199}{U+9501}（reader-writer lock）：允{U+8BB8}多{U+4E2A}{U+7EBF}程同{U+65F6}{U+8BFB}共享{U+6570}據，而{U+5BF9}{U+5199}操作是互斥的。
+    * 自旋{U+9501}（spin lock）與互斥{U+9501}{U+7C7B}似，都是{U+4E3A}了保{U+62A4}共享{U+8D44}源。互斥{U+9501}是{U+5F53}{U+8D44}源被占用，申{U+8BF7}者{U+8FDB}入睡眠{U+72B6}{U+6001}；而自旋{U+9501}{U+5219}循{U+73AF}{U+68C0}{U+6D4B}保持{U+7740}是否已{U+7ECF}{U+91CA}放{U+9501}。
+    * {U+6761}件{U+53D8}量（condition）：可以以原子的方式阻塞{U+8FDB}程，直到某{U+4E2A}特定{U+6761}件{U+4E3A}真{U+4E3A}止。{U+5BF9}{U+6761}件的{U+6D4B}{U+8BD5}是在互斥{U+9501}的保{U+62A4}下{U+8FDB}行的。{U+6761}件{U+53D8}量始{U+7EC8}與互斥{U+9501}一起使用。
+* 信{U+53F7}量機制(Semaphore)
+    * {U+65E0}名{U+7EBF}程信{U+53F7}量
+    * 命名{U+7EBF}程信{U+53F7}量
+* 信{U+53F7}機制(Signal)：{U+7C7B}似{U+8FDB}程{U+95F4}的信{U+53F7}{U+5904}理
+* 屏障（barrier）：屏障允{U+8BB8}每{U+4E2A}{U+7EBF}程等待，直到所有的合作{U+7EBF}程都{U+8FBE}到某一{U+70B9}，然後{U+4ECE}{U+8BE5}{U+70B9}{U+7EE7}{U+7EED}{U+6267}行。
 
-线程间的通信目的主要是用于线程同步，所以线程没有像进程通信中的用于数据交换的通信机制  
+{U+7EBF}程{U+95F4}的通信目的主要是用於{U+7EBF}程同步，所以{U+7EBF}程{U+6CA1}有像{U+8FDB}程通信中的用於{U+6570}據交{U+6362}的通信機制  
 
-> 进程之间的通信方式以及优缺点来源于：[进程线程面试题总结](http://blog.csdn.net/wujiafei_njgcxy/article/details/77098977)
+> {U+8FDB}程之{U+95F4}的通信方式以及優缺{U+70B9}{U+6765}源於：[{U+8FDB}程{U+7EBF}程面{U+8BD5}{U+9898}{U+603B}{U+7ED3}](http://blog.csdn.net/wujiafei_njgcxy/article/details/77098977)
 
-#### 进程之间私有和共享的资源
+#### {U+8FDB}程之{U+95F4}私有和共享的{U+8D44}源
 
-* 私有：地址空间、堆、全局变量、栈、寄存器
-* 共享：代码段，公共数据，进程目录，进程 ID
+* 私有：地址空{U+95F4}、堆、全局{U+53D8}量、{U+6808}、寄存器
+* 共享：代{U+7801}段，公共{U+6570}據，{U+8FDB}程目{U+5F55}，{U+8FDB}程 ID
 
-#### 线程之间私有和共享的资源
+#### {U+7EBF}程之{U+95F4}私有和共享的{U+8D44}源
 
-* 私有：线程栈，寄存器，程序寄存器
-* 共享：堆，地址空间，全局变量，静态变量
+* 私有：{U+7EBF}程{U+6808}，寄存器，程序寄存器
+* 共享：堆，地址空{U+95F4}，全局{U+53D8}量，{U+9759}{U+6001}{U+53D8}量
 
-#### 多进程与多线程间的对比、优劣与选择
+#### 多{U+8FDB}程與多{U+7EBF}程{U+95F4}的{U+5BF9}比、優劣與{U+9009}{U+62E9}
 
-##### 对比
+##### {U+5BF9}比
 
-对比维度 | 多进程 | 多线程 | 总结
+{U+5BF9}比{U+7EF4}度 | 多{U+8FDB}程 | 多{U+7EBF}程 | {U+603B}{U+7ED3}
 ---|---|---|---
-数据共享、同步|数据共享复杂，需要用 IPC；数据是分开的，同步简单|因为共享进程数据，数据共享简单，但也是因为这个原因导致同步复杂|各有优势
-内存、CPU|占用内存多，切换复杂，CPU 利用率低|占用内存少，切换简单，CPU 利用率高|线程占优
-创建销毁、切换|创建销毁、切换复杂，速度慢|创建销毁、切换简单，速度很快|线程占优
-编程、调试|编程简单，调试简单|编程复杂，调试复杂|进程占优
-可靠性|进程间不会互相影响|一个线程挂掉将导致整个进程挂掉|进程占优
-分布式|适应于多核、多机分布式；如果一台机器不够，扩展到多台机器比较简单|适应于多核分布式|进程占优
+{U+6570}據共享、同步|{U+6570}據共享複{U+6742}，需要用 IPC；{U+6570}據是分{U+5F00}的，同步{U+7B80}{U+5355}|因{U+4E3A}共享{U+8FDB}程{U+6570}據，{U+6570}據共享{U+7B80}{U+5355}，但也是因{U+4E3A}{U+8FD9}{U+4E2A}原因{U+5BFC}致同步複{U+6742}|各有優{U+52BF}
+{U+5185}存、CPU|占用{U+5185}存多，切{U+6362}複{U+6742}，CPU 利用率低|占用{U+5185}存少，切{U+6362}{U+7B80}{U+5355}，CPU 利用率高|{U+7EBF}程占優
+{U+521B}建{U+9500}{U+6BC1}、切{U+6362}|{U+521B}建{U+9500}{U+6BC1}、切{U+6362}複{U+6742}，速度慢|{U+521B}建{U+9500}{U+6BC1}、切{U+6362}{U+7B80}{U+5355}，速度很快|{U+7EBF}程占優
+{U+7F16}程、{U+8C03}{U+8BD5}|{U+7F16}程{U+7B80}{U+5355}，{U+8C03}{U+8BD5}{U+7B80}{U+5355}|{U+7F16}程複{U+6742}，{U+8C03}{U+8BD5}複{U+6742}|{U+8FDB}程占優
+可靠性|{U+8FDB}程{U+95F4}不{U+4F1A}互相影{U+54CD}|一{U+4E2A}{U+7EBF}程掛掉{U+5C06}{U+5BFC}致整{U+4E2A}{U+8FDB}程掛掉|{U+8FDB}程占優
+分布式|適{U+5E94}於多核、多機分布式；如果一台機器不{U+591F}，{U+6269}展到多台機器比{U+8F83}{U+7B80}{U+5355}|適{U+5E94}於多核分布式|{U+8FDB}程占優
 
-##### 优劣
+##### 優劣
 
-优劣|多进程|多线程
+優劣|多{U+8FDB}程|多{U+7EBF}程
 ---|---|---
-优点|编程、调试简单，可靠性较高|创建、销毁、切换速度快，内存、资源占用小
-缺点|创建、销毁、切换速度慢，内存、资源占用大|编程、调试复杂，可靠性较差
+優{U+70B9}|{U+7F16}程、{U+8C03}{U+8BD5}{U+7B80}{U+5355}，可靠性{U+8F83}高|{U+521B}建、{U+9500}{U+6BC1}、切{U+6362}速度快，{U+5185}存、{U+8D44}源占用小
+缺{U+70B9}|{U+521B}建、{U+9500}{U+6BC1}、切{U+6362}速度慢，{U+5185}存、{U+8D44}源占用大|{U+7F16}程、{U+8C03}{U+8BD5}複{U+6742}，可靠性{U+8F83}差
 
-##### 选择
+##### {U+9009}{U+62E9}
 
-* 需要频繁创建销毁的优先用线程
-* 需要进行大量计算的优先使用线程
-* 强相关的处理用线程，弱相关的处理用进程
-* 可能要扩展到多机分布的用进程，多核分布的用线程
-* 都满足需求的情况下，用你最熟悉、最拿手的方式
+* 需要{U+9891}繁{U+521B}建{U+9500}{U+6BC1}的優先用{U+7EBF}程
+* 需要{U+8FDB}行大量{U+8BA1}算的優先使用{U+7EBF}程
+* {U+5F3A}相{U+5173}的{U+5904}理用{U+7EBF}程，弱相{U+5173}的{U+5904}理用{U+8FDB}程
+* 可能要{U+6269}展到多機分布的用{U+8FDB}程，多核分布的用{U+7EBF}程
+* 都{U+6EE1}足需求的情{U+51B5}下，用你最熟悉、最拿手的方式
 
-> 多进程与多线程间的对比、优劣与选择来自：[多线程还是多进程的选择及区别](https://blog.csdn.net/lishenglong666/article/details/8557215)
+> 多{U+8FDB}程與多{U+7EBF}程{U+95F4}的{U+5BF9}比、優劣與{U+9009}{U+62E9}{U+6765}自：[多{U+7EBF}程{U+8FD8}是多{U+8FDB}程的{U+9009}{U+62E9}及{U+533A}{U+522B}](https://blog.csdn.net/lishenglong666/article/details/8557215)
 
-### Linux 内核的同步方式
+### Linux {U+5185}核的同步方式
 
 #### 原因
 
-在现代操作系统里，同一时间可能有多个内核执行流在执行，因此内核其实象多进程多线程编程一样也需要一些同步机制来同步各执行单元对共享数据的访问。尤其是在多处理器系统上，更需要一些同步机制来同步不同处理器上的执行单元对共享的数据的访问。
+在{U+73B0}代操作系{U+7EDF}裏，同一{U+65F6}{U+95F4}可能有多{U+4E2A}{U+5185}核{U+6267}行流在{U+6267}行，因此{U+5185}核其{U+5B9E}象多{U+8FDB}程多{U+7EBF}程{U+7F16}程一{U+6837}也需要一些同步機制{U+6765}同步各{U+6267}行{U+5355}元{U+5BF9}共享{U+6570}據的{U+8BBF}{U+95EE}。尤其是在多{U+5904}理器系{U+7EDF}上，更需要一些同步機制{U+6765}同步不同{U+5904}理器上的{U+6267}行{U+5355}元{U+5BF9}共享的{U+6570}據的{U+8BBF}{U+95EE}。
 
 #### 同步方式
 
 * 原子操作
-* 信号量（semaphore）
-* 读写信号量（rw_semaphore）
-* 自旋锁（spinlock）
-* 大内核锁（BKL，Big Kernel Lock）
-* 读写锁（rwlock）
-* 大读者锁（brlock-Big Reader Lock）
-* 读-拷贝修改(RCU，Read-Copy Update)
-* 顺序锁（seqlock）
+* 信{U+53F7}量（semaphore）
+* {U+8BFB}{U+5199}信{U+53F7}量（rw_semaphore）
+* 自旋{U+9501}（spinlock）
+* 大{U+5185}核{U+9501}（BKL，Big Kernel Lock）
+* {U+8BFB}{U+5199}{U+9501}（rwlock）
+* 大{U+8BFB}者{U+9501}（brlock-Big Reader Lock）
+* {U+8BFB}-拷{U+8D1D}修改(RCU，Read-Copy Update)
+* {U+987A}序{U+9501}（seqlock）
 
-> 来自：[Linux 内核的同步机制，第 1 部分](https://www.ibm.com/developerworks/cn/linux/l-synch/part1/)、[Linux 内核的同步机制，第 2 部分](https://www.ibm.com/developerworks/cn/linux/l-synch/part2/)
+> {U+6765}自：[Linux {U+5185}核的同步機制，第 1 部分](https://www.ibm.com/developerworks/cn/linux/l-synch/part1/)、[Linux {U+5185}核的同步機制，第 2 部分](https://www.ibm.com/developerworks/cn/linux/l-synch/part2/)
 
-### 死锁
+### 死{U+9501}
 
 #### 原因
 
-* 系统资源不足
-* 资源分配不当
-* 进程运行推进顺序不合适
+* 系{U+7EDF}{U+8D44}源不足
+* {U+8D44}源分配不{U+5F53}
+* {U+8FDB}程{U+8FD0}行推{U+8FDB}{U+987A}序不合適
 
-#### 产生条件
+#### {U+4EA7}生{U+6761}件
 
 * 互斥
-* 请求和保持
-* 不剥夺
-* 环路
+* {U+8BF7}求和保持
+* 不{U+5265}{U+593A}
+* {U+73AF}路
 
-#### 预防
+#### {U+9884}防
 
-* 打破互斥条件：改造独占性资源为虚拟资源，大部分资源已无法改造。
-* 打破不可抢占条件：当一进程占有一独占性资源后又申请一独占性资源而无法满足，则退出原占有的资源。
-* 打破占有且申请条件：采用资源预先分配策略，即进程运行前申请全部资源，满足则运行，不然就等待，这样就不会占有且申请。
-* 打破循环等待条件：实现资源有序分配策略，对所有设备实现分类编号，所有进程只能采用按序号递增的形式申请资源。
-* 有序资源分配法
-* 银行家算法
+* 打破互斥{U+6761}件：改造{U+72EC}占性{U+8D44}源{U+4E3A}{U+865A}{U+62DF}{U+8D44}源，大部分{U+8D44}源已{U+65E0}法改造。
+* 打破不可{U+62A2}占{U+6761}件：{U+5F53}一{U+8FDB}程占有一{U+72EC}占性{U+8D44}源後又申{U+8BF7}一{U+72EC}占性{U+8D44}源而{U+65E0}法{U+6EE1}足，{U+5219}退出原占有的{U+8D44}源。
+* 打破占有且申{U+8BF7}{U+6761}件：采用{U+8D44}源{U+9884}先分配策略，即{U+8FDB}程{U+8FD0}行前申{U+8BF7}全部{U+8D44}源，{U+6EE1}足{U+5219}{U+8FD0}行，不然就等待，{U+8FD9}{U+6837}就不{U+4F1A}占有且申{U+8BF7}。
+* 打破循{U+73AF}等待{U+6761}件：{U+5B9E}{U+73B0}{U+8D44}源有序分配策略，{U+5BF9}所有{U+8BBE}{U+5907}{U+5B9E}{U+73B0}分{U+7C7B}{U+7F16}{U+53F7}，所有{U+8FDB}程只能采用按序{U+53F7}{U+9012}增的形式申{U+8BF7}{U+8D44}源。
+* 有序{U+8D44}源分配法
+* {U+94F6}行家算法
 
-### 文件系统
+### 文件系{U+7EDF}
 
-* Windows：FCB 表 + FAT + 位图
-* Unix：inode + 混合索引 + 成组链接
+* Windows：FCB 表 + FAT + 位{U+56FE}
+* Unix：inode + 混合索引 + 成{U+7EC4}{U+94FE}接
 
-### 主机字节序与网络字节序
+### 主機字{U+8282}序與網{U+7EDC}字{U+8282}序
 
-#### 主机字节序（CPU 字节序）
+#### 主機字{U+8282}序（CPU 字{U+8282}序）
 
 ##### 概念
 
-主机字节序又叫 CPU 字节序，其不是由操作系统决定的，而是由 CPU 指令集架构决定的。主机字节序分为两种：
+主機字{U+8282}序又叫 CPU 字{U+8282}序，其不是由操作系{U+7EDF}{U+51B3}定的，而是由 CPU 指令集架構{U+51B3}定的。主機字{U+8282}序分{U+4E3A}{U+4E24}種：
 
-* 大端字节序（Big Endian）：高序字节存储在低位地址，低序字节存储在高位地址
-* 小端字节序（Little Endian）：高序字节存储在高位地址，低序字节存储在低位地址
+* 大端字{U+8282}序（Big Endian）：高序字{U+8282}存{U+50A8}在低位地址，低序字{U+8282}存{U+50A8}在高位地址
+* 小端字{U+8282}序（Little Endian）：高序字{U+8282}存{U+50A8}在高位地址，低序字{U+8282}存{U+50A8}在低位地址
 
-##### 存储方式
+##### 存{U+50A8}方式
 
-32 位整数 `0x12345678` 是从起始位置为 `0x00` 的地址开始存放，则：
+32 位整{U+6570} `0x12345678` 是{U+4ECE}起始位置{U+4E3A} `0x00` 的地址{U+5F00}始存放，{U+5219}：
 
-内存地址 | 0x00 | 0x01 | 0x02 | 0x03
+{U+5185}存地址 | 0x00 | 0x01 | 0x02 | 0x03
 ---|---|---|---|---
 大端|12|34|56|78
 小端|78|56|34|12
 
 
-<details><summary>大端小端图片</summary>
+<details><summary>大端小端{U+56FE}片</summary>
 
 ![大端序](images/CPU-Big-Endian.svg.png)
 ![小端序](images/CPU-Little-Endian.svg.png)
 
 </details>
 
-##### 判断大端小端
+##### 判{U+65AD}大端小端
 
-<details><summary>判断大端小端</summary>
+<details><summary>判{U+65AD}大端小端</summary>
 
-可以这样判断自己 CPU 字节序是大端还是小端：
+可以{U+8FD9}{U+6837}判{U+65AD}自己 CPU 字{U+8282}序是大端{U+8FD8}是小端：
 
 ```cpp
 #include <iostream>
@@ -1975,458 +1975,458 @@ int main()
 
 </details>
 
-##### 各架构处理器的字节序
+##### 各架構{U+5904}理器的字{U+8282}序
 
-* x86（Intel、AMD）、MOS Technology 6502、Z80、VAX、PDP-11 等处理器为小端序；
-* Motorola 6800、Motorola 68000、PowerPC 970、System/370、SPARC（除 V9 外）等处理器为大端序；
-* ARM（默认小端序）、PowerPC（除 PowerPC 970 外）、DEC Alpha、SPARC V9、MIPS、PA-RISC 及 IA64 的字节序是可配置的。
+* x86（Intel、AMD）、MOS Technology 6502、Z80、VAX、PDP-11 等{U+5904}理器{U+4E3A}小端序；
+* Motorola 6800、Motorola 68000、PowerPC 970、System/370、SPARC（除 V9 外）等{U+5904}理器{U+4E3A}大端序；
+* ARM（默{U+8BA4}小端序）、PowerPC（除 PowerPC 970 外）、DEC Alpha、SPARC V9、MIPS、PA-RISC 及 IA64 的字{U+8282}序是可配置的。
 
-#### 网络字节序
+#### 網{U+7EDC}字{U+8282}序
 
-网络字节顺序是 TCP/IP 中规定好的一种数据表示格式，它与具体的 CPU 类型、操作系统等无关，从而可以保重数据在不同主机之间传输时能够被正确解释。
+網{U+7EDC}字{U+8282}{U+987A}序是 TCP/IP 中{U+89C4}定好的一種{U+6570}據表示格式，它與具體的 CPU {U+7C7B}型、操作系{U+7EDF}等{U+65E0}{U+5173}，{U+4ECE}而可以保重{U+6570}據在不同主機之{U+95F4}{U+4F20}{U+8F93}{U+65F6}能{U+591F}被正確解{U+91CA}。
 
-网络字节顺序采用：大端（Big Endian）排列方式。
+網{U+7EDC}字{U+8282}{U+987A}序采用：大端（Big Endian）排列方式。
 
-### 页面置换算法
+### {U+9875}面置{U+6362}算法
 
-在地址映射过程中，若在页面中发现所要访问的页面不在内存中，则产生缺页中断。当发生缺页中断时，如果操作系统内存中没有空闲页面，则操作系统必须在内存选择一个页面将其移出内存，以便为即将调入的页面让出空间。而用来选择淘汰哪一页的规则叫做页面置换算法。
+在地址映射{U+8FC7}程中，若在{U+9875}面中{U+53D1}{U+73B0}所要{U+8BBF}{U+95EE}的{U+9875}面不在{U+5185}存中，{U+5219}{U+4EA7}生缺{U+9875}中{U+65AD}。{U+5F53}{U+53D1}生缺{U+9875}中{U+65AD}{U+65F6}，如果操作系{U+7EDF}{U+5185}存中{U+6CA1}有空{U+95F2}{U+9875}面，{U+5219}操作系{U+7EDF}必{U+987B}在{U+5185}存{U+9009}{U+62E9}一{U+4E2A}{U+9875}面{U+5C06}其移出{U+5185}存，以便{U+4E3A}即{U+5C06}{U+8C03}入的{U+9875}面{U+8BA9}出空{U+95F4}。而用{U+6765}{U+9009}{U+62E9}淘汰哪一{U+9875}的{U+89C4}{U+5219}叫做{U+9875}面置{U+6362}算法。
 
-#### 分类
+#### 分{U+7C7B}
 
-* 全局置换：在整个内存空间置换
-* 局部置换：在本进程中进行置换
+* 全局置{U+6362}：在整{U+4E2A}{U+5185}存空{U+95F4}置{U+6362}
+* 局部置{U+6362}：在本{U+8FDB}程中{U+8FDB}行置{U+6362}
 
 #### 算法
 
 全局：
 * 工作集算法
-* 缺页率置换算法
+* 缺{U+9875}率置{U+6362}算法
 
 局部：
-* 最佳置换算法（OPT）
-* 先进先出置换算法（FIFO）
+* 最佳置{U+6362}算法（OPT）
+* 先{U+8FDB}先出置{U+6362}算法（FIFO）
 * 最近最久未使用（LRU）算法
-* 时钟（Clock）置换算法
+* {U+65F6}{U+949F}（Clock）置{U+6362}算法
 
-## 计算机网络
+## {U+8BA1}算機網{U+7EDC}
 
-计算机经网络体系结构：
+{U+8BA1}算機{U+7ECF}網{U+7EDC}體系{U+7ED3}構：
 
-![计算机经网络体系结构](images/计算机经网络体系结构.png)
+![{U+8BA1}算機{U+7ECF}網{U+7EDC}體系{U+7ED3}構](images/{U+8BA1}算機{U+7ECF}網{U+7EDC}體系{U+7ED3}構.png)
 
-### 各层作用及协议
+### 各{U+5C42}作用及{U+534F}{U+8BAE}
 
-分层 | 作用 | 协议
+分{U+5C42} | 作用 | {U+534F}{U+8BAE}
 ---|---|---
-物理层 | 通过媒介传输比特，确定机械及电气规范（比特 Bit） | RJ45、CLOCK、IEEE802.3（中继器，集线器）
-数据链路层|将比特组装成帧和点到点的传递（帧 Frame）| PPP、FR、HDLC、VLAN、MAC（网桥，交换机）
-网络层|负责数据包从源到宿的传递和网际互连（包 Packet）|IP、ICMP、ARP、RARP、OSPF、IPX、RIP、IGRP（路由器）
-运输层|提供端到端的可靠报文传递和错误恢复（ 段Segment）|TCP、UDP、SPX
-会话层|建立、管理和终止会话（会话协议数据单元 SPDU）|NFS、SQL、NETBIOS、RPC
-表示层|对数据进行翻译、加密和压缩（表示协议数据单元 PPDU）|JPEG、MPEG、ASII
-应用层|允许访问OSI环境的手段（应用协议数据单元 APDU）|FTP、DNS、Telnet、SMTP、HTTP、WWW、NFS
+物理{U+5C42} | 通{U+8FC7}媒介{U+4F20}{U+8F93}比特，確定機械及{U+7535}氣{U+89C4}範（比特 Bit） | RJ45、CLOCK、IEEE802.3（中{U+7EE7}器，集{U+7EBF}器）
+{U+6570}據{U+94FE}路{U+5C42}|{U+5C06}比特{U+7EC4}{U+88C5}成{U+5E27}和{U+70B9}到{U+70B9}的{U+4F20}{U+9012}（{U+5E27} Frame）| PPP、FR、HDLC、VLAN、MAC（網{U+6865}，交{U+6362}機）
+網{U+7EDC}{U+5C42}|{U+8D1F}{U+8D23}{U+6570}據包{U+4ECE}源到宿的{U+4F20}{U+9012}和網{U+9645}互{U+8FDE}（包 Packet）|IP、ICMP、ARP、RARP、OSPF、IPX、RIP、IGRP（路由器）
+{U+8FD0}{U+8F93}{U+5C42}|提供端到端的可靠{U+62A5}文{U+4F20}{U+9012}和{U+9519}{U+8BEF}恢複（ 段Segment）|TCP、UDP、SPX
+{U+4F1A}{U+8BDD}{U+5C42}|建立、管理和{U+7EC8}止{U+4F1A}{U+8BDD}（{U+4F1A}{U+8BDD}{U+534F}{U+8BAE}{U+6570}據{U+5355}元 SPDU）|NFS、SQL、NETBIOS、RPC
+表示{U+5C42}|{U+5BF9}{U+6570}據{U+8FDB}行翻{U+8BD1}、加密和{U+538B}{U+7F29}（表示{U+534F}{U+8BAE}{U+6570}據{U+5355}元 PPDU）|JPEG、MPEG、ASII
+{U+5E94}用{U+5C42}|允{U+8BB8}{U+8BBF}{U+95EE}OSI{U+73AF}境的手段（{U+5E94}用{U+534F}{U+8BAE}{U+6570}據{U+5355}元 APDU）|FTP、DNS、Telnet、SMTP、HTTP、WWW、NFS
 
 
-### 物理层
+### 物理{U+5C42}
 
-* 传输数据的单位 ———— 比特
-* 数据传输系统：源系统（源点、发送器） --> 传输系统 --> 目的系统（接收器、终点）
+* {U+4F20}{U+8F93}{U+6570}據的{U+5355}位 ———— 比特
+* {U+6570}據{U+4F20}{U+8F93}系{U+7EDF}：源系{U+7EDF}（源{U+70B9}、{U+53D1}送器） --> {U+4F20}{U+8F93}系{U+7EDF} --> 目的系{U+7EDF}（接收器、{U+7EC8}{U+70B9}）
 
 通道：
-* 单向通道（单工通道）：只有一个方向通信，没有反方向交互，如广播
-* 双向交替通行（半双工通信）：通信双方都可发消息，但不能同时发送或接收
-* 双向同时通信（全双工通信）：通信双方可以同时发送和接收信息
+* {U+5355}向通道（{U+5355}工通道）：只有一{U+4E2A}方向通信，{U+6CA1}有反方向交互，如{U+5E7F}播
+* {U+53CC}向交替通行（半{U+53CC}工通信）：通信{U+53CC}方都可{U+53D1}消息，但不能同{U+65F6}{U+53D1}送或接收
+* {U+53CC}向同{U+65F6}通信（全{U+53CC}工通信）：通信{U+53CC}方可以同{U+65F6}{U+53D1}送和接收信息
 
-通道复用技术：
-* 频分复用（FDM，Frequency Division Multiplexing）：不同用户在不同频带，所用用户在同样时间占用不同带宽资源
-* 时分复用（TDM，Time Division Multiplexing）：不同用户在同一时间段的不同时间片，所有用户在不同时间占用同样的频带宽度
-* 波分复用（WDM，Wavelength Division Multiplexing）：光的频分复用
-* 码分复用（CDM，Code Division Multiplexing）：不同用户使用不同的码，可以在同样时间使用同样频带通信
+通道複用技{U+672F}：
+* {U+9891}分複用（FDM，Frequency Division Multiplexing）：不同用{U+6237}在不同{U+9891}{U+5E26}，所用用{U+6237}在同{U+6837}{U+65F6}{U+95F4}占用不同{U+5E26}{U+5BBD}{U+8D44}源
+* {U+65F6}分複用（TDM，Time Division Multiplexing）：不同用{U+6237}在同一{U+65F6}{U+95F4}段的不同{U+65F6}{U+95F4}片，所有用{U+6237}在不同{U+65F6}{U+95F4}占用同{U+6837}的{U+9891}{U+5E26}{U+5BBD}度
+* 波分複用（WDM，Wavelength Division Multiplexing）：光的{U+9891}分複用
+* {U+7801}分複用（CDM，Code Division Multiplexing）：不同用{U+6237}使用不同的{U+7801}，可以在同{U+6837}{U+65F6}{U+95F4}使用同{U+6837}{U+9891}{U+5E26}通信
 
-### 数据链路层
+### {U+6570}據{U+94FE}路{U+5C42}
 
 主要信道：
-* 点对点信道
-* 广播信道
+* {U+70B9}{U+5BF9}{U+70B9}信道
+* {U+5E7F}播信道
 
-#### 点对点信道
+#### {U+70B9}{U+5BF9}{U+70B9}信道
 
-* 数据单元 ———— 帧
+* {U+6570}據{U+5355}元 ———— {U+5E27}
 
-三个基本问题：
-* 封装成帧：把网络层的 IP 数据报封装成帧，`SOH - 数据部分 - EOT`
-* 透明传输：不管数据部分什么字符，都能传输出去；可以通过字节填充方法解决（冲突字符前加转义字符）
-* 差错检测：降低误码率（BER，Bit Error Rate），广泛使用循环冗余检测（CRC，Cyclic Redundancy Check）
+三{U+4E2A}基本{U+95EE}{U+9898}：
+* 封{U+88C5}成{U+5E27}：把網{U+7EDC}{U+5C42}的 IP {U+6570}據{U+62A5}封{U+88C5}成{U+5E27}，`SOH - {U+6570}據部分 - EOT`
+* 透明{U+4F20}{U+8F93}：不管{U+6570}據部分什麼字符，都能{U+4F20}{U+8F93}出去；可以通{U+8FC7}字{U+8282}填充方法解{U+51B3}（{U+51B2}突字符前加{U+8F6C}{U+4E49}字符）
+* 差{U+9519}{U+68C0}{U+6D4B}：降低{U+8BEF}{U+7801}率（BER，Bit Error Rate），{U+5E7F}泛使用循{U+73AF}冗餘{U+68C0}{U+6D4B}（CRC，Cyclic Redundancy Check）
 
-点对点协议（Point-to-Point Protocol）：
-* 点对点协议（Point-to-Point Protocol）：用户计算机和 ISP 通信时所使用的协议
+{U+70B9}{U+5BF9}{U+70B9}{U+534F}{U+8BAE}（Point-to-Point Protocol）：
+* {U+70B9}{U+5BF9}{U+70B9}{U+534F}{U+8BAE}（Point-to-Point Protocol）：用{U+6237}{U+8BA1}算機和 ISP 通信{U+65F6}所使用的{U+534F}{U+8BAE}
 
-#### 广播信道
+#### {U+5E7F}播信道
 
-广播通信：
+{U+5E7F}播通信：
 * 硬件地址（物理地址、MAC 地址）
-* 单播（unicast）帧（一对一）：收到的帧的 MAC 地址与本站的硬件地址相同
-* 广播（broadcast）帧（一对全体）：发送给本局域网上所有站点的帧
-* 多播（multicast）帧（一对多）：发送给本局域网上一部分站点的帧
+* {U+5355}播（unicast）{U+5E27}（一{U+5BF9}一）：收到的{U+5E27}的 MAC 地址與本站的硬件地址相同
+* {U+5E7F}播（broadcast）{U+5E27}（一{U+5BF9}全體）：{U+53D1}送{U+7ED9}本局域網上所有站{U+70B9}的{U+5E27}
+* 多播（multicast）{U+5E27}（一{U+5BF9}多）：{U+53D1}送{U+7ED9}本局域網上一部分站{U+70B9}的{U+5E27}
 
-### 网络层
+### 網{U+7EDC}{U+5C42}
 
-* IP（Internet Protocol，网际协议）是为计算机网络相互连接进行通信而设计的协议。
-* ARP（Address Resolution Protocol，地址解析协议）
-* ICMP（Internet Control Message Protocol，网际控制报文协议）
-* IGMP（Internet Group Management Protocol，网际组管理协议）
+* IP（Internet Protocol，網{U+9645}{U+534F}{U+8BAE}）是{U+4E3A}{U+8BA1}算機網{U+7EDC}相互{U+8FDE}接{U+8FDB}行通信而{U+8BBE}{U+8BA1}的{U+534F}{U+8BAE}。
+* ARP（Address Resolution Protocol，地址解析{U+534F}{U+8BAE}）
+* ICMP（Internet Control Message Protocol，網{U+9645}控制{U+62A5}文{U+534F}{U+8BAE}）
+* IGMP（Internet Group Management Protocol，網{U+9645}{U+7EC4}管理{U+534F}{U+8BAE}）
 
-#### IP 网际协议
+#### IP 網{U+9645}{U+534F}{U+8BAE}
 
-IP 地址分类：
-* `IP 地址 ::= {<网络号>,<主机号>}`
+IP 地址分{U+7C7B}：
+* `IP 地址 ::= {<網{U+7EDC}{U+53F7}>,<主機{U+53F7}>}`
 
-IP 地址类别 | 网络号 | 网络范围 | 主机号 | IP 地址范围
+IP 地址{U+7C7B}{U+522B} | 網{U+7EDC}{U+53F7} | 網{U+7EDC}範{U+56F4} | 主機{U+53F7} | IP 地址範{U+56F4}
 ---|---|---|---|---
-A 类 | 8bit，第一位固定为 0 | 0 —— 127 | 24bit | 1.0.0.0 —— 127.255.255.255
-B 类 | 16bit，前两位固定为  10 | 128.0 —— 191.255 | 16bit | 128.0.0.0 —— 191.255.255.255
-C  类 | 24bit，前三位固定为  110 | 192.0.0 —— 223.255.255 | 8bit | 192.0.0.0 —— 223.255.255.255
-D  类 | 前四位固定为 1110，后面为多播地址
-E  类 | 前五位固定为 11110，后面保留为今后所用
+A {U+7C7B} | 8bit，第一位固定{U+4E3A} 0 | 0 —— 127 | 24bit | 1.0.0.0 —— 127.255.255.255
+B {U+7C7B} | 16bit，前{U+4E24}位固定{U+4E3A}  10 | 128.0 —— 191.255 | 16bit | 128.0.0.0 —— 191.255.255.255
+C  {U+7C7B} | 24bit，前三位固定{U+4E3A}  110 | 192.0.0 —— 223.255.255 | 8bit | 192.0.0.0 —— 223.255.255.255
+D  {U+7C7B} | 前四位固定{U+4E3A} 1110，後面{U+4E3A}多播地址
+E  {U+7C7B} | 前五位固定{U+4E3A} 11110，後面保留{U+4E3A}今後所用
 
-IP 数据报格式：
+IP {U+6570}據{U+62A5}格式：
 
-![IP 数据报格式](images/IP数据报格式.png)
+![IP {U+6570}據{U+62A5}格式](images/IP{U+6570}據{U+62A5}格式.png)
 
-#### ICMP 网际控制报文协议
+#### ICMP 網{U+9645}控制{U+62A5}文{U+534F}{U+8BAE}
 
-ICMP 报文格式：
+ICMP {U+62A5}文格式：
 
-![ICMP 报文格式](images/ICMP报文格式.png)
+![ICMP {U+62A5}文格式](images/ICMP{U+62A5}文格式.png)
 
-应用：
-* PING（Packet InterNet Groper，分组网间探测）测试两个主机之间的连通性
-    * TTL（Time To Live，生存时间）该字段指定 IP 包被路由器丢弃之前允许通过的最大网段数量
+{U+5E94}用：
+* PING（Packet InterNet Groper，分{U+7EC4}網{U+95F4}探{U+6D4B}）{U+6D4B}{U+8BD5}{U+4E24}{U+4E2A}主機之{U+95F4}的{U+8FDE}通性
+    * TTL（Time To Live，生存{U+65F6}{U+95F4}）{U+8BE5}字段指定 IP 包被路由器{U+4E22}{U+5F03}之前允{U+8BB8}通{U+8FC7}的最大網段{U+6570}量
 
-#### 内部网关协议
+#### {U+5185}部網{U+5173}{U+534F}{U+8BAE}
 
-* RIP（Routing Information Protocol，路由信息协议）
-* OSPF（Open Sortest Path First，开放最短路径优先）
+* RIP（Routing Information Protocol，路由信息{U+534F}{U+8BAE}）
+* OSPF（Open Sortest Path First，{U+5F00}放最短路{U+5F84}優先）
 
-#### 外部网关协议
+#### 外部網{U+5173}{U+534F}{U+8BAE}
 
-* BGP（Border Gateway Protocol，边界网关协议）
+* BGP（Border Gateway Protocol，{U+8FB9}界網{U+5173}{U+534F}{U+8BAE}）
 
 #### IP多播
 
-* IGMP（Internet Group Management Protocol，网际组管理协议）
-* 多播路由选择协议
+* IGMP（Internet Group Management Protocol，網{U+9645}{U+7EC4}管理{U+534F}{U+8BAE}）
+* 多播路由{U+9009}{U+62E9}{U+534F}{U+8BAE}
 
 #### VPN 和 NAT
 
-* VPN（Virtual Private Network，虚拟专用网）
-* NAT（Network Address Translation，网络地址转换）
+* VPN（Virtual Private Network，{U+865A}{U+62DF}{U+4E13}用網）
+* NAT（Network Address Translation，網{U+7EDC}地址{U+8F6C}{U+6362}）
 
-#### 路由表包含什么？
+#### 路由表包含什麼？
 
-1. 网络 ID（Network ID, Network number）：就是目标地址的网络 ID。
-2. 子网掩码（subnet mask）：用来判断 IP 所属网络
-3. 下一跳地址/接口（Next hop / interface）：就是数据在发送到目标地址的旅途中下一站的地址。其中 interface 指向 next hop（即为下一个 route）。一个自治系统（AS, Autonomous system）中的 route 应该包含区域内所有的子网络，而默认网关（Network id: `0.0.0.0`, Netmask: `0.0.0.0`）指向自治系统的出口。
+1. 網{U+7EDC} ID（Network ID, Network number）：就是目{U+6807}地址的網{U+7EDC} ID。
+2. 子網掩{U+7801}（subnet mask）：用{U+6765}判{U+65AD} IP 所{U+5C5E}網{U+7EDC}
+3. 下一跳地址/接口（Next hop / interface）：就是{U+6570}據在{U+53D1}送到目{U+6807}地址的旅途中下一站的地址。其中 interface 指向 next hop（即{U+4E3A}下一{U+4E2A} route）。一{U+4E2A}自治系{U+7EDF}（AS, Autonomous system）中的 route {U+5E94}{U+8BE5}包含{U+533A}域{U+5185}所有的子網{U+7EDC}，而默{U+8BA4}網{U+5173}（Network id: `0.0.0.0`, Netmask: `0.0.0.0`）指向自治系{U+7EDF}的出口。
 
-根据应用和执行的不同，路由表可能含有如下附加信息：
+根據{U+5E94}用和{U+6267}行的不同，路由表可能含有如下附加信息：
 
-1. 花费（Cost）：就是数据发送过程中通过路径所需要的花费。
-2. 路由的服务质量
-3. 路由中需要过滤的出/入连接列表
+1. 花{U+8D39}（Cost）：就是{U+6570}據{U+53D1}送{U+8FC7}程中通{U+8FC7}路{U+5F84}所需要的花{U+8D39}。
+2. 路由的服{U+52A1}{U+8D28}量
+3. 路由中需要{U+8FC7}{U+6EE4}的出/入{U+8FDE}接列表
 
-### 运输层
+### {U+8FD0}{U+8F93}{U+5C42}
 
-协议：
+{U+534F}{U+8BAE}：
 
-* TCP（Transmission Control Protocol，传输控制协议）
-* UDP（User Datagram Protocol，用户数据报协议）
+* TCP（Transmission Control Protocol，{U+4F20}{U+8F93}控制{U+534F}{U+8BAE}）
+* UDP（User Datagram Protocol，用{U+6237}{U+6570}據{U+62A5}{U+534F}{U+8BAE}）
 
 端口：
 
-应用程序 | FTP | TELNET | SMTP | DNS | TFTP | HTTP | HTTPS | SNMP  
+{U+5E94}用程序 | FTP | TELNET | SMTP | DNS | TFTP | HTTP | HTTPS | SNMP  
 --- | --- | --- |--- |--- |--- |--- |--- |---   
-端口号 | 21 | 23 | 25 | 53 | 69 | 80 | 443 | 161  
+端口{U+53F7} | 21 | 23 | 25 | 53 | 69 | 80 | 443 | 161  
 
 #### TCP
 
-* TCP（Transmission Control Protocol，传输控制协议）是一种面向连接的、可靠的、基于字节流的传输层通信协议，其传输的单位是报文段。
+* TCP（Transmission Control Protocol，{U+4F20}{U+8F93}控制{U+534F}{U+8BAE}）是一種面向{U+8FDE}接的、可靠的、基於字{U+8282}流的{U+4F20}{U+8F93}{U+5C42}通信{U+534F}{U+8BAE}，其{U+4F20}{U+8F93}的{U+5355}位是{U+62A5}文段。
 
 特征：
-* 面向连接
-* 只能点对点（一对一）通信
+* 面向{U+8FDE}接
+* 只能{U+70B9}{U+5BF9}{U+70B9}（一{U+5BF9}一）通信
 * 可靠交互
-* 全双工通信
-* 面向字节流
+* 全{U+53CC}工通信
+* 面向字{U+8282}流
 
-TCP 如何保证可靠传输：
-* 确认和超时重传
-* 数据合理分片和排序
+TCP 如何保{U+8BC1}可靠{U+4F20}{U+8F93}：
+* 確{U+8BA4}和超{U+65F6}重{U+4F20}
+* {U+6570}據合理分片和排序
 * 流量控制
-* 拥塞控制
-* 数据校验
+* {U+62E5}塞控制
+* {U+6570}據校{U+9A8C}
 
-TCP 报文结构
+TCP {U+62A5}文{U+7ED3}構
 
-![TCP 报文](images/TCP报文.png)
+![TCP {U+62A5}文](images/TCP{U+62A5}文.png)
 
 TCP 首部
 
 ![TCP 首部](images/TCP首部.png)
 
-TCP：状态控制码（Code，Control Flag），占 6 比特，含义如下：
-* URG：紧急比特（urgent），当 `URG＝1` 时，表明紧急指针字段有效，代表该封包为紧急封包。它告诉系统此报文段中有紧急数据，应尽快传送(相当于高优先级的数据)， 且上图中的 Urgent Pointer 字段也会被启用。
-* ACK：确认比特（Acknowledge）。只有当 `ACK＝1` 时确认号字段才有效，代表这个封包为确认封包。当 `ACK＝0` 时，确认号无效。
-* PSH：（Push function）若为 1 时，代表要求对方立即传送缓冲区内的其他对应封包，而无需等缓冲满了才送。
-* RST：复位比特(Reset)，当 `RST＝1` 时，表明 TCP 连接中出现严重差错（如由于主机崩溃或其他原因），必须释放连接，然后再重新建立运输连接。
-* SYN：同步比特(Synchronous)，SYN 置为 1，就表示这是一个连接请求或连接接受报文，通常带有 SYN 标志的封包表示『主动』要连接到对方的意思。
-* FIN：终止比特(Final)，用来释放一个连接。当 `FIN＝1` 时，表明此报文段的发送端的数据已发送完毕，并要求释放运输连接。
+TCP：{U+72B6}{U+6001}控制{U+7801}（Code，Control Flag），占 6 比特，含{U+4E49}如下：
+* URG：{U+7D27}急比特（urgent），{U+5F53} `URG＝1` {U+65F6}，表明{U+7D27}急指{U+9488}字段有效，代表{U+8BE5}封包{U+4E3A}{U+7D27}急封包。它告{U+8BC9}系{U+7EDF}此{U+62A5}文段中有{U+7D27}急{U+6570}據，{U+5E94}{U+5C3D}快{U+4F20}送(相{U+5F53}於高優先{U+7EA7}的{U+6570}據)， 且上{U+56FE}中的 Urgent Pointer 字段也{U+4F1A}被{U+542F}用。
+* ACK：確{U+8BA4}比特（Acknowledge）。只有{U+5F53} `ACK＝1` {U+65F6}確{U+8BA4}{U+53F7}字段才有效，代表{U+8FD9}{U+4E2A}封包{U+4E3A}確{U+8BA4}封包。{U+5F53} `ACK＝0` {U+65F6}，確{U+8BA4}{U+53F7}{U+65E0}效。
+* PSH：（Push function）若{U+4E3A} 1 {U+65F6}，代表要求{U+5BF9}方立即{U+4F20}送{U+7F13}{U+51B2}{U+533A}{U+5185}的其他{U+5BF9}{U+5E94}封包，而{U+65E0}需等{U+7F13}{U+51B2}{U+6EE1}了才送。
+* RST：複位比特(Reset)，{U+5F53} `RST＝1` {U+65F6}，表明 TCP {U+8FDE}接中出{U+73B0}{U+4E25}重差{U+9519}（如由於主機崩{U+6E83}或其他原因），必{U+987B}{U+91CA}放{U+8FDE}接，然後再重新建立{U+8FD0}{U+8F93}{U+8FDE}接。
+* SYN：同步比特(Synchronous)，SYN 置{U+4E3A} 1，就表示{U+8FD9}是一{U+4E2A}{U+8FDE}接{U+8BF7}求或{U+8FDE}接接受{U+62A5}文，通常{U+5E26}有 SYN {U+6807}志的封包表示『主{U+52A8}』要{U+8FDE}接到{U+5BF9}方的意思。
+* FIN：{U+7EC8}止比特(Final)，用{U+6765}{U+91CA}放一{U+4E2A}{U+8FDE}接。{U+5F53} `FIN＝1` {U+65F6}，表明此{U+62A5}文段的{U+53D1}送端的{U+6570}據已{U+53D1}送完{U+6BD5}，並要求{U+91CA}放{U+8FD0}{U+8F93}{U+8FDE}接。
 
 #### UDP
 
-* UDP（User Datagram Protocol，用户数据报协议）是 OSI（Open System Interconnection 开放式系统互联） 参考模型中一种无连接的传输层协议，提供面向事务的简单不可靠信息传送服务，其传输的单位是用户数据报。
+* UDP（User Datagram Protocol，用{U+6237}{U+6570}據{U+62A5}{U+534F}{U+8BAE}）是 OSI（Open System Interconnection {U+5F00}放式系{U+7EDF}互{U+8054}） {U+53C2}考模型中一種{U+65E0}{U+8FDE}接的{U+4F20}{U+8F93}{U+5C42}{U+534F}{U+8BAE}，提供面向事{U+52A1}的{U+7B80}{U+5355}不可靠信息{U+4F20}送服{U+52A1}，其{U+4F20}{U+8F93}的{U+5355}位是用{U+6237}{U+6570}據{U+62A5}。
 
 特征：
-* 无连接
-* 尽最大努力交付
-* 面向报文
-* 没有拥塞控制
-* 支持一对一、一对多、多对一、多对多的交互通信
-* 首部开销小
+* {U+65E0}{U+8FDE}接
+* {U+5C3D}最大努力交付
+* 面向{U+62A5}文
+* {U+6CA1}有{U+62E5}塞控制
+* 支持一{U+5BF9}一、一{U+5BF9}多、多{U+5BF9}一、多{U+5BF9}多的交互通信
+* 首部{U+5F00}{U+9500}小
 
-UDP 报文结构
+UDP {U+62A5}文{U+7ED3}構
 
-![UDP 报文](images/UDP报文.png)
+![UDP {U+62A5}文](images/UDP{U+62A5}文.png)
 
 UDP 首部
 
 ![UDP 首部](images/UDP首部.png)
 
-> TCP/UDP 图片来源于：<https://github.com/JerryC8080/understand-tcp-udp>
+> TCP/UDP {U+56FE}片{U+6765}源於：<https://github.com/JerryC8080/understand-tcp-udp>
 
-#### TCP 与 UDP 的区别
+#### TCP 與 UDP 的{U+533A}{U+522B}
 
-1. TCP 面向连接，UDP 是无连接的；
-2. TCP 提供可靠的服务，也就是说，通过 TCP 连接传送的数据，无差错，不丢失，不重复，且按序到达；UDP 尽最大努力交付，即不保证可靠交付
-3. TCP 的逻辑通信信道是全双工的可靠信道；UDP 则是不可靠信道
-5. 每一条 TCP 连接只能是点到点的；UDP 支持一对一，一对多，多对一和多对多的交互通信
-6. TCP 面向字节流（可能出现黏包问题），实际上是 TCP 把数据看成一连串无结构的字节流；UDP 是面向报文的（不会出现黏包问题）
-7. UDP 没有拥塞控制，因此网络出现拥塞不会使源主机的发送速率降低（对实时应用很有用，如 IP 电话，实时视频会议等）
-8. TCP 首部开销20字节；UDP 的首部开销小，只有 8 个字节
+1. TCP 面向{U+8FDE}接，UDP 是{U+65E0}{U+8FDE}接的；
+2. TCP 提供可靠的服{U+52A1}，也就是{U+8BF4}，通{U+8FC7} TCP {U+8FDE}接{U+4F20}送的{U+6570}據，{U+65E0}差{U+9519}，不{U+4E22}失，不重複，且按序到{U+8FBE}；UDP {U+5C3D}最大努力交付，即不保{U+8BC1}可靠交付
+3. TCP 的{U+903B}{U+8F91}通信信道是全{U+53CC}工的可靠信道；UDP {U+5219}是不可靠信道
+5. 每一{U+6761} TCP {U+8FDE}接只能是{U+70B9}到{U+70B9}的；UDP 支持一{U+5BF9}一，一{U+5BF9}多，多{U+5BF9}一和多{U+5BF9}多的交互通信
+6. TCP 面向字{U+8282}流（可能出{U+73B0}黏包{U+95EE}{U+9898}），{U+5B9E}{U+9645}上是 TCP 把{U+6570}據看成一{U+8FDE}串{U+65E0}{U+7ED3}構的字{U+8282}流；UDP 是面向{U+62A5}文的（不{U+4F1A}出{U+73B0}黏包{U+95EE}{U+9898}）
+7. UDP {U+6CA1}有{U+62E5}塞控制，因此網{U+7EDC}出{U+73B0}{U+62E5}塞不{U+4F1A}使源主機的{U+53D1}送速率降低（{U+5BF9}{U+5B9E}{U+65F6}{U+5E94}用很有用，如 IP {U+7535}{U+8BDD}，{U+5B9E}{U+65F6}{U+89C6}{U+9891}{U+4F1A}{U+8BAE}等）
+8. TCP 首部{U+5F00}{U+9500}20字{U+8282}；UDP 的首部{U+5F00}{U+9500}小，只有 8 {U+4E2A}字{U+8282}
 
-#### TCP 黏包问题
+#### TCP 黏包{U+95EE}{U+9898}
 
 ##### 原因
 
-TCP 是一个基于字节流的传输服务（UDP 基于报文的），“流” 意味着 TCP 所传输的数据是没有边界的。所以可能会出现两个数据包黏在一起的情况。
+TCP 是一{U+4E2A}基於字{U+8282}流的{U+4F20}{U+8F93}服{U+52A1}（UDP 基於{U+62A5}文的），「流」 意味{U+7740} TCP 所{U+4F20}{U+8F93}的{U+6570}據是{U+6CA1}有{U+8FB9}界的。所以可能{U+4F1A}出{U+73B0}{U+4E24}{U+4E2A}{U+6570}據包黏在一起的情{U+51B5}。
 
-##### 解决
+##### 解{U+51B3}
 
-* 发送定长包。如果每个消息的大小都是一样的，那么在接收对等方只要累计接收数据，直到数据等于一个定长的数值就将它作为一个消息。
-* 包头加上包体长度。包头是定长的 4 个字节，说明了包体的长度。接收对等方先接收包头长度，依据包头长度来接收包体。
-* 在数据包之间设置边界，如添加特殊符号 `\r\n` 标记。FTP 协议正是这么做的。但问题在于如果数据正文中也含有 `\r\n`，则会误判为消息的边界。
-* 使用更加复杂的应用层协议。
+* {U+53D1}送定{U+957F}包。如果每{U+4E2A}消息的大小都是一{U+6837}的，那麼在接收{U+5BF9}等方只要累{U+8BA1}接收{U+6570}據，直到{U+6570}據等於一{U+4E2A}定{U+957F}的{U+6570}值就{U+5C06}它作{U+4E3A}一{U+4E2A}消息。
+* 包{U+5934}加上包體{U+957F}度。包{U+5934}是定{U+957F}的 4 {U+4E2A}字{U+8282}，{U+8BF4}明了包體的{U+957F}度。接收{U+5BF9}等方先接收包{U+5934}{U+957F}度，依據包{U+5934}{U+957F}度{U+6765}接收包體。
+* 在{U+6570}據包之{U+95F4}{U+8BBE}置{U+8FB9}界，如添加特殊符{U+53F7} `\r\n` {U+6807}{U+8BB0}。FTP {U+534F}{U+8BAE}正是{U+8FD9}麼做的。但{U+95EE}{U+9898}在於如果{U+6570}據正文中也含有 `\r\n`，{U+5219}{U+4F1A}{U+8BEF}判{U+4E3A}消息的{U+8FB9}界。
+* 使用更加複{U+6742}的{U+5E94}用{U+5C42}{U+534F}{U+8BAE}。
 
 #### TCP 流量控制
 
 ##### 概念
 
-流量控制（flow control）就是让发送方的发送速率不要太快，要让接收方来得及接收。
+流量控制（flow control）就是{U+8BA9}{U+53D1}送方的{U+53D1}送速率不要太快，要{U+8BA9}接收方{U+6765}得及接收。
 
 ##### 方法
 
-<details><summary>利用可变窗口进行流量控制</summary>
+<details><summary>利用可{U+53D8}窗口{U+8FDB}行流量控制</summary>
 
-![](images/利用可变窗口进行流量控制举例.png)
+![](images/利用可{U+53D8}窗口{U+8FDB}行流量控制{U+4E3E}例.png)
 
 </details>
 
-#### TCP 拥塞控制
+#### TCP {U+62E5}塞控制
 
 ##### 概念
 
-拥塞控制就是防止过多的数据注入到网络中，这样可以使网络中的路由器或链路不致过载。
+{U+62E5}塞控制就是防止{U+8FC7}多的{U+6570}據注入到網{U+7EDC}中，{U+8FD9}{U+6837}可以使網{U+7EDC}中的路由器或{U+94FE}路不致{U+8FC7}{U+8F7D}。
 
 ##### 方法
 
-* 慢开始( slow-start )
-* 拥塞避免( congestion avoidance )
-* 快重传( fast retransmit )
-* 快恢复( fast recovery )
+* 慢{U+5F00}始( slow-start )
+* {U+62E5}塞避免( congestion avoidance )
+* 快重{U+4F20}( fast retransmit )
+* 快恢複( fast recovery )
 
-<details><summary>TCP的拥塞控制图</summary>
+<details><summary>TCP的{U+62E5}塞控制{U+56FE}</summary>
 
-![](images/TCP拥塞窗口cwnd在拥塞控制时的变化情况.png)
-![](images/快重传示意图.png)
-![](images/TCP的拥塞控制流程图.png)
+![](images/TCP{U+62E5}塞窗口cwnd在{U+62E5}塞控制{U+65F6}的{U+53D8}化情{U+51B5}.png)
+![](images/快重{U+4F20}示意{U+56FE}.png)
+![](images/TCP的{U+62E5}塞控制流程{U+56FE}.png)
 
 </details>
 
-#### TCP 传输连接管理
+#### TCP {U+4F20}{U+8F93}{U+8FDE}接管理
 
-> 因为 TCP 三次握手建立连接、四次挥手释放连接很重要，所以附上《计算机网络（第 7 版）-谢希仁》书中对此章的详细描述：<https://github.com/huihut/interview/blob/master/images/TCP-transport-connection-management.png>
+> 因{U+4E3A} TCP 三次握手建立{U+8FDE}接、四次{U+6325}手{U+91CA}放{U+8FDE}接很重要，所以附上《{U+8BA1}算機網{U+7EDC}（第 7 版）-{U+8C22}希仁》{U+4E66}中{U+5BF9}此章的{U+8BE6}{U+7EC6}描述：<https://github.com/huihut/interview/blob/master/images/TCP-transport-connection-management.png>
 
-##### TCP 三次握手建立连接
+##### TCP 三次握手建立{U+8FDE}接
 
-![UDP 报文](images/TCP三次握手建立连接.png)
+![UDP {U+62A5}文](images/TCP三次握手建立{U+8FDE}接.png)
 
-【TCP 建立连接全过程解释】
+【TCP 建立{U+8FDE}接全{U+8FC7}程解{U+91CA}】
 
-1. 客户端发送 SYN 给服务器，说明客户端请求建立连接；
-2. 服务端收到客户端发的 SYN，并回复 SYN+ACK 给客户端（同意建立连接）；
-3. 客户端收到服务端的 SYN+ACK 后，回复 ACK 给服务端（表示客户端收到了服务端发的同意报文）；
-4. 服务端收到客户端的 ACK，连接已建立，可以数据传输。
+1. 客{U+6237}端{U+53D1}送 SYN {U+7ED9}服{U+52A1}器，{U+8BF4}明客{U+6237}端{U+8BF7}求建立{U+8FDE}接；
+2. 服{U+52A1}端收到客{U+6237}端{U+53D1}的 SYN，並回複 SYN+ACK {U+7ED9}客{U+6237}端（同意建立{U+8FDE}接）；
+3. 客{U+6237}端收到服{U+52A1}端的 SYN+ACK 後，回複 ACK {U+7ED9}服{U+52A1}端（表示客{U+6237}端收到了服{U+52A1}端{U+53D1}的同意{U+62A5}文）；
+4. 服{U+52A1}端收到客{U+6237}端的 ACK，{U+8FDE}接已建立，可以{U+6570}據{U+4F20}{U+8F93}。
 
-##### TCP 为什么要进行三次握手？
+##### TCP {U+4E3A}什麼要{U+8FDB}行三次握手？
 
-【答案一】因为信道不可靠，而 TCP 想在不可靠信道上建立可靠地传输，那么三次通信是理论上的最小值。（而 UDP 则不需建立可靠传输，因此 UDP 不需要三次握手。）
+【答案一】因{U+4E3A}信道不可靠，而 TCP 想在不可靠信道上建立可靠地{U+4F20}{U+8F93}，那麼三次通信是理{U+8BBA}上的最小值。（而 UDP {U+5219}不需建立可靠{U+4F20}{U+8F93}，因此 UDP 不需要三次握手。）
 
-> [Google Groups . TCP 建立连接为什么是三次握手？{技术}{网络通信}](https://groups.google.com/forum/#!msg/pongba/kF6O7-MFxM0/5S7zIJ4yqKUJ)
+> [Google Groups . TCP 建立{U+8FDE}接{U+4E3A}什麼是三次握手？{技{U+672F}}{網{U+7EDC}通信}](https://groups.google.com/forum/#!msg/pongba/kF6O7-MFxM0/5S7zIJ4yqKUJ)
 
-【答案二】因为双方都需要确认对方收到了自己发送的序列号，确认过程最少要进行三次通信。
+【答案二】因{U+4E3A}{U+53CC}方都需要確{U+8BA4}{U+5BF9}方收到了自己{U+53D1}送的序列{U+53F7}，確{U+8BA4}{U+8FC7}程最少要{U+8FDB}行三次通信。
 
-> [知乎 . TCP 为什么是三次握手，而不是两次或四次？](https://www.zhihu.com/question/24853633/answer/115173386)
+> [知乎 . TCP {U+4E3A}什麼是三次握手，而不是{U+4E24}次或四次？](https://www.zhihu.com/question/24853633/answer/115173386)
 
-【答案三】为了防止已失效的连接请求报文段突然又传送到了服务端，因而产生错误。
+【答案三】{U+4E3A}了防止已失效的{U+8FDE}接{U+8BF7}求{U+62A5}文段突然又{U+4F20}送到了服{U+52A1}端，因而{U+4EA7}生{U+9519}{U+8BEF}。
 
-> [《计算机网络（第 7 版）-谢希仁》](https://github.com/huihut/interview/blob/master/images/TCP-transport-connection-management.png)
+> [《{U+8BA1}算機網{U+7EDC}（第 7 版）-{U+8C22}希仁》](https://github.com/huihut/interview/blob/master/images/TCP-transport-connection-management.png)
 
-##### TCP 四次挥手释放连接
+##### TCP 四次{U+6325}手{U+91CA}放{U+8FDE}接
 
-![UDP 报文](images/TCP四次挥手释放连接.png)
+![UDP {U+62A5}文](images/TCP四次{U+6325}手{U+91CA}放{U+8FDE}接.png)
 
-【TCP 释放连接全过程解释】
+【TCP {U+91CA}放{U+8FDE}接全{U+8FC7}程解{U+91CA}】
 
-1. 客户端发送 FIN 给服务器，说明客户端不必发送数据给服务器了（请求释放从客户端到服务器的连接）；
-2. 服务器接收到客户端发的 FIN，并回复 ACK 给客户端（同意释放从客户端到服务器的连接）；
-3. 客户端收到服务端回复的 ACK，此时从客户端到服务器的连接已释放（但服务端到客户端的连接还未释放，并且客户端还可以接收数据）；
-4. 服务端继续发送之前没发完的数据给客户端；
-5. 服务端发送 FIN+ACK 给客户端，说明服务端发送完了数据（请求释放从服务端到客户端的连接，就算没收到客户端的回复，过段时间也会自动释放）；
-6. 客户端收到服务端的 FIN+ACK，并回复 ACK 给客户端（同意释放从服务端到客户端的连接）；
-7. 服务端收到客户端的 ACK 后，释放从服务端到客户端的连接。
+1. 客{U+6237}端{U+53D1}送 FIN {U+7ED9}服{U+52A1}器，{U+8BF4}明客{U+6237}端不必{U+53D1}送{U+6570}據{U+7ED9}服{U+52A1}器了（{U+8BF7}求{U+91CA}放{U+4ECE}客{U+6237}端到服{U+52A1}器的{U+8FDE}接）；
+2. 服{U+52A1}器接收到客{U+6237}端{U+53D1}的 FIN，並回複 ACK {U+7ED9}客{U+6237}端（同意{U+91CA}放{U+4ECE}客{U+6237}端到服{U+52A1}器的{U+8FDE}接）；
+3. 客{U+6237}端收到服{U+52A1}端回複的 ACK，此{U+65F6}{U+4ECE}客{U+6237}端到服{U+52A1}器的{U+8FDE}接已{U+91CA}放（但服{U+52A1}端到客{U+6237}端的{U+8FDE}接{U+8FD8}未{U+91CA}放，並且客{U+6237}端{U+8FD8}可以接收{U+6570}據）；
+4. 服{U+52A1}端{U+7EE7}{U+7EED}{U+53D1}送之前{U+6CA1}{U+53D1}完的{U+6570}據{U+7ED9}客{U+6237}端；
+5. 服{U+52A1}端{U+53D1}送 FIN+ACK {U+7ED9}客{U+6237}端，{U+8BF4}明服{U+52A1}端{U+53D1}送完了{U+6570}據（{U+8BF7}求{U+91CA}放{U+4ECE}服{U+52A1}端到客{U+6237}端的{U+8FDE}接，就算{U+6CA1}收到客{U+6237}端的回複，{U+8FC7}段{U+65F6}{U+95F4}也{U+4F1A}自{U+52A8}{U+91CA}放）；
+6. 客{U+6237}端收到服{U+52A1}端的 FIN+ACK，並回複 ACK {U+7ED9}客{U+6237}端（同意{U+91CA}放{U+4ECE}服{U+52A1}端到客{U+6237}端的{U+8FDE}接）；
+7. 服{U+52A1}端收到客{U+6237}端的 ACK 後，{U+91CA}放{U+4ECE}服{U+52A1}端到客{U+6237}端的{U+8FDE}接。
 
-##### TCP 为什么要进行四次挥手？
+##### TCP {U+4E3A}什麼要{U+8FDB}行四次{U+6325}手？
 
-【问题一】TCP 为什么要进行四次挥手？ / 为什么 TCP 建立连接需要三次，而释放连接则需要四次？
+【{U+95EE}{U+9898}一】TCP {U+4E3A}什麼要{U+8FDB}行四次{U+6325}手？ / {U+4E3A}什麼 TCP 建立{U+8FDE}接需要三次，而{U+91CA}放{U+8FDE}接{U+5219}需要四次？
 
-【答案一】因为 TCP 是全双工模式，客户端请求关闭连接后，客户端向服务端的连接关闭（一二次挥手），服务端继续传输之前没传完的数据给客户端（数据传输），服务端向客户端的连接关闭（三四次挥手）。所以 TCP 释放连接时服务器的 ACK 和 FIN 是分开发送的（中间隔着数据传输），而 TCP 建立连接时服务器的 ACK 和 SYN 是一起发送的（第二次握手），所以 TCP 建立连接需要三次，而释放连接则需要四次。
+【答案一】因{U+4E3A} TCP 是全{U+53CC}工模式，客{U+6237}端{U+8BF7}求{U+5173}{U+95ED}{U+8FDE}接後，客{U+6237}端向服{U+52A1}端的{U+8FDE}接{U+5173}{U+95ED}（一二次{U+6325}手），服{U+52A1}端{U+7EE7}{U+7EED}{U+4F20}{U+8F93}之前{U+6CA1}{U+4F20}完的{U+6570}據{U+7ED9}客{U+6237}端（{U+6570}據{U+4F20}{U+8F93}），服{U+52A1}端向客{U+6237}端的{U+8FDE}接{U+5173}{U+95ED}（三四次{U+6325}手）。所以 TCP {U+91CA}放{U+8FDE}接{U+65F6}服{U+52A1}器的 ACK 和 FIN 是分{U+5F00}{U+53D1}送的（中{U+95F4}隔{U+7740}{U+6570}據{U+4F20}{U+8F93}），而 TCP 建立{U+8FDE}接{U+65F6}服{U+52A1}器的 ACK 和 SYN 是一起{U+53D1}送的（第二次握手），所以 TCP 建立{U+8FDE}接需要三次，而{U+91CA}放{U+8FDE}接{U+5219}需要四次。
 
-【问题二】为什么 TCP 连接时可以 ACK 和 SYN 一起发送，而释放时则 ACK 和 FIN 分开发送呢？（ACK 和 FIN 分开是指第二次和第三次挥手）
+【{U+95EE}{U+9898}二】{U+4E3A}什麼 TCP {U+8FDE}接{U+65F6}可以 ACK 和 SYN 一起{U+53D1}送，而{U+91CA}放{U+65F6}{U+5219} ACK 和 FIN 分{U+5F00}{U+53D1}送呢？（ACK 和 FIN 分{U+5F00}是指第二次和第三次{U+6325}手）
 
-【答案二】因为客户端请求释放时，服务器可能还有数据需要传输给客户端，因此服务端要先响应客户端 FIN 请求（服务端发送 ACK），然后数据传输，传输完成后，服务端再提出 FIN 请求（服务端发送 FIN）；而连接时则没有中间的数据传输，因此连接时可以 ACK 和 SYN 一起发送。
+【答案二】因{U+4E3A}客{U+6237}端{U+8BF7}求{U+91CA}放{U+65F6}，服{U+52A1}器可能{U+8FD8}有{U+6570}據需要{U+4F20}{U+8F93}{U+7ED9}客{U+6237}端，因此服{U+52A1}端要先{U+54CD}{U+5E94}客{U+6237}端 FIN {U+8BF7}求（服{U+52A1}端{U+53D1}送 ACK），然後{U+6570}據{U+4F20}{U+8F93}，{U+4F20}{U+8F93}完成後，服{U+52A1}端再提出 FIN {U+8BF7}求（服{U+52A1}端{U+53D1}送 FIN）；而{U+8FDE}接{U+65F6}{U+5219}{U+6CA1}有中{U+95F4}的{U+6570}據{U+4F20}{U+8F93}，因此{U+8FDE}接{U+65F6}可以 ACK 和 SYN 一起{U+53D1}送。
 
-【问题三】为什么客户端释放最后需要 TIME-WAIT 等待 2MSL 呢？
+【{U+95EE}{U+9898}三】{U+4E3A}什麼客{U+6237}端{U+91CA}放最後需要 TIME-WAIT 等待 2MSL 呢？
 
 【答案三】
 
-1. 为了保证客户端发送的最后一个 ACK 报文能够到达服务端。若未成功到达，则服务端超时重传 FIN+ACK 报文段，客户端再重传 ACK，并重新计时。
-2. 防止已失效的连接请求报文段出现在本连接中。TIME-WAIT 持续 2MSL 可使本连接持续的时间内所产生的所有报文段都从网络中消失，这样可使下次连接中不会出现旧的连接报文段。
+1. {U+4E3A}了保{U+8BC1}客{U+6237}端{U+53D1}送的最後一{U+4E2A} ACK {U+62A5}文能{U+591F}到{U+8FBE}服{U+52A1}端。若未成功到{U+8FBE}，{U+5219}服{U+52A1}端超{U+65F6}重{U+4F20} FIN+ACK {U+62A5}文段，客{U+6237}端再重{U+4F20} ACK，並重新{U+8BA1}{U+65F6}。
+2. 防止已失效的{U+8FDE}接{U+8BF7}求{U+62A5}文段出{U+73B0}在本{U+8FDE}接中。TIME-WAIT 持{U+7EED} 2MSL 可使本{U+8FDE}接持{U+7EED}的{U+65F6}{U+95F4}{U+5185}所{U+4EA7}生的所有{U+62A5}文段都{U+4ECE}網{U+7EDC}中消失，{U+8FD9}{U+6837}可使下次{U+8FDE}接中不{U+4F1A}出{U+73B0}{U+65E7}的{U+8FDE}接{U+62A5}文段。
 
-#### TCP 有限状态机
+#### TCP 有限{U+72B6}{U+6001}機
 
-<details><summary>TCP 有限状态机图片</summary>
+<details><summary>TCP 有限{U+72B6}{U+6001}機{U+56FE}片</summary>
 
-![TCP 的有限状态机](images/TCP的有限状态机.png)
+![TCP 的有限{U+72B6}{U+6001}機](images/TCP的有限{U+72B6}{U+6001}機.png)
 
 </details>
 
-### 应用层
+### {U+5E94}用{U+5C42}
 
 #### DNS
 
-* DNS（Domain Name System，域名系统）是互联网的一项服务。它作为将域名和 IP 地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。DNS 使用 TCP 和 UDP 端口 53。当前，对于每一级域名长度的限制是 63 个字符，域名总长度则不能超过 253 个字符。
+* DNS（Domain Name System，域名系{U+7EDF}）是互{U+8054}網的一{U+9879}服{U+52A1}。它作{U+4E3A}{U+5C06}域名和 IP 地址相互映射的一{U+4E2A}分布式{U+6570}據{U+5E93}，能{U+591F}使人更方便地{U+8BBF}{U+95EE}互{U+8054}網。DNS 使用 TCP 和 UDP 端口 53。{U+5F53}前，{U+5BF9}於每一{U+7EA7}域名{U+957F}度的限制是 63 {U+4E2A}字符，域名{U+603B}{U+957F}度{U+5219}不能超{U+8FC7} 253 {U+4E2A}字符。
 
 域名：
-* `域名 ::= {<三级域名>.<二级域名>.<顶级域名>}`，如：`blog.huihut.com`
+* `域名 ::= {<三{U+7EA7}域名>.<二{U+7EA7}域名>.<{U+9876}{U+7EA7}域名>}`，如：`blog.huihut.com`
 
 #### FTP
 
-* FTP（File Transfer Protocol，文件传输协议）是用于在网络上进行文件传输的一套标准协议，使用客户/服务器模式，使用 TCP 数据报，提供交互式访问，双向传输。
-* TFTP（Trivial File Transfer Protocol，简单文件传输协议）一个小且易实现的文件传输协议，也使用客户-服务器方式，使用UDP数据报，只支持文件传输而不支持交互，没有列目录，不能对用户进行身份鉴定
+* FTP（File Transfer Protocol，文件{U+4F20}{U+8F93}{U+534F}{U+8BAE}）是用於在網{U+7EDC}上{U+8FDB}行文件{U+4F20}{U+8F93}的一套{U+6807}准{U+534F}{U+8BAE}，使用客{U+6237}/服{U+52A1}器模式，使用 TCP {U+6570}據{U+62A5}，提供交互式{U+8BBF}{U+95EE}，{U+53CC}向{U+4F20}{U+8F93}。
+* TFTP（Trivial File Transfer Protocol，{U+7B80}{U+5355}文件{U+4F20}{U+8F93}{U+534F}{U+8BAE}）一{U+4E2A}小且易{U+5B9E}{U+73B0}的文件{U+4F20}{U+8F93}{U+534F}{U+8BAE}，也使用客{U+6237}-服{U+52A1}器方式，使用UDP{U+6570}據{U+62A5}，只支持文件{U+4F20}{U+8F93}而不支持交互，{U+6CA1}有列目{U+5F55}，不能{U+5BF9}用{U+6237}{U+8FDB}行身份{U+9274}定
 
 #### TELNET
 
-* TELNET 协议是 TCP/IP 协议族中的一员，是 Internet 远程登陆服务的标准协议和主要方式。它为用户提供了在本地计算机上完成远程主机工作的能力。
+* TELNET {U+534F}{U+8BAE}是 TCP/IP {U+534F}{U+8BAE}族中的一{U+5458}，是 Internet {U+8FDC}程登{U+9646}服{U+52A1}的{U+6807}准{U+534F}{U+8BAE}和主要方式。它{U+4E3A}用{U+6237}提供了在本地{U+8BA1}算機上完成{U+8FDC}程主機工作的能力。
 
-* HTTP（HyperText Transfer Protocol，超文本传输协议）是用于从 WWW（World Wide Web，万维网）服务器传输超文本到本地浏览器的传送协议。
+* HTTP（HyperText Transfer Protocol，超文本{U+4F20}{U+8F93}{U+534F}{U+8BAE}）是用於{U+4ECE} WWW（World Wide Web，萬{U+7EF4}網）服{U+52A1}器{U+4F20}{U+8F93}超文本到本地{U+6D4F}{U+89C8}器的{U+4F20}送{U+534F}{U+8BAE}。
 
-* SMTP（Simple Mail Transfer Protocol，简单邮件传输协议）是一组用于由源地址到目的地址传送邮件的规则，由它来控制信件的中转方式。SMTP 协议属于 TCP/IP 协议簇，它帮助每台计算机在发送或中转信件时找到下一个目的地。
-* Socket 建立网络通信连接至少要一对端口号（Socket）。Socket 本质是编程接口（API），对 TCP/IP 的封装，TCP/IP 也要提供可供程序员做网络开发所用的接口，这就是 Socket 编程接口。
+* SMTP（Simple Mail Transfer Protocol，{U+7B80}{U+5355}{U+90AE}件{U+4F20}{U+8F93}{U+534F}{U+8BAE}）是一{U+7EC4}用於由源地址到目的地址{U+4F20}送{U+90AE}件的{U+89C4}{U+5219}，由它{U+6765}控制信件的中{U+8F6C}方式。SMTP {U+534F}{U+8BAE}{U+5C5E}於 TCP/IP {U+534F}{U+8BAE}簇，它{U+5E2E}助每台{U+8BA1}算機在{U+53D1}送或中{U+8F6C}信件{U+65F6}找到下一{U+4E2A}目的地。
+* Socket 建立網{U+7EDC}通信{U+8FDE}接至少要一{U+5BF9}端口{U+53F7}（Socket）。Socket 本{U+8D28}是{U+7F16}程接口（API），{U+5BF9} TCP/IP 的封{U+88C5}，TCP/IP 也要提供可供程序{U+5458}做網{U+7EDC}{U+5F00}{U+53D1}所用的接口，{U+8FD9}就是 Socket {U+7F16}程接口。
 
 #### WWW
 
-* WWW（World Wide Web，环球信息网，万维网）是一个由许多互相链接的超文本组成的系统，通过互联网访问
+* WWW（World Wide Web，{U+73AF}球信息網，萬{U+7EF4}網）是一{U+4E2A}由{U+8BB8}多互相{U+94FE}接的超文本{U+7EC4}成的系{U+7EDF}，通{U+8FC7}互{U+8054}網{U+8BBF}{U+95EE}
 
 ##### URL
 
-* URL（Uniform Resource Locator，统一资源定位符）是因特网上标准的资源的地址（Address）
+* URL（Uniform Resource Locator，{U+7EDF}一{U+8D44}源定位符）是因特網上{U+6807}准的{U+8D44}源的地址（Address）
 
-标准格式：
+{U+6807}准格式：
 
-* `协议类型:[//服务器地址[:端口号]][/资源层级UNIX文件路径]文件名[?查询][#片段ID]`
+* `{U+534F}{U+8BAE}{U+7C7B}型:[//服{U+52A1}器地址[:端口{U+53F7}]][/{U+8D44}源{U+5C42}{U+7EA7}UNIX文件路{U+5F84}]文件名[?查{U+8BE2}][#片段ID]`
     
 完整格式：
 
-* `协议类型:[//[访问资源需要的凭证信息@]服务器地址[:端口号]][/资源层级UNIX文件路径]文件名[?查询][#片段ID]`
+* `{U+534F}{U+8BAE}{U+7C7B}型:[//[{U+8BBF}{U+95EE}{U+8D44}源需要的{U+51ED}{U+8BC1}信息@]服{U+52A1}器地址[:端口{U+53F7}]][/{U+8D44}源{U+5C42}{U+7EA7}UNIX文件路{U+5F84}]文件名[?查{U+8BE2}][#片段ID]`
 
-> 其中【访问凭证信息@；:端口号；?查询；#片段ID】都属于选填项  
+> 其中【{U+8BBF}{U+95EE}{U+51ED}{U+8BC1}信息@；:端口{U+53F7}；?查{U+8BE2}；#片段ID】都{U+5C5E}於{U+9009}填{U+9879}  
 > 如：`https://github.com/huihut/interview#cc`
 
 ##### HTTP
 
-HTTP（HyperText Transfer Protocol，超文本传输协议）是一种用于分布式、协作式和超媒体信息系统的应用层协议。HTTP 是万维网的数据通信的基础。
+HTTP（HyperText Transfer Protocol，超文本{U+4F20}{U+8F93}{U+534F}{U+8BAE}）是一種用於分布式、{U+534F}作式和超媒體信息系{U+7EDF}的{U+5E94}用{U+5C42}{U+534F}{U+8BAE}。HTTP 是萬{U+7EF4}網的{U+6570}據通信的基{U+7840}。
 
-请求方法
+{U+8BF7}求方法
 
-方法 | 意义
+方法 | 意{U+4E49}
 --- | ---
-OPTIONS | 请求一些选项信息，允许客户端查看服务器的性能
-GET | 请求指定的页面信息，并返回实体主体
-HEAD | 类似于 get 请求，只不过返回的响应中没有具体的内容，用于获取报头
-POST | 向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST请求可能会导致新的资源的建立和/或已有资源的修改
-PUT | 从客户端向服务器传送的数据取代指定的文档的内容
-DELETE | 请求服务器删除指定的页面
-TRACE | 回显服务器收到的请求，主要用于测试或诊断
+OPTIONS | {U+8BF7}求一些{U+9009}{U+9879}信息，允{U+8BB8}客{U+6237}端查看服{U+52A1}器的性能
+GET | {U+8BF7}求指定的{U+9875}面信息，並返回{U+5B9E}體主體
+HEAD | {U+7C7B}似於 get {U+8BF7}求，只不{U+8FC7}返回的{U+54CD}{U+5E94}中{U+6CA1}有具體的{U+5185}容，用於{U+83B7}取{U+62A5}{U+5934}
+POST | 向指定{U+8D44}源提交{U+6570}據{U+8FDB}行{U+5904}理{U+8BF7}求（例如提交表{U+5355}或者上{U+4F20}文件）。{U+6570}據被包含在{U+8BF7}求體中。POST{U+8BF7}求可能{U+4F1A}{U+5BFC}致新的{U+8D44}源的建立和/或已有{U+8D44}源的修改
+PUT | {U+4ECE}客{U+6237}端向服{U+52A1}器{U+4F20}送的{U+6570}據取代指定的文{U+6863}的{U+5185}容
+DELETE | {U+8BF7}求服{U+52A1}器{U+5220}除指定的{U+9875}面
+TRACE | 回{U+663E}服{U+52A1}器收到的{U+8BF7}求，主要用於{U+6D4B}{U+8BD5}或{U+8BCA}{U+65AD}
 
-状态码（Status-Code）
+{U+72B6}{U+6001}{U+7801}（Status-Code）
 
-* 1xx：表示通知信息，如请求收到了或正在进行处理
-    * 100 Continue：继续，客户端应继续其请求
-    * 101 Switching Protocols 切换协议。服务器根据客户端的请求切换协议。只能切换到更高级的协议，例如，切换到 HTTP 的新版本协议
+* 1xx：表示通知信息，如{U+8BF7}求收到了或正在{U+8FDB}行{U+5904}理
+    * 100 Continue：{U+7EE7}{U+7EED}，客{U+6237}端{U+5E94}{U+7EE7}{U+7EED}其{U+8BF7}求
+    * 101 Switching Protocols 切{U+6362}{U+534F}{U+8BAE}。服{U+52A1}器根據客{U+6237}端的{U+8BF7}求切{U+6362}{U+534F}{U+8BAE}。只能切{U+6362}到更高{U+7EA7}的{U+534F}{U+8BAE}，例如，切{U+6362}到 HTTP 的新版本{U+534F}{U+8BAE}
 * 2xx：表示成功，如接收或知道了
-    * 200 OK: 请求成功
-* 3xx：表示重定向，如要完成请求还必须采取进一步的行动
-    * 301 Moved Permanently: 永久移动。请求的资源已被永久的移动到新 URL，返回信息会包括新的 URL，浏览器会自动定向到新 URL。今后任何新的请求都应使用新的 URL 代替
-* 4xx：表示客户的差错，如请求中有错误的语法或不能完成
-    * 400 Bad Request: 客户端请求的语法错误，服务器无法理解
-    * 401 Unauthorized: 请求要求用户的身份认证
-    * 403 Forbidden: 服务器理解请求客户端的请求，但是拒绝执行此请求（权限不够）
-    * 404 Not Found: 服务器无法根据客户端的请求找到资源（网页）。通过此代码，网站设计人员可设置 “您所请求的资源无法找到” 的个性页面
-    * 408 Request Timeout: 服务器等待客户端发送的请求时间过长，超时
-* 5xx：表示服务器的差错，如服务器失效无法完成请求
-    * 500 Internal Server Error: 服务器内部错误，无法完成请求
-    * 503 Service Unavailable: 由于超载或系统维护，服务器暂时的无法处理客户端的请求。延时的长度可包含在服务器的 Retry-After 头信息中
-    * 504 Gateway Timeout: 充当网关或代理的服务器，未及时从远端服务器获取请求
+    * 200 OK: {U+8BF7}求成功
+* 3xx：表示重定向，如要完成{U+8BF7}求{U+8FD8}必{U+987B}采取{U+8FDB}一步的行{U+52A8}
+    * 301 Moved Permanently: 永久移{U+52A8}。{U+8BF7}求的{U+8D44}源已被永久的移{U+52A8}到新 URL，返回信息{U+4F1A}包括新的 URL，{U+6D4F}{U+89C8}器{U+4F1A}自{U+52A8}定向到新 URL。今後任何新的{U+8BF7}求都{U+5E94}使用新的 URL 代替
+* 4xx：表示客{U+6237}的差{U+9519}，如{U+8BF7}求中有{U+9519}{U+8BEF}的{U+8BED}法或不能完成
+    * 400 Bad Request: 客{U+6237}端{U+8BF7}求的{U+8BED}法{U+9519}{U+8BEF}，服{U+52A1}器{U+65E0}法理解
+    * 401 Unauthorized: {U+8BF7}求要求用{U+6237}的身份{U+8BA4}{U+8BC1}
+    * 403 Forbidden: 服{U+52A1}器理解{U+8BF7}求客{U+6237}端的{U+8BF7}求，但是拒{U+7EDD}{U+6267}行此{U+8BF7}求（{U+6743}限不{U+591F}）
+    * 404 Not Found: 服{U+52A1}器{U+65E0}法根據客{U+6237}端的{U+8BF7}求找到{U+8D44}源（網{U+9875}）。通{U+8FC7}此代{U+7801}，網站{U+8BBE}{U+8BA1}人{U+5458}可{U+8BBE}置 「您所{U+8BF7}求的{U+8D44}源{U+65E0}法找到」 的{U+4E2A}性{U+9875}面
+    * 408 Request Timeout: 服{U+52A1}器等待客{U+6237}端{U+53D1}送的{U+8BF7}求{U+65F6}{U+95F4}{U+8FC7}{U+957F}，超{U+65F6}
+* 5xx：表示服{U+52A1}器的差{U+9519}，如服{U+52A1}器失效{U+65E0}法完成{U+8BF7}求
+    * 500 Internal Server Error: 服{U+52A1}器{U+5185}部{U+9519}{U+8BEF}，{U+65E0}法完成{U+8BF7}求
+    * 503 Service Unavailable: 由於超{U+8F7D}或系{U+7EDF}{U+7EF4}{U+62A4}，服{U+52A1}器{U+6682}{U+65F6}的{U+65E0}法{U+5904}理客{U+6237}端的{U+8BF7}求。延{U+65F6}的{U+957F}度可包含在服{U+52A1}器的 Retry-After {U+5934}信息中
+    * 504 Gateway Timeout: 充{U+5F53}網{U+5173}或代理的服{U+52A1}器，未及{U+65F6}{U+4ECE}{U+8FDC}端服{U+52A1}器{U+83B7}取{U+8BF7}求
 
-> 更多状态码：[菜鸟教程 . HTTP状态码](http://www.runoob.com/http/http-status-codes.html)
+> 更多{U+72B6}{U+6001}{U+7801}：[菜{U+9E1F}教程 . HTTP{U+72B6}{U+6001}{U+7801}](http://www.runoob.com/http/http-status-codes.html)
 
-##### 其他协议
+##### 其他{U+534F}{U+8BAE}
 
-* SMTP（Simple Main Transfer Protocol，简单邮件传输协议）是在 Internet 传输 Email 的标准，是一个相对简单的基于文本的协议。在其之上指定了一条消息的一个或多个接收者（在大多数情况下被确认是存在的），然后消息文本会被传输。可以很简单地通过 Telnet 程序来测试一个 SMTP 服务器。SMTP 使用 TCP 端口 25。
-* DHCP（Dynamic Host Configuration Protocol，动态主机设置协议）是一个局域网的网络协议，使用 UDP 协议工作，主要有两个用途：
-    * 用于内部网络或网络服务供应商自动分配 IP 地址给用户
-    * 用于内部网络管理员作为对所有电脑作中央管理的手段
-* SNMP（Simple Network Management Protocol，简单网络管理协议）构成了互联网工程工作小组（IETF，Internet Engineering Task Force）定义的 Internet 协议族的一部分。该协议能够支持网络管理系统，用以监测连接到网络上的设备是否有任何引起管理上关注的情况。
+* SMTP（Simple Main Transfer Protocol，{U+7B80}{U+5355}{U+90AE}件{U+4F20}{U+8F93}{U+534F}{U+8BAE}）是在 Internet {U+4F20}{U+8F93} Email 的{U+6807}准，是一{U+4E2A}相{U+5BF9}{U+7B80}{U+5355}的基於文本的{U+534F}{U+8BAE}。在其之上指定了一{U+6761}消息的一{U+4E2A}或多{U+4E2A}接收者（在大多{U+6570}情{U+51B5}下被確{U+8BA4}是存在的），然後消息文本{U+4F1A}被{U+4F20}{U+8F93}。可以很{U+7B80}{U+5355}地通{U+8FC7} Telnet 程序{U+6765}{U+6D4B}{U+8BD5}一{U+4E2A} SMTP 服{U+52A1}器。SMTP 使用 TCP 端口 25。
+* DHCP（Dynamic Host Configuration Protocol，{U+52A8}{U+6001}主機{U+8BBE}置{U+534F}{U+8BAE}）是一{U+4E2A}局域網的網{U+7EDC}{U+534F}{U+8BAE}，使用 UDP {U+534F}{U+8BAE}工作，主要有{U+4E24}{U+4E2A}用途：
+    * 用於{U+5185}部網{U+7EDC}或網{U+7EDC}服{U+52A1}供{U+5E94}商自{U+52A8}分配 IP 地址{U+7ED9}用{U+6237}
+    * 用於{U+5185}部網{U+7EDC}管理{U+5458}作{U+4E3A}{U+5BF9}所有{U+7535}{U+8111}作中央管理的手段
+* SNMP（Simple Network Management Protocol，{U+7B80}{U+5355}網{U+7EDC}管理{U+534F}{U+8BAE}）構成了互{U+8054}網工程工作小{U+7EC4}（IETF，Internet Engineering Task Force）定{U+4E49}的 Internet {U+534F}{U+8BAE}族的一部分。{U+8BE5}{U+534F}{U+8BAE}能{U+591F}支持網{U+7EDC}管理系{U+7EDF}，用以{U+76D1}{U+6D4B}{U+8FDE}接到網{U+7EDC}上的{U+8BBE}{U+5907}是否有任何引起管理上{U+5173}注的情{U+51B5}。
 
-## 网络编程
+## 網{U+7EDC}{U+7F16}程
 
 ### Socket
 
-[Linux Socket 编程（不限 Linux）](https://www.cnblogs.com/skynet/archive/2010/12/12/1903949.html)
+[Linux Socket {U+7F16}程（不限 Linux）](https://www.cnblogs.com/skynet/archive/2010/12/12/1903949.html)
 
-![Socket 客户端服务器通讯](images/socket客户端服务器通讯.jpg)
+![Socket 客{U+6237}端服{U+52A1}器通{U+8BAF}](images/socket客{U+6237}端服{U+52A1}器通{U+8BAF}.jpg)
 
 
-#### Socket 中的 read()、write() 函数
+#### Socket 中的 read()、write() 函{U+6570}
 
 ```cpp
 ssize_t read(int fd, void *buf, size_t count);
@@ -2435,237 +2435,237 @@ ssize_t write(int fd, const void *buf, size_t count);
 
 ##### read()
 
-* read 函数是负责从 fd 中读取内容。
-* 当读成功时，read 返回实际所读的字节数。
-* 如果返回的值是 0 表示已经读到文件的结束了，小于 0 表示出现了错误。
-* 如果错误为 EINTR 说明读是由中断引起的；如果是 ECONNREST 表示网络连接出了问题。
+* read 函{U+6570}是{U+8D1F}{U+8D23}{U+4ECE} fd 中{U+8BFB}取{U+5185}容。
+* {U+5F53}{U+8BFB}成功{U+65F6}，read 返回{U+5B9E}{U+9645}所{U+8BFB}的字{U+8282}{U+6570}。
+* 如果返回的值是 0 表示已{U+7ECF}{U+8BFB}到文件的{U+7ED3}束了，小於 0 表示出{U+73B0}了{U+9519}{U+8BEF}。
+* 如果{U+9519}{U+8BEF}{U+4E3A} EINTR {U+8BF4}明{U+8BFB}是由中{U+65AD}引起的；如果是 ECONNREST 表示網{U+7EDC}{U+8FDE}接出了{U+95EE}{U+9898}。
 
 ##### write()
 
-* write 函数将 buf 中的 nbytes 字节内容写入文件描述符 fd。
-* 成功时返回写的字节数。失败时返回 -1，并设置 errno 变量。
-* 在网络程序中，当我们向套接字文件描述符写时有俩种可能。
-* （1）write 的返回值大于 0，表示写了部分或者是全部的数据。
-* （2）返回的值小于 0，此时出现了错误。
-* 如果错误为 EINTR 表示在写的时候出现了中断错误；如果为 EPIPE 表示网络连接出现了问题（对方已经关闭了连接）。
+* write 函{U+6570}{U+5C06} buf 中的 nbytes 字{U+8282}{U+5185}容{U+5199}入文件描述符 fd。
+* 成功{U+65F6}返回{U+5199}的字{U+8282}{U+6570}。失{U+8D25}{U+65F6}返回 -1，並{U+8BBE}置 errno {U+53D8}量。
+* 在網{U+7EDC}程序中，{U+5F53}我{U+4EEC}向套接字文件描述符{U+5199}{U+65F6}有{U+4FE9}種可能。
+* （1）write 的返回值大於 0，表示{U+5199}了部分或者是全部的{U+6570}據。
+* （2）返回的值小於 0，此{U+65F6}出{U+73B0}了{U+9519}{U+8BEF}。
+* 如果{U+9519}{U+8BEF}{U+4E3A} EINTR 表示在{U+5199}的{U+65F6}候出{U+73B0}了中{U+65AD}{U+9519}{U+8BEF}；如果{U+4E3A} EPIPE 表示網{U+7EDC}{U+8FDE}接出{U+73B0}了{U+95EE}{U+9898}（{U+5BF9}方已{U+7ECF}{U+5173}{U+95ED}了{U+8FDE}接）。
 
-#### Socket 中 TCP 的三次握手建立连接
+#### Socket 中 TCP 的三次握手建立{U+8FDE}接
 
-我们知道 TCP 建立连接要进行 “三次握手”，即交换三个分组。大致流程如下：
+我{U+4EEC}知道 TCP 建立{U+8FDE}接要{U+8FDB}行 「三次握手」，即交{U+6362}三{U+4E2A}分{U+7EC4}。大致流程如下：
 
-1. 客户端向服务器发送一个 SYN J
-2. 服务器向客户端响应一个 SYN K，并对 SYN J 进行确认 ACK J+1
-3. 客户端再想服务器发一个确认 ACK K+1
+1. 客{U+6237}端向服{U+52A1}器{U+53D1}送一{U+4E2A} SYN J
+2. 服{U+52A1}器向客{U+6237}端{U+54CD}{U+5E94}一{U+4E2A} SYN K，並{U+5BF9} SYN J {U+8FDB}行確{U+8BA4} ACK J+1
+3. 客{U+6237}端再想服{U+52A1}器{U+53D1}一{U+4E2A}確{U+8BA4} ACK K+1
 
-只有就完了三次握手，但是这个三次握手发生在 Socket 的那几个函数中呢？请看下图：
+只有就完了三次握手，但是{U+8FD9}{U+4E2A}三次握手{U+53D1}生在 Socket 的那幾{U+4E2A}函{U+6570}中呢？{U+8BF7}看下{U+56FE}：
 
-![socket 中发送的 TCP 三次握手](http://images.cnblogs.com/cnblogs_com/skynet/201012/201012122157467258.png)
+![socket 中{U+53D1}送的 TCP 三次握手](http://images.cnblogs.com/cnblogs_com/skynet/201012/201012122157467258.png)
 
-从图中可以看出：
-1. 当客户端调用 connect 时，触发了连接请求，向服务器发送了 SYN J 包，这时 connect 进入阻塞状态；  
-2. 服务器监听到连接请求，即收到 SYN J 包，调用 accept 函数接收请求向客户端发送 SYN K ，ACK J+1，这时 accept 进入阻塞状态；  
-3. 客户端收到服务器的 SYN K ，ACK J+1 之后，这时 connect 返回，并对 SYN K 进行确认；  
-4. 服务器收到 ACK K+1 时，accept 返回，至此三次握手完毕，连接建立。
+{U+4ECE}{U+56FE}中可以看出：
+1. {U+5F53}客{U+6237}端{U+8C03}用 connect {U+65F6}，觸{U+53D1}了{U+8FDE}接{U+8BF7}求，向服{U+52A1}器{U+53D1}送了 SYN J 包，{U+8FD9}{U+65F6} connect {U+8FDB}入阻塞{U+72B6}{U+6001}；  
+2. 服{U+52A1}器{U+76D1}聽到{U+8FDE}接{U+8BF7}求，即收到 SYN J 包，{U+8C03}用 accept 函{U+6570}接收{U+8BF7}求向客{U+6237}端{U+53D1}送 SYN K ，ACK J+1，{U+8FD9}{U+65F6} accept {U+8FDB}入阻塞{U+72B6}{U+6001}；  
+3. 客{U+6237}端收到服{U+52A1}器的 SYN K ，ACK J+1 之後，{U+8FD9}{U+65F6} connect 返回，並{U+5BF9} SYN K {U+8FDB}行確{U+8BA4}；  
+4. 服{U+52A1}器收到 ACK K+1 {U+65F6}，accept 返回，至此三次握手完{U+6BD5}，{U+8FDE}接建立。
 
-#### Socket 中 TCP 的四次握手释放连接
+#### Socket 中 TCP 的四次握手{U+91CA}放{U+8FDE}接
 
-上面介绍了 socket 中 TCP 的三次握手建立过程，及其涉及的 socket 函数。现在我们介绍 socket 中的四次握手释放连接的过程，请看下图：
+上面介{U+7ECD}了 socket 中 TCP 的三次握手建立{U+8FC7}程，及其涉及的 socket 函{U+6570}。{U+73B0}在我{U+4EEC}介{U+7ECD} socket 中的四次握手{U+91CA}放{U+8FDE}接的{U+8FC7}程，{U+8BF7}看下{U+56FE}：
 
-![socket 中发送的 TCP 四次握手](http://images.cnblogs.com/cnblogs_com/skynet/201012/201012122157487616.png)
+![socket 中{U+53D1}送的 TCP 四次握手](http://images.cnblogs.com/cnblogs_com/skynet/201012/201012122157487616.png)
 
-图示过程如下：
+{U+56FE}示{U+8FC7}程如下：
 
-1. 某个应用进程首先调用 close 主动关闭连接，这时 TCP 发送一个 FIN M；
-2. 另一端接收到 FIN M 之后，执行被动关闭，对这个 FIN 进行确认。它的接收也作为文件结束符传递给应用进程，因为 FIN 的接收意味着应用进程在相应的连接上再也接收不到额外数据；
-3. 一段时间之后，接收到文件结束符的应用进程调用 close 关闭它的 socket。这导致它的 TCP 也发送一个 FIN N；
-4. 接收到这个 FIN 的源发送端 TCP 对它进行确认。
+1. 某{U+4E2A}{U+5E94}用{U+8FDB}程首先{U+8C03}用 close 主{U+52A8}{U+5173}{U+95ED}{U+8FDE}接，{U+8FD9}{U+65F6} TCP {U+53D1}送一{U+4E2A} FIN M；
+2. 另一端接收到 FIN M 之後，{U+6267}行被{U+52A8}{U+5173}{U+95ED}，{U+5BF9}{U+8FD9}{U+4E2A} FIN {U+8FDB}行確{U+8BA4}。它的接收也作{U+4E3A}文件{U+7ED3}束符{U+4F20}{U+9012}{U+7ED9}{U+5E94}用{U+8FDB}程，因{U+4E3A} FIN 的接收意味{U+7740}{U+5E94}用{U+8FDB}程在相{U+5E94}的{U+8FDE}接上再也接收不到{U+989D}外{U+6570}據；
+3. 一段{U+65F6}{U+95F4}之後，接收到文件{U+7ED3}束符的{U+5E94}用{U+8FDB}程{U+8C03}用 close {U+5173}{U+95ED}它的 socket。{U+8FD9}{U+5BFC}致它的 TCP 也{U+53D1}送一{U+4E2A} FIN N；
+4. 接收到{U+8FD9}{U+4E2A} FIN 的源{U+53D1}送端 TCP {U+5BF9}它{U+8FDB}行確{U+8BA4}。
 
-这样每个方向上都有一个 FIN 和 ACK。
+{U+8FD9}{U+6837}每{U+4E2A}方向上都有一{U+4E2A} FIN 和 ACK。
 
-## 数据库
+## {U+6570}據{U+5E93}
 
-* 数据库事务四大特性：原子性、一致性、分离性、持久性
-* 数据库索引：顺序索引、B+ 树索引、hash 索引
-[MySQL 索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
-* [SQL 约束 (Constraints)](http://www.w3school.com.cn/sql/sql_constraints.asp)
+* {U+6570}據{U+5E93}事{U+52A1}四大特性：原子性、一致性、分離性、持久性
+* {U+6570}據{U+5E93}索引：{U+987A}序索引、B+ {U+6811}索引、hash 索引
+[MySQL 索引背後的{U+6570}據{U+7ED3}構及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
+* [SQL {U+7EA6}束 (Constraints)](http://www.w3school.com.cn/sql/sql_constraints.asp)
 
-### 范式
+### 範式
 
-* 第一范式（1NF）：属性（字段）是最小单位不可再分
-* 第二范式（2NF）：满足 1NF，每个非主属性完全依赖于主键（消除 1NF 非主属性对码的部分函数依赖）
-* 第三范式（3NF）：满足 2NF，任何非主属性不依赖于其他非主属性（消除 2NF 主属性对码的传递函数依赖）
-* 鲍依斯-科得范式（BCNF）：满足 3NF，任何非主属性不能对主键子集依赖（消除 3NF 主属性对码的部分和传递函数依赖）
-* 第四范式（4NF）：满足 3NF，属性之间不能有非平凡且非函数依赖的多值依赖（消除 3NF 非平凡且非函数依赖的多值依赖）
+* 第一範式（1NF）：{U+5C5E}性（字段）是最小{U+5355}位不可再分
+* 第二範式（2NF）：{U+6EE1}足 1NF，每{U+4E2A}非主{U+5C5E}性完全依{U+8D56}於主{U+952E}（消除 1NF 非主{U+5C5E}性{U+5BF9}{U+7801}的部分函{U+6570}依{U+8D56}）
+* 第三範式（3NF）：{U+6EE1}足 2NF，任何非主{U+5C5E}性不依{U+8D56}於其他非主{U+5C5E}性（消除 2NF 主{U+5C5E}性{U+5BF9}{U+7801}的{U+4F20}{U+9012}函{U+6570}依{U+8D56}）
+* {U+9C8D}依斯-科得範式（BCNF）：{U+6EE1}足 3NF，任何非主{U+5C5E}性不能{U+5BF9}主{U+952E}子集依{U+8D56}（消除 3NF 主{U+5C5E}性{U+5BF9}{U+7801}的部分和{U+4F20}{U+9012}函{U+6570}依{U+8D56}）
+* 第四範式（4NF）：{U+6EE1}足 3NF，{U+5C5E}性之{U+95F4}不能有非平凡且非函{U+6570}依{U+8D56}的多值依{U+8D56}（消除 3NF 非平凡且非函{U+6570}依{U+8D56}的多值依{U+8D56}）
 
-## 设计模式
+## {U+8BBE}{U+8BA1}模式
 
-> 各大设计模式例子参考：[CSDN专栏 . C++ 设计模式](https://blog.csdn.net/column/details/15392.html) 系列博文
+> 各大{U+8BBE}{U+8BA1}模式例子{U+53C2}考：[CSDN{U+4E13}{U+680F} . C++ {U+8BBE}{U+8BA1}模式](https://blog.csdn.net/column/details/15392.html) 系列博文
 
-[设计模式工程目录](DesignPattern)
+[{U+8BBE}{U+8BA1}模式工程目{U+5F55}](DesignPattern)
 
-### 单例模式
+### {U+5355}例模式
 
-[单例模式例子](DesignPattern/SingletonPattern)
+[{U+5355}例模式例子](DesignPattern/SingletonPattern)
 
-### 抽象工厂模式
+### 抽象工廠模式
 
-[抽象工厂模式例子](DesignPattern/AbstractFactoryPattern)
+[抽象工廠模式例子](DesignPattern/AbstractFactoryPattern)
 
-### 适配器模式
+### 適配器模式
 
-[适配器模式例子](DesignPattern/AdapterPattern)
+[適配器模式例子](DesignPattern/AdapterPattern)
 
-### 桥接模式
+### {U+6865}接模式
 
-[桥接模式例子](DesignPattern/BridgePattern)
+[{U+6865}接模式例子](DesignPattern/BridgePattern)
 
-### 观察者模式
+### {U+89C2}察者模式
 
-[观察者模式例子](DesignPattern/ObserverPattern)
+[{U+89C2}察者模式例子](DesignPattern/ObserverPattern)
 
-### 设计模式的六大原则
+### {U+8BBE}{U+8BA1}模式的六大原{U+5219}
 
-* 单一职责原则（SRP，Single Responsibility Principle）
-* 里氏替换原则（LSP，Liskov Substitution Principle）
-* 依赖倒置原则（DIP，Dependence Inversion Principle）
-* 接口隔离原则（ISP，Interface Segregation Principle）
-* 迪米特法则（LoD，Law of Demeter）
-* 开放封闭原则（OCP，Open Close Principle）
+* {U+5355}一{U+804C}{U+8D23}原{U+5219}（SRP，Single Responsibility Principle）
+* 裏氏替{U+6362}原{U+5219}（LSP，Liskov Substitution Principle）
+* 依{U+8D56}倒置原{U+5219}（DIP，Dependence Inversion Principle）
+* 接口隔離原{U+5219}（ISP，Interface Segregation Principle）
+* 迪米特法{U+5219}（LoD，Law of Demeter）
+* {U+5F00}放封{U+95ED}原{U+5219}（OCP，Open Close Principle）
 
-## 链接装载库
+## {U+94FE}接{U+88C5}{U+8F7D}{U+5E93}
 
-### 内存、栈、堆
+### {U+5185}存、{U+6808}、堆
 
-一般应用程序内存空间有如下区域：
+一般{U+5E94}用程序{U+5185}存空{U+95F4}有如下{U+533A}域：
 
-* 栈：由操作系统自动分配释放，存放函数的参数值、局部变量等的值，用于维护函数调用的上下文
-* 堆：一般由程序员分配释放，若程序员不释放，程序结束时可能由操作系统回收，用来容纳应用程序动态分配的内存区域
-* 可执行文件映像：存储着可执行文件在内存中的映像，由装载器装载是将可执行文件的内存读取或映射到这里
-* 保留区：保留区并不是一个单一的内存区域，而是对内存中受到保护而禁止访问的内存区域的总称，如通常 C 语言讲无效指针赋值为 0（NULL），因此 0 地址正常情况下不可能有效的访问数据
+* {U+6808}：由操作系{U+7EDF}自{U+52A8}分配{U+91CA}放，存放函{U+6570}的{U+53C2}{U+6570}值、局部{U+53D8}量等的值，用於{U+7EF4}{U+62A4}函{U+6570}{U+8C03}用的上下文
+* 堆：一般由程序{U+5458}分配{U+91CA}放，若程序{U+5458}不{U+91CA}放，程序{U+7ED3}束{U+65F6}可能由操作系{U+7EDF}回收，用{U+6765}容{U+7EB3}{U+5E94}用程序{U+52A8}{U+6001}分配的{U+5185}存{U+533A}域
+* 可{U+6267}行文件映像：存{U+50A8}{U+7740}可{U+6267}行文件在{U+5185}存中的映像，由{U+88C5}{U+8F7D}器{U+88C5}{U+8F7D}是{U+5C06}可{U+6267}行文件的{U+5185}存{U+8BFB}取或映射到{U+8FD9}裏
+* 保留{U+533A}：保留{U+533A}並不是一{U+4E2A}{U+5355}一的{U+5185}存{U+533A}域，而是{U+5BF9}{U+5185}存中受到保{U+62A4}而禁止{U+8BBF}{U+95EE}的{U+5185}存{U+533A}域的{U+603B}{U+79F0}，如通常 C {U+8BED}言{U+8BB2}{U+65E0}效指{U+9488}{U+8D4B}值{U+4E3A} 0（NULL），因此 0 地址正常情{U+51B5}下不可能有效的{U+8BBF}{U+95EE}{U+6570}據
 
-#### 栈
+#### {U+6808}
 
-栈保存了一个函数调用所需要的维护信息，常被称为堆栈帧（Stack Frame）或活动记录（Activate Record），一般包含以下几方面：
+{U+6808}保存了一{U+4E2A}函{U+6570}{U+8C03}用所需要的{U+7EF4}{U+62A4}信息，常被{U+79F0}{U+4E3A}堆{U+6808}{U+5E27}（Stack Frame）或活{U+52A8}{U+8BB0}{U+5F55}（Activate Record），一般包含以下幾方面：
 
-* 函数的返回地址和参数
-* 临时变量：包括函数的非静态局部变量以及编译器自动生成的其他临时变量
-* 保存上下文：包括函数调用前后需要保持不变的寄存器
+* 函{U+6570}的返回地址和{U+53C2}{U+6570}
+* {U+4E34}{U+65F6}{U+53D8}量：包括函{U+6570}的非{U+9759}{U+6001}局部{U+53D8}量以及{U+7F16}{U+8BD1}器自{U+52A8}生成的其他{U+4E34}{U+65F6}{U+53D8}量
+* 保存上下文：包括函{U+6570}{U+8C03}用前後需要保持不{U+53D8}的寄存器
 
 #### 堆
 
 堆分配算法：
 
-* 空闲链表（Free List）
-* 位图（Bitmap）
-* 对象池
+* 空{U+95F2}{U+94FE}表（Free List）
+* 位{U+56FE}（Bitmap）
+* {U+5BF9}象池
 
-#### “段错误（segment fault）” 或 “非法操作，该内存地址不能 read/write”
+#### 「段{U+9519}{U+8BEF}（segment fault）」 或 「非法操作，{U+8BE5}{U+5185}存地址不能 read/write」
 
-典型的非法指针解引用造成的错误。当指针指向一个不允许读写的内存地址，而程序却试图利用指针来读或写该地址时，会出现这个错误。
+典型的非法指{U+9488}解引用造成的{U+9519}{U+8BEF}。{U+5F53}指{U+9488}指向一{U+4E2A}不允{U+8BB8}{U+8BFB}{U+5199}的{U+5185}存地址，而程序{U+5374}{U+8BD5}{U+56FE}利用指{U+9488}{U+6765}{U+8BFB}或{U+5199}{U+8BE5}地址{U+65F6}，{U+4F1A}出{U+73B0}{U+8FD9}{U+4E2A}{U+9519}{U+8BEF}。
 
 普遍原因：
 
-* 将指针初始化为 NULL，之后没有给它一个合理的值就开始使用指针
-* 没用初始化栈中的指针，指针的值一般会是随机数，之后就直接开始使用指针
+* {U+5C06}指{U+9488}初始化{U+4E3A} NULL，之後{U+6CA1}有{U+7ED9}它一{U+4E2A}合理的值就{U+5F00}始使用指{U+9488}
+* {U+6CA1}用初始化{U+6808}中的指{U+9488}，指{U+9488}的值一般{U+4F1A}是{U+968F}機{U+6570}，之後就直接{U+5F00}始使用指{U+9488}
 
-### 编译链接
+### {U+7F16}{U+8BD1}{U+94FE}接
 
 #### 各平台文件格式
 
-平台 | 可执行文件 | 目标文件 | 动态库/共享对象 | 静态库
+平台 | 可{U+6267}行文件 | 目{U+6807}文件 | {U+52A8}{U+6001}{U+5E93}/共享{U+5BF9}象 | {U+9759}{U+6001}{U+5E93}
 ---|---|---|---|---
 Windows|exe|obj|dll|lib
 Unix/Linux|ELF、out|o|so|a
 Mac|Mach-O|o|dylib、tbd、framework|a、framework
 
-#### 编译链接过程
+#### {U+7F16}{U+8BD1}{U+94FE}接{U+8FC7}程
 
-1. 预编译（预编译器处理如 `#include`、`#define` 等预编译指令，生成 `.i` 或 `.ii` 文件）
-2. 编译（编译器进行词法分析、语法分析、语义分析、中间代码生成、目标代码生成、优化，生成 `.s` 文件）
-3. 汇编（汇编器把汇编码翻译成机器码，生成 `.o` 文件）
-4. 链接（连接器进行地址和空间分配、符号决议、重定位，生成 `.out` 文件）
+1. {U+9884}{U+7F16}{U+8BD1}（{U+9884}{U+7F16}{U+8BD1}器{U+5904}理如 `#include`、`#define` 等{U+9884}{U+7F16}{U+8BD1}指令，生成 `.i` 或 `.ii` 文件）
+2. {U+7F16}{U+8BD1}（{U+7F16}{U+8BD1}器{U+8FDB}行{U+8BCD}法分析、{U+8BED}法分析、{U+8BED}{U+4E49}分析、中{U+95F4}代{U+7801}生成、目{U+6807}代{U+7801}生成、優化，生成 `.s` 文件）
+3. {U+6C47}{U+7F16}（{U+6C47}{U+7F16}器把{U+6C47}{U+7F16}{U+7801}翻{U+8BD1}成機器{U+7801}，生成 `.o` 文件）
+4. {U+94FE}接（{U+8FDE}接器{U+8FDB}行地址和空{U+95F4}分配、符{U+53F7}{U+51B3}{U+8BAE}、重定位，生成 `.out` 文件）
 
-> 现在版本 GCC 把预编译和编译合成一步，预编译编译程序 cc1、汇编器 as、连接器 ld
+> {U+73B0}在版本 GCC 把{U+9884}{U+7F16}{U+8BD1}和{U+7F16}{U+8BD1}合成一步，{U+9884}{U+7F16}{U+8BD1}{U+7F16}{U+8BD1}程序 cc1、{U+6C47}{U+7F16}器 as、{U+8FDE}接器 ld
 
-> MSVC 编译环境，编译器 cl、连接器 link、可执行文件查看器 dumpbin
+> MSVC {U+7F16}{U+8BD1}{U+73AF}境，{U+7F16}{U+8BD1}器 cl、{U+8FDE}接器 link、可{U+6267}行文件查看器 dumpbin
 
-#### 目标文件
+#### 目{U+6807}文件
 
-编译器编译源代码后生成的文件叫做目标文件。目标文件从结构上讲，它是已经编译后的可执行文件格式，只是还没有经过链接的过程，其中可能有些符号或有些地址还没有被调整。
+{U+7F16}{U+8BD1}器{U+7F16}{U+8BD1}源代{U+7801}後生成的文件叫做目{U+6807}文件。目{U+6807}文件{U+4ECE}{U+7ED3}構上{U+8BB2}，它是已{U+7ECF}{U+7F16}{U+8BD1}後的可{U+6267}行文件格式，只是{U+8FD8}{U+6CA1}有{U+7ECF}{U+8FC7}{U+94FE}接的{U+8FC7}程，其中可能有些符{U+53F7}或有些地址{U+8FD8}{U+6CA1}有被{U+8C03}整。
 
-> 可执行文件（Windows 的 `.exe` 和 Linux 的 `ELF`）、动态链接库（Windows 的 `.dll` 和 Linux 的 `.so`）、静态链接库（Windows 的 `.lib` 和 Linux 的 `.a`）都是按照可执行文件格式存储（Windows 按照 PE-COFF，Linux 按照 ELF）
+> 可{U+6267}行文件（Windows 的 `.exe` 和 Linux 的 `ELF`）、{U+52A8}{U+6001}{U+94FE}接{U+5E93}（Windows 的 `.dll` 和 Linux 的 `.so`）、{U+9759}{U+6001}{U+94FE}接{U+5E93}（Windows 的 `.lib` 和 Linux 的 `.a`）都是按照可{U+6267}行文件格式存{U+50A8}（Windows 按照 PE-COFF，Linux 按照 ELF）
 
-##### 目标文件格式
+##### 目{U+6807}文件格式
 
-* Windows 的 PE（Portable Executable），或称为 PE-COFF，`.obj` 格式
+* Windows 的 PE（Portable Executable），或{U+79F0}{U+4E3A} PE-COFF，`.obj` 格式
 * Linux 的 ELF（Executable Linkable Format），`.o` 格式
 * Intel/Microsoft 的 OMF（Object Module Format）
 * Unix 的 `a.out` 格式
 * MS-DOS 的 `.COM` 格式
 
-> PE 和 ELF 都是 COFF（Common File Format）的变种
+> PE 和 ELF 都是 COFF（Common File Format）的{U+53D8}種
 
-##### 目标文件存储结构
+##### 目{U+6807}文件存{U+50A8}{U+7ED3}構
 
 段 | 功能
 --- | ---
-File Header | 文件头，描述整个文件的文件属性（包括文件是否可执行、是静态链接或动态连接及入口地址、目标硬件、目标操作系统等）
-.text section | 代码段，执行语句编译成的机器代码 
-.data section | 数据段，已初始化的全局变量和局部静态变量
-.bss section | BSS 段（Block Started by Symbol），未初始化的全局变量和局部静态变量（因为默认值为 0，所以只是在此预留位置，不占空间）
-.rodata section | 只读数据段，存放只读数据，一般是程序里面的只读变量（如 const 修饰的变量）和字符串常量
-.comment section | 注释信息段，存放编译器版本信息
-.note.GNU-stack section | 堆栈提示段 
+File Header | 文件{U+5934}，描述整{U+4E2A}文件的文件{U+5C5E}性（包括文件是否可{U+6267}行、是{U+9759}{U+6001}{U+94FE}接或{U+52A8}{U+6001}{U+8FDE}接及入口地址、目{U+6807}硬件、目{U+6807}操作系{U+7EDF}等）
+.text section | 代{U+7801}段，{U+6267}行{U+8BED}句{U+7F16}{U+8BD1}成的機器代{U+7801} 
+.data section | {U+6570}據段，已初始化的全局{U+53D8}量和局部{U+9759}{U+6001}{U+53D8}量
+.bss section | BSS 段（Block Started by Symbol），未初始化的全局{U+53D8}量和局部{U+9759}{U+6001}{U+53D8}量（因{U+4E3A}默{U+8BA4}值{U+4E3A} 0，所以只是在此{U+9884}留位置，不占空{U+95F4}）
+.rodata section | 只{U+8BFB}{U+6570}據段，存放只{U+8BFB}{U+6570}據，一般是程序裏面的只{U+8BFB}{U+53D8}量（如 const 修{U+9970}的{U+53D8}量）和字符串常量
+.comment section | 注{U+91CA}信息段，存放{U+7F16}{U+8BD1}器版本信息
+.note.GNU-stack section | 堆{U+6808}提示段 
 
 > 其他段略
 
-#### 链接的接口————符号
+#### {U+94FE}接的接口————符{U+53F7}
 
-在链接中，目标文件之间相互拼合实际上是目标文件之间对地址的引用，即对函数和变量的地址的引用。我们将函数和变量统称为符号（Symbol），函数名或变量名就是符号名（Symbol Name）。
+在{U+94FE}接中，目{U+6807}文件之{U+95F4}相互拼合{U+5B9E}{U+9645}上是目{U+6807}文件之{U+95F4}{U+5BF9}地址的引用，即{U+5BF9}函{U+6570}和{U+53D8}量的地址的引用。我{U+4EEC}{U+5C06}函{U+6570}和{U+53D8}量{U+7EDF}{U+79F0}{U+4E3A}符{U+53F7}（Symbol），函{U+6570}名或{U+53D8}量名就是符{U+53F7}名（Symbol Name）。
 
-如下符号表（Symbol Table）：
+如下符{U+53F7}表（Symbol Table）：
 
-Symbol（符号名） | Symbol Value （地址）
+Symbol（符{U+53F7}名） | Symbol Value （地址）
 --- | ---
 main| 0x100
 Add | 0x123
 ... | ...
 
-### Linux 的共享库（Shared Library）
+### Linux 的共享{U+5E93}（Shared Library）
 
-Linux 下的共享库就是普通的 ELF 共享对象。
+Linux 下的共享{U+5E93}就是普通的 ELF 共享{U+5BF9}象。
 
-共享库版本更新应该保证二进制接口 ABI（Application Binary Interface）的兼容
+共享{U+5E93}版本更新{U+5E94}{U+8BE5}保{U+8BC1}二{U+8FDB}制接口 ABI（Application Binary Interface）的兼容
 
 #### 命名
 
 `libname.so.x.y.z`
 
-* x：主版本号，不同主版本号的库之间不兼容，需要重新编译
-* y：次版本号，高版本号向后兼容低版本号
-* z：发布版本号，不对接口进行更改，完全兼容
+* x：主版本{U+53F7}，不同主版本{U+53F7}的{U+5E93}之{U+95F4}不兼容，需要重新{U+7F16}{U+8BD1}
+* y：次版本{U+53F7}，高版本{U+53F7}向後兼容低版本{U+53F7}
+* z：{U+53D1}布版本{U+53F7}，不{U+5BF9}接口{U+8FDB}行更改，完全兼容
 
-#### 路径
+#### 路{U+5F84}
 
-大部分包括 Linux 在内的开源系统遵循 FHS（File Hierarchy Standard）的标准，这标准规定了系统文件如何存放，包括各个目录结构、组织和作用。
+大部分包括 Linux 在{U+5185}的{U+5F00}源系{U+7EDF}遵循 FHS（File Hierarchy Standard）的{U+6807}准，{U+8FD9}{U+6807}准{U+89C4}定了系{U+7EDF}文件如何存放，包括各{U+4E2A}目{U+5F55}{U+7ED3}構、{U+7EC4}{U+7EC7}和作用。
 
-* `/lib`：存放系统最关键和最基础的共享库，如动态链接器、C 语言运行库、数学库等
-* `/usr/lib`：存放非系统运行时所需要的关键性的库，主要是开发库
-* `/usr/local/lib`：存放跟操作系统本身并不十分相关的库，主要是一些第三方应用程序的库
+* `/lib`：存放系{U+7EDF}最{U+5173}{U+952E}和最基{U+7840}的共享{U+5E93}，如{U+52A8}{U+6001}{U+94FE}接器、C {U+8BED}言{U+8FD0}行{U+5E93}、{U+6570}{U+5B66}{U+5E93}等
+* `/usr/lib`：存放非系{U+7EDF}{U+8FD0}行{U+65F6}所需要的{U+5173}{U+952E}性的{U+5E93}，主要是{U+5F00}{U+53D1}{U+5E93}
+* `/usr/local/lib`：存放跟操作系{U+7EDF}本身並不十分相{U+5173}的{U+5E93}，主要是一些第三方{U+5E94}用程序的{U+5E93}
 
-> 动态链接器会在 `/lib`、`/usr/lib` 和由 `/etc/ld.so.conf` 配置文件指定的，目录中查找共享库
+> {U+52A8}{U+6001}{U+94FE}接器{U+4F1A}在 `/lib`、`/usr/lib` 和由 `/etc/ld.so.conf` 配置文件指定的，目{U+5F55}中查找共享{U+5E93}
 
-#### 环境变量
+#### {U+73AF}境{U+53D8}量
 
-* `LD_LIBRARY_PATH`：临时改变某个应用程序的共享库查找路径，而不会影响其他应用程序
-* `LD_PRELOAD`：指定预先装载的一些共享库甚至是目标文件
-* `LD_DEBUG`：打开动态链接器的调试功能
+* `LD_LIBRARY_PATH`：{U+4E34}{U+65F6}改{U+53D8}某{U+4E2A}{U+5E94}用程序的共享{U+5E93}查找路{U+5F84}，而不{U+4F1A}影{U+54CD}其他{U+5E94}用程序
+* `LD_PRELOAD`：指定{U+9884}先{U+88C5}{U+8F7D}的一些共享{U+5E93}甚至是目{U+6807}文件
+* `LD_DEBUG`：打{U+5F00}{U+52A8}{U+6001}{U+94FE}接器的{U+8C03}{U+8BD5}功能
 
-#### so 共享库的编写
+#### so 共享{U+5E93}的{U+7F16}{U+5199}
 
-<details><summary>使用 CLion 编写共享库</summary>
+<details><summary>使用 CLion {U+7F16}{U+5199}共享{U+5E93}</summary>
 
-创建一个名为 MySharedLib 的共享库
+{U+521B}建一{U+4E2A}名{U+4E3A} MySharedLib 的共享{U+5E93}
 
 CMakeLists.txt
 
@@ -2687,7 +2687,7 @@ library.h
 // 打印 Hello World!
 void hello();
 
-// 使用可变模版参数求和
+// 使用可{U+53D8}模版{U+53C2}{U+6570}求和
 template <typename T>
 T sum(T t)
 {
@@ -2715,11 +2715,11 @@ void hello() {
 
 </details>
 
-#### so 共享库的使用（被可执行项目调用）
+#### so 共享{U+5E93}的使用（被可{U+6267}行{U+9879}目{U+8C03}用）
 
-<details><summary>使用 CLion 调用共享库</summary>
+<details><summary>使用 CLion {U+8C03}用共享{U+5E93}</summary>
 
-创建一个名为 TestSharedLib 的可执行项目
+{U+521B}建一{U+4E2A}名{U+4E3A} TestSharedLib 的可{U+6267}行{U+9879}目
 
 CMakeLists.txt
 
@@ -2727,12 +2727,12 @@ CMakeLists.txt
 cmake_minimum_required(VERSION 3.10)
 project(TestSharedLib)
 
-# C++11 编译
+# C++11 {U+7F16}{U+8BD1}
 set(CMAKE_CXX_STANDARD 11)
 
-# 头文件路径
+# {U+5934}文件路{U+5F84}
 set(INC_DIR /home/xx/code/clion/MySharedLib)
-# 库文件路径
+# {U+5E93}文件路{U+5F84}
 set(LIB_DIR /home/xx/code/clion/MySharedLib/cmake-build-debug)
 
 include_directories(${INC_DIR})
@@ -2741,7 +2741,7 @@ link_libraries(MySharedLib)
 
 add_executable(TestSharedLib main.cpp)
 
-# 链接 MySharedLib 库
+# {U+94FE}接 MySharedLib {U+5E93}
 target_link_libraries(TestSharedLib MySharedLib)
 ```
 
@@ -2763,7 +2763,7 @@ int main() {
 }
 ```
 
-执行结果
+{U+6267}行{U+7ED3}果
 
 ```
 Hello, World!
@@ -2773,12 +2773,12 @@ Hello, World!
 
 </details>
 
-### Windows 应用程序入口函数
+### Windows {U+5E94}用程序入口函{U+6570}
 
-* GUI（Graphical User Interface）应用，链接器选项：`/SUBSYSTEM:WINDOWS`
-* CUI（Console User Interface）应用，链接器选项：`/SUBSYSTEM:CONSOLE`
+* GUI（Graphical User Interface）{U+5E94}用，{U+94FE}接器{U+9009}{U+9879}：`/SUBSYSTEM:WINDOWS`
+* CUI（Console User Interface）{U+5E94}用，{U+94FE}接器{U+9009}{U+9879}：`/SUBSYSTEM:CONSOLE`
 
-<details><summary>_tWinMain 与 _tmain 函数声明</summary>
+<details><summary>_tWinMain 與 _tmain 函{U+6570}{U+58F0}明</summary>
 
 ```cpp
 Int WINAPI _tWinMain(
@@ -2795,49 +2795,49 @@ int _tmain(
 
 </details>
 
-应用程序类型|入口点函数|嵌入可执行文件的启动函数
+{U+5E94}用程序{U+7C7B}型|入口{U+70B9}函{U+6570}|嵌入可{U+6267}行文件的{U+542F}{U+52A8}函{U+6570}
 ---|---|---
-处理ANSI字符（串）的GUI应用程序|_tWinMain(WinMain)|WinMainCRTSartup
-处理Unicode字符（串）的GUI应用程序|_tWinMain(wWinMain)|wWinMainCRTSartup
-处理ANSI字符（串）的CUI应用程序|_tmain(Main)|mainCRTSartup
-处理Unicode字符（串）的CUI应用程序|_tmain(wMain)|wmainCRTSartup
-动态链接库（Dynamic-Link Library）|DllMain|_DllMainCRTStartup 
+{U+5904}理ANSI字符（串）的GUI{U+5E94}用程序|_tWinMain(WinMain)|WinMainCRTSartup
+{U+5904}理Unicode字符（串）的GUI{U+5E94}用程序|_tWinMain(wWinMain)|wWinMainCRTSartup
+{U+5904}理ANSI字符（串）的CUI{U+5E94}用程序|_tmain(Main)|mainCRTSartup
+{U+5904}理Unicode字符（串）的CUI{U+5E94}用程序|_tmain(wMain)|wmainCRTSartup
+{U+52A8}{U+6001}{U+94FE}接{U+5E93}（Dynamic-Link Library）|DllMain|_DllMainCRTStartup 
 
-### Windows 的动态链接库（Dynamic-Link Library）
+### Windows 的{U+52A8}{U+6001}{U+94FE}接{U+5E93}（Dynamic-Link Library）
 
-> 知识点来自《Windows核心编程（第五版）》
+> 知{U+8BC6}{U+70B9}{U+6765}自《Windows核心{U+7F16}程（第五版）》
 
-#### 用处
+#### 用{U+5904}
 
-* 扩展了应用程序的特性
-* 简化了项目管理
-* 有助于节省内存
-* 促进了资源的共享
-* 促进了本地化
-* 有助于解决平台间的差异
-* 可以用于特殊目的
+* {U+6269}展了{U+5E94}用程序的特性
+* {U+7B80}化了{U+9879}目管理
+* 有助於{U+8282}省{U+5185}存
+* 促{U+8FDB}了{U+8D44}源的共享
+* 促{U+8FDB}了本地化
+* 有助於解{U+51B3}平台{U+95F4}的差異
+* 可以用於特殊目的
 
 #### 注意
 
-* 创建 DLL，事实上是在创建可供一个可执行模块调用的函数
-* 当一个模块提供一个内存分配函数（malloc、new）的时候，它必须同时提供另一个内存释放函数（free、delete）
-* 在使用 C 和 C++ 混编的时候，要使用 extern "C" 修饰符
-* 一个 DLL 可以导出函数、变量（避免导出）、C++ 类（导出导入需要同编译器，否则避免导出）
-* DLL 模块：cpp 文件中的 __declspec(dllexport) 写在 include 头文件之前
-* 调用 DLL 的可执行模块：cpp 文件的 __declspec(dllimport) 之前不应该定义 MYLIBAPI
+* {U+521B}建 DLL，事{U+5B9E}上是在{U+521B}建可供一{U+4E2A}可{U+6267}行模{U+5757}{U+8C03}用的函{U+6570}
+* {U+5F53}一{U+4E2A}模{U+5757}提供一{U+4E2A}{U+5185}存分配函{U+6570}（malloc、new）的{U+65F6}候，它必{U+987B}同{U+65F6}提供另一{U+4E2A}{U+5185}存{U+91CA}放函{U+6570}（free、delete）
+* 在使用 C 和 C++ 混{U+7F16}的{U+65F6}候，要使用 extern "C" 修{U+9970}符
+* 一{U+4E2A} DLL 可以{U+5BFC}出函{U+6570}、{U+53D8}量（避免{U+5BFC}出）、C++ {U+7C7B}（{U+5BFC}出{U+5BFC}入需要同{U+7F16}{U+8BD1}器，否{U+5219}避免{U+5BFC}出）
+* DLL 模{U+5757}：cpp 文件中的 __declspec(dllexport) {U+5199}在 include {U+5934}文件之前
+* {U+8C03}用 DLL 的可{U+6267}行模{U+5757}：cpp 文件的 __declspec(dllimport) 之前不{U+5E94}{U+8BE5}定{U+4E49} MYLIBAPI
 
-#### 加载 Windows 程序的搜索顺序
+#### 加{U+8F7D} Windows 程序的搜索{U+987A}序
 
-1. 包含可执行文件的目录
-2. Windows 的系统目录，可以通过 GetSystemDirectory 得到
-3. 16 位的系统目录，即 Windows 目录中的 System 子目录
-4. Windows 目录，可以通过 GetWindowsDirectory 得到
-5. 进程的当前目录
-6. PATH 环境变量中所列出的目录
+1. 包含可{U+6267}行文件的目{U+5F55}
+2. Windows 的系{U+7EDF}目{U+5F55}，可以通{U+8FC7} GetSystemDirectory 得到
+3. 16 位的系{U+7EDF}目{U+5F55}，即 Windows 目{U+5F55}中的 System 子目{U+5F55}
+4. Windows 目{U+5F55}，可以通{U+8FC7} GetWindowsDirectory 得到
+5. {U+8FDB}程的{U+5F53}前目{U+5F55}
+6. PATH {U+73AF}境{U+53D8}量中所列出的目{U+5F55}
 
-#### DLL 入口函数
+#### DLL 入口函{U+6570}
 
-<details><summary>DllMain 函数</summary>
+<details><summary>DllMain 函{U+6570}</summary>
 
 ```cpp
 BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
@@ -2845,19 +2845,19 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
     switch(fdwReason)
     {
     case DLL_PROCESS_ATTACH:
-        // 第一次将一个DLL映射到进程地址空间时调用
+        // 第一次{U+5C06}一{U+4E2A}DLL映射到{U+8FDB}程地址空{U+95F4}{U+65F6}{U+8C03}用
         // The DLL is being mapped into the process' address space.
         break;
     case DLL_THREAD_ATTACH:
-        // 当进程创建一个线程的时候，用于告诉DLL执行与线程相关的初始化（非主线程执行）
+        // {U+5F53}{U+8FDB}程{U+521B}建一{U+4E2A}{U+7EBF}程的{U+65F6}候，用於告{U+8BC9}DLL{U+6267}行與{U+7EBF}程相{U+5173}的初始化（非主{U+7EBF}程{U+6267}行）
         // A thread is bing created.
         break;
     case DLL_THREAD_DETACH:
-        // 系统调用 ExitThread 线程退出前，即将终止的线程通过告诉DLL执行与线程相关的清理
+        // 系{U+7EDF}{U+8C03}用 ExitThread {U+7EBF}程退出前，即{U+5C06}{U+7EC8}止的{U+7EBF}程通{U+8FC7}告{U+8BC9}DLL{U+6267}行與{U+7EBF}程相{U+5173}的清理
         // A thread is exiting cleanly.
         break;
     case DLL_PROCESS_DETACH:
-        // 将一个DLL从进程的地址空间时调用
+        // {U+5C06}一{U+4E2A}DLL{U+4ECE}{U+8FDB}程的地址空{U+95F4}{U+65F6}{U+8C03}用
         // The DLL is being unmapped from the process' address space.
         break;
     }
@@ -2867,12 +2867,12 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
 
 </details>
 
-#### 载入卸载库
+#### {U+8F7D}入卸{U+8F7D}{U+5E93}
 
-<details><summary>LoadLibrary、LoadLibraryExA、LoadPackagedLibrary、FreeLibrary、FreeLibraryAndExitThread 函数声明</summary>
+<details><summary>LoadLibrary、LoadLibraryExA、LoadPackagedLibrary、FreeLibrary、FreeLibraryAndExitThread 函{U+6570}{U+58F0}明</summary>
 
 ```cpp
-// 载入库
+// {U+8F7D}入{U+5E93}
 HMODULE WINAPI LoadLibrary(
   _In_ LPCTSTR lpFileName
 );
@@ -2881,17 +2881,17 @@ HMODULE LoadLibraryExA(
   HANDLE hFile,
   DWORD  dwFlags
 );
-// 若要在通用 Windows 平台（UWP）应用中加载 Win32 DLL，需要调用 LoadPackagedLibrary，而不是 LoadLibrary 或 LoadLibraryEx
+// 若要在通用 Windows 平台（UWP）{U+5E94}用中加{U+8F7D} Win32 DLL，需要{U+8C03}用 LoadPackagedLibrary，而不是 LoadLibrary 或 LoadLibraryEx
 HMODULE LoadPackagedLibrary(
   LPCWSTR lpwLibFileName,
   DWORD   Reserved
 );
 
-// 卸载库
+// 卸{U+8F7D}{U+5E93}
 BOOL WINAPI FreeLibrary(
   _In_ HMODULE hModule
 );
-// 卸载库和退出线程
+// 卸{U+8F7D}{U+5E93}和退出{U+7EBF}程
 VOID WINAPI FreeLibraryAndExitThread(
   _In_ HMODULE hModule,
   _In_ DWORD   dwExitCode
@@ -2900,9 +2900,9 @@ VOID WINAPI FreeLibraryAndExitThread(
 
 </details>
 
-#### 显示地链接到导出符号
+#### {U+663E}示地{U+94FE}接到{U+5BFC}出符{U+53F7}
 
-<details><summary>GetProcAddress 函数声明</summary>
+<details><summary>GetProcAddress 函{U+6570}{U+58F0}明</summary>
 
 ```cpp
 FARPROC GetProcAddress(
@@ -2915,14 +2915,14 @@ FARPROC GetProcAddress(
 
 #### DumpBin.exe 查看 DLL 信息
 
-在 `VS 的开发人员命令提示符` 使用 `DumpBin.exe` 可查看 DLL 库的导出段（导出的变量、函数、类名的符号）、相对虚拟地址（RVA，relative virtual address）。如：
+在 `VS 的{U+5F00}{U+53D1}人{U+5458}命令提示符` 使用 `DumpBin.exe` 可查看 DLL {U+5E93}的{U+5BFC}出段（{U+5BFC}出的{U+53D8}量、函{U+6570}、{U+7C7B}名的符{U+53F7}）、相{U+5BF9}{U+865A}{U+62DF}地址（RVA，relative virtual address）。如：
 ```
 DUMPBIN -exports D:\mydll.dll
 ```
 
-#### LoadLibrary 与 FreeLibrary 流程图
+#### LoadLibrary 與 FreeLibrary 流程{U+56FE}
 
-<details><summary>LoadLibrary 与 FreeLibrary 流程图</summary>
+<details><summary>LoadLibrary 與 FreeLibrary 流程{U+56FE}</summary>
 
 ##### LoadLibrary
 
@@ -2934,32 +2934,32 @@ DUMPBIN -exports D:\mydll.dll
 
 </details>
 
-#### DLL 库的编写（导出一个 DLL 模块）
+#### DLL {U+5E93}的{U+7F16}{U+5199}（{U+5BFC}出一{U+4E2A} DLL 模{U+5757}）
 
-<details><summary>DLL 库的编写（导出一个 DLL 模块）</summary>
-DLL 头文件
+<details><summary>DLL {U+5E93}的{U+7F16}{U+5199}（{U+5BFC}出一{U+4E2A} DLL 模{U+5757}）</summary>
+DLL {U+5934}文件
 
 ```cpp
 // MyLib.h
 
 #ifdef MYLIBAPI
 
-// MYLIBAPI 应该在全部 DLL 源文件的 include "Mylib.h" 之前被定义
-// 全部函数/变量正在被导出
+// MYLIBAPI {U+5E94}{U+8BE5}在全部 DLL 源文件的 include "Mylib.h" 之前被定{U+4E49}
+// 全部函{U+6570}/{U+53D8}量正在被{U+5BFC}出
 
 #else
 
-// 这个头文件被一个exe源代码模块包含，意味着全部函数/变量被导入
+// {U+8FD9}{U+4E2A}{U+5934}文件被一{U+4E2A}exe源代{U+7801}模{U+5757}包含，意味{U+7740}全部函{U+6570}/{U+53D8}量被{U+5BFC}入
 #define MYLIBAPI extern "C" __declspec(dllimport)
 
 #endif
 
-// 这里定义任何的数据结构和符号
+// {U+8FD9}裏定{U+4E49}任何的{U+6570}據{U+7ED3}構和符{U+53F7}
 
-// 定义导出的变量（避免导出变量）
+// 定{U+4E49}{U+5BFC}出的{U+53D8}量（避免{U+5BFC}出{U+53D8}量）
 MYLIBAPI int g_nResult;
 
-// 定义导出函数原型
+// 定{U+4E49}{U+5BFC}出函{U+6570}原型
 MYLIBAPI int Add(int nLeft, int nRight);
 ```
 
@@ -2968,16 +2968,16 @@ DLL 源文件
 ```cpp
 // MyLibFile1.cpp
 
-// 包含标准Windows和C运行时头文件
+// 包含{U+6807}准Windows和C{U+8FD0}行{U+65F6}{U+5934}文件
 #include <windows.h>
 
-// DLL源码文件导出的函数和变量
+// DLL源{U+7801}文件{U+5BFC}出的函{U+6570}和{U+53D8}量
 #define MYLIBAPI extern "C" __declspec(dllexport)
 
-// 包含导出的数据结构、符号、函数、变量
+// 包含{U+5BFC}出的{U+6570}據{U+7ED3}構、符{U+53F7}、函{U+6570}、{U+53D8}量
 #include "MyLib.h"
 
-// 将此DLL源代码文件的代码放在此处
+// {U+5C06}此DLL源代{U+7801}文件的代{U+7801}放在此{U+5904}
 int g_nResult;
 
 int Add(int nLeft, int nRight)
@@ -2989,9 +2989,9 @@ int Add(int nLeft, int nRight)
 
 </details>
 
-#### DLL 库的使用（运行时动态链接 DLL）
+#### DLL {U+5E93}的使用（{U+8FD0}行{U+65F6}{U+52A8}{U+6001}{U+94FE}接 DLL）
 
-<details><summary>DLL 库的使用（运行时动态链接 DLL）</summary>
+<details><summary>DLL {U+5E93}的使用（{U+8FD0}行{U+65F6}{U+52A8}{U+6001}{U+94FE}接 DLL）</summary>
 
 ```cpp
 // A simple program that uses LoadLibrary and 
@@ -3040,150 +3040,150 @@ int main( void )
 
 </details>
 
-### 运行库（Runtime Library）
+### {U+8FD0}行{U+5E93}（Runtime Library）
 
-#### 典型程序运行步骤
+#### 典型程序{U+8FD0}行步{U+9AA4}
 
-1. 操作系统创建进程，把控制权交给程序的入口（往往是运行库中的某个入口函数）
-2. 入口函数对运行库和程序运行环境进行初始化（包括堆、I/O、线程、全局变量构造等等）。
-3. 入口函数初始化后，调用 main 函数，正式开始执行程序主体部分。
-4. main 函数执行完毕后，返回到入口函数进行清理工作（包括全局变量析构、堆销毁、关闭I/O等），然后进行系统调用结束进程。
+1. 操作系{U+7EDF}{U+521B}建{U+8FDB}程，把控制{U+6743}交{U+7ED9}程序的入口（往往是{U+8FD0}行{U+5E93}中的某{U+4E2A}入口函{U+6570}）
+2. 入口函{U+6570}{U+5BF9}{U+8FD0}行{U+5E93}和程序{U+8FD0}行{U+73AF}境{U+8FDB}行初始化（包括堆、I/O、{U+7EBF}程、全局{U+53D8}量構造等等）。
+3. 入口函{U+6570}初始化後，{U+8C03}用 main 函{U+6570}，正式{U+5F00}始{U+6267}行程序主體部分。
+4. main 函{U+6570}{U+6267}行完{U+6BD5}後，返回到入口函{U+6570}{U+8FDB}行清理工作（包括全局{U+53D8}量析構、堆{U+9500}{U+6BC1}、{U+5173}{U+95ED}I/O等），然後{U+8FDB}行系{U+7EDF}{U+8C03}用{U+7ED3}束{U+8FDB}程。
 
-> 一个程序的 I/O 指代程序与外界的交互，包括文件、管程、网络、命令行、信号等。更广义地讲，I/O 指代操作系统理解为 “文件” 的事物。
+> 一{U+4E2A}程序的 I/O 指代程序與外界的交互，包括文件、管程、網{U+7EDC}、命令行、信{U+53F7}等。更{U+5E7F}{U+4E49}地{U+8BB2}，I/O 指代操作系{U+7EDF}理解{U+4E3A} 「文件」 的事物。
 
 #### glibc 入口
 
 `_start -> __libc_start_main -> exit -> _exit`
 
-其中 `main(argc, argv, __environ)` 函数在 `__libc_start_main` 里执行。
+其中 `main(argc, argv, __environ)` 函{U+6570}在 `__libc_start_main` 裏{U+6267}行。
 
 #### MSVC CRT 入口
 
 `int mainCRTStartup(void)`
 
-执行如下操作：
+{U+6267}行如下操作：
 
-1. 初始化和 OS 版本有关的全局变量。
+1. 初始化和 OS 版本有{U+5173}的全局{U+53D8}量。
 2. 初始化堆。
 3. 初始化 I/O。
-4. 获取命令行参数和环境变量。
-5. 初始化 C 库的一些数据。
-6. 调用 main 并记录返回值。
-7. 检查错误并将 main 的返回值返回。
+4. {U+83B7}取命令行{U+53C2}{U+6570}和{U+73AF}境{U+53D8}量。
+5. 初始化 C {U+5E93}的一些{U+6570}據。
+6. {U+8C03}用 main 並{U+8BB0}{U+5F55}返回值。
+7. {U+68C0}查{U+9519}{U+8BEF}並{U+5C06} main 的返回值返回。
 
-#### C 语言运行库（CRT）
+#### C {U+8BED}言{U+8FD0}行{U+5E93}（CRT）
 
 大致包含如下功能：
 
-* 启动与退出：包括入口函数及入口函数所依赖的其他函数等。
-* 标准函数：有 C 语言标准规定的C语言标准库所拥有的函数实现。
-* I/O：I/O 功能的封装和实现。
-* 堆：堆的封装和实现。
-* 语言实现：语言中一些特殊功能的实现。
-* 调试：实现调试功能的代码。
+* {U+542F}{U+52A8}與退出：包括入口函{U+6570}及入口函{U+6570}所依{U+8D56}的其他函{U+6570}等。
+* {U+6807}准函{U+6570}：有 C {U+8BED}言{U+6807}准{U+89C4}定的C{U+8BED}言{U+6807}准{U+5E93}所{U+62E5}有的函{U+6570}{U+5B9E}{U+73B0}。
+* I/O：I/O 功能的封{U+88C5}和{U+5B9E}{U+73B0}。
+* 堆：堆的封{U+88C5}和{U+5B9E}{U+73B0}。
+* {U+8BED}言{U+5B9E}{U+73B0}：{U+8BED}言中一些特殊功能的{U+5B9E}{U+73B0}。
+* {U+8C03}{U+8BD5}：{U+5B9E}{U+73B0}{U+8C03}{U+8BD5}功能的代{U+7801}。
 
-#### C语言标准库（ANSI C）
+#### C{U+8BED}言{U+6807}准{U+5E93}（ANSI C）
 
 包含：
 
-* 标准输入输出（stdio.h）
+* {U+6807}准{U+8F93}入{U+8F93}出（stdio.h）
 * 文件操作（stdio.h）
 * 字符操作（ctype.h）
 * 字符串操作（string.h）
-* 数学函数（math.h）
-* 资源管理（stdlib.h）
-* 格式转换（stdlib.h）
-* 时间/日期（time.h）
-* 断言（assert.h）
-* 各种类型上的常数（limits.h & float.h）
-* 变长参数（stdarg.h）
-* 非局部跳转（setjmp.h）
+* {U+6570}{U+5B66}函{U+6570}（math.h）
+* {U+8D44}源管理（stdlib.h）
+* 格式{U+8F6C}{U+6362}（stdlib.h）
+* {U+65F6}{U+95F4}/日期（time.h）
+* {U+65AD}言（assert.h）
+* 各種{U+7C7B}型上的常{U+6570}（limits.h & float.h）
+* {U+53D8}{U+957F}{U+53C2}{U+6570}（stdarg.h）
+* 非局部跳{U+8F6C}（setjmp.h）
 
-## 海量数据处理
+## 海量{U+6570}據{U+5904}理
 
-* [ 海量数据处理面试题集锦](http://blog.csdn.net/v_july_v/article/details/6685962)
-* [十道海量数据处理面试题与十个方法大总结](http://blog.csdn.net/v_JULY_v/article/details/6279498)
+* [ 海量{U+6570}據{U+5904}理面{U+8BD5}{U+9898}集{U+9526}](http://blog.csdn.net/v_july_v/article/details/6685962)
+* [十道海量{U+6570}據{U+5904}理面{U+8BD5}{U+9898}與十{U+4E2A}方法大{U+603B}{U+7ED3}](http://blog.csdn.net/v_JULY_v/article/details/6279498)
 
-## 音视频
+## 音{U+89C6}{U+9891}
 
-* [最全实时音视频开发要用到的开源工程汇总](http://www.yunliaoim.com/im/1869.html)
-* [18个实时音视频开发中会用到开源项目](http://webrtc.org.cn/18%E4%B8%AA%E5%AE%9E%E6%97%B6%E9%9F%B3%E8%A7%86%E9%A2%91%E5%BC%80%E5%8F%91%E4%B8%AD%E4%BC%9A%E7%94%A8%E5%88%B0%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/)
+* [最全{U+5B9E}{U+65F6}音{U+89C6}{U+9891}{U+5F00}{U+53D1}要用到的{U+5F00}源工程{U+6C47}{U+603B}](http://www.yunliaoim.com/im/1869.html)
+* [18{U+4E2A}{U+5B9E}{U+65F6}音{U+89C6}{U+9891}{U+5F00}{U+53D1}中{U+4F1A}用到{U+5F00}源{U+9879}目](http://webrtc.org.cn/18%E4%B8%AA%E5%AE%9E%E6%97%B6%E9%9F%B3%E8%A7%86%E9%A2%91%E5%BC%80%E5%8F%91%E4%B8%AD%E4%BC%9A%E7%94%A8%E5%88%B0%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/)
 
 ## 其他
 
-* [Bjarne Stroustrup 的常见问题](http://www.stroustrup.com/bs_faq.html)
-* [Bjarne Stroustrup 的 C++ 风格和技巧常见问题](http://www.stroustrup.com/bs_faq2.html)
+* [Bjarne Stroustrup 的常{U+89C1}{U+95EE}{U+9898}](http://www.stroustrup.com/bs_faq.html)
+* [Bjarne Stroustrup 的 C++ {U+98CE}格和技巧常{U+89C1}{U+95EE}{U+9898}](http://www.stroustrup.com/bs_faq2.html)
 
-## 书籍
+## {U+4E66}籍
 
-### 语言
+### {U+8BED}言
 
 * 《C++ Primer》
 * 《Effective C++》
 * 《More Effective C++》
-* 《深度探索 C++ 对象模型》
+* 《深度探索 C++ {U+5BF9}象模型》
 * 《深入理解 C++11》
-* 《STL 源码剖析》
+* 《STL 源{U+7801}剖析》
 
 ### 算法
 
-* 《剑指 Offer》
-* 《编程珠玑》
-* 《程序员面试宝典》
+* 《{U+5251}指 Offer》
+* 《{U+7F16}程珠{U+7391}》
+* 《程序{U+5458}面{U+8BD5}{U+5B9D}典》
 
-### 系统
+### 系{U+7EDF}
 
-* 《深入理解计算机系统》
-* 《Windows 核心编程》
-* 《Unix 环境高级编程》
+* 《深入理解{U+8BA1}算機系{U+7EDF}》
+* 《Windows 核心{U+7F16}程》
+* 《Unix {U+73AF}境高{U+7EA7}{U+7F16}程》
 
-### 网络
+### 網{U+7EDC}
 
-* 《Unix 网络编程》
-* 《TCP/IP 详解》
+* 《Unix 網{U+7EDC}{U+7F16}程》
+* 《TCP/IP {U+8BE6}解》
 
 ### 其他
 
-* 《程序员的自我修养》
+* 《程序{U+5458}的自我修{U+517B}》
 
-## 复习刷题网站
+## 複{U+4E60}刷{U+9898}網站
 
 * [leetcode](https://leetcode.com/)
-* [牛客网](https://www.nowcoder.net/)
-* [慕课网](https://www.imooc.com/)
-* [菜鸟教程](http://www.runoob.com/)
+* [牛客網](https://www.nowcoder.net/)
+* [慕{U+8BFE}網](https://www.imooc.com/)
+* [菜{U+9E1F}教程](http://www.runoob.com/)
 
-## 招聘时间岗位
+## 招聘{U+65F6}{U+95F4}{U+5C97}位
 
-* [牛客网 . 2019 IT名企校招指南](https://www.nowcoder.com/activity/campus2019)
+* [牛客網 . 2019 IT名企校招指南](https://www.nowcoder.com/activity/campus2019)
 
-## 面试题目经验
+## 面{U+8BD5}{U+9898}目{U+7ECF}{U+9A8C}
 
-### 牛客网
+### 牛客網
 
-* [牛客网 . 2017秋季校园招聘笔经面经专题汇总](https://www.nowcoder.com/discuss/12805)
-* [牛客网 . 史上最全2017春招面经大合集！！](https://www.nowcoder.com/discuss/25268)
-* [牛客网 . 面试题干货在此](https://www.nowcoder.com/discuss/57978)
+* [牛客網 . 2017秋季校{U+56ED}招聘{U+7B14}{U+7ECF}面{U+7ECF}{U+4E13}{U+9898}{U+6C47}{U+603B}](https://www.nowcoder.com/discuss/12805)
+* [牛客網 . 史上最全2017春招面{U+7ECF}大合集！！](https://www.nowcoder.com/discuss/25268)
+* [牛客網 . 面{U+8BD5}{U+9898}幹{U+8D27}在此](https://www.nowcoder.com/discuss/57978)
 
 ### 知乎
 
-* [知乎 . 互联网求职路上，你见过哪些写得很好、很用心的面经？最好能分享自己的面经、心路历程。](https://www.zhihu.com/question/29693016)
-* [知乎 . 互联网公司最常见的面试算法题有哪些？](https://www.zhihu.com/question/24964987)
-* [知乎 . 面试 C++ 程序员，什么样的问题是好问题？](https://www.zhihu.com/question/20184857)
+* [知乎 . 互{U+8054}網求{U+804C}路上，你{U+89C1}{U+8FC7}哪些{U+5199}得很好、很用心的面{U+7ECF}？最好能分享自己的面{U+7ECF}、心路{U+5386}程。](https://www.zhihu.com/question/29693016)
+* [知乎 . 互{U+8054}網公司最常{U+89C1}的面{U+8BD5}算法{U+9898}有哪些？](https://www.zhihu.com/question/24964987)
+* [知乎 . 面{U+8BD5} C++ 程序{U+5458}，什麼{U+6837}的{U+95EE}{U+9898}是好{U+95EE}{U+9898}？](https://www.zhihu.com/question/20184857)
 
 ### CSDN
 
-* [CSDN . 全面整理的C++面试题](http://blog.csdn.net/ljzcome/article/details/574158)
-* [CSDN . 百度研发类面试题（C++方向）](http://blog.csdn.net/Xiongchao99/article/details/74524807?locationNum=6&fps=1)
-* [CSDN . c++常见面试题30道](http://blog.csdn.net/fakine/article/details/51321544)
-* [CSDN . 腾讯2016实习生面试经验（已经拿到offer)](http://blog.csdn.net/onever_say_love/article/details/51223886)
+* [CSDN . 全面整理的C++面{U+8BD5}{U+9898}](http://blog.csdn.net/ljzcome/article/details/574158)
+* [CSDN . 百度研{U+53D1}{U+7C7B}面{U+8BD5}{U+9898}（C++方向）](http://blog.csdn.net/Xiongchao99/article/details/74524807?locationNum=6&fps=1)
+* [CSDN . c++常{U+89C1}面{U+8BD5}{U+9898}30道](http://blog.csdn.net/fakine/article/details/51321544)
+* [CSDN . {U+817E}{U+8BAF}2016{U+5B9E}{U+4E60}生面{U+8BD5}{U+7ECF}{U+9A8C}（已{U+7ECF}拿到offer)](http://blog.csdn.net/onever_say_love/article/details/51223886)
 
 ### cnblogs
 
-* [cnblogs . C++面试集锦( 面试被问到的问题 )](https://www.cnblogs.com/Y1Focus/p/6707121.html)
-* [cnblogs . C/C++ 笔试、面试题目大汇总](https://www.cnblogs.com/fangyukuan/archive/2010/09/18/1829871.html)
-* [cnblogs . 常见C++面试题及基本知识点总结（一）](https://www.cnblogs.com/LUO77/p/5771237.html)
+* [cnblogs . C++面{U+8BD5}集{U+9526}( 面{U+8BD5}被{U+95EE}到的{U+95EE}{U+9898} )](https://www.cnblogs.com/Y1Focus/p/6707121.html)
+* [cnblogs . C/C++ {U+7B14}{U+8BD5}、面{U+8BD5}{U+9898}目大{U+6C47}{U+603B}](https://www.cnblogs.com/fangyukuan/archive/2010/09/18/1829871.html)
+* [cnblogs . 常{U+89C1}C++面{U+8BD5}{U+9898}及基本知{U+8BC6}{U+70B9}{U+603B}{U+7ED3}（一）](https://www.cnblogs.com/LUO77/p/5771237.html)
 
 ### Segmentfault
 
-* [segmentfault . C++常见面试问题总结](https://segmentfault.com/a/1190000003745529)
+* [segmentfault . C++常{U+89C1}面{U+8BD5}{U+95EE}{U+9898}{U+603B}{U+7ED3}](https://segmentfault.com/a/1190000003745529)
