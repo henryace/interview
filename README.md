@@ -1,3 +1,5 @@
+此repository從 (https://github.com/huihut/interview) fork而來。
+
 # C/C++ 面試知識總結
 
 C/C++ 面試知識總結，只為複習、分享。部分知識點與圖片來自網絡，侵刪。
