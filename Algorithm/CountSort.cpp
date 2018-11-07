@@ -1,46 +1,58 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
-// /*****************
-// 計數排序：統計小於等於該元素值的元素的個數i，於是該元素就放在目標數組的索引i位（i≥0）。
-// 計數排序基於一個假設，待排序數列的所有數均出現在（0，k）的區間之內，如果k過大則會引起較大的空間複雜度
-// 計數排序並非是一種基於比較的排序方法，它直接統計出鍵值本應該出現的位置
-// 時間複雜度為O（n），空間複雜度為O（n+k）
-// *****************/
+/*****************
+計數排序：統計小於等於該元素值的元素的個數i，於是該元素就放在目標數組的索引i位（i≥0）。
+計數排序基於一個假設，待排序數列的所有數均為整數，且出現在（0，k）的區間之內。
+如果 k（待排數組的最大值） 過大則會引起較大的空間複雜度，一般是用來排序 0 到 100 之間的數字的最好的算法，但是它不適合按字母順序排序人名。
+計數排序不是比較排序，排序的速度快於任何比較排序算法。
+時間複雜度為 O（n+k），空間複雜度為 O（n+k）
+算法的步驟如下：
+1. 找出待排序的數組中最大和最小的元素
+2. 統計數組中每個值為 i 的元素出現的次數，存入數組 C 的第 i 項
+3. 對所有的計數累加（從 C 中的第一個元素開始，每一項和前一項相加）
+4. 反向填充目標數組：將每個元素 i 放在新數組的第 C[i] 項，每放一個元素就將 C[i] 減去 1
+*****************/
 
-void countSort(vector<int> &vec, vector<int> &objVec) {
-  vector<int> range(10, 0);              // range的下標即鍵值
-  for (int i = 0; i < vec.size(); ++i) { //統計每個鍵值出現的次數
-    range[vec[i]]++;
-  }
 
-  for (int i = 1; i < vec.size();
-       ++i) { //後面的鍵值出現的位置為前面所有鍵值出現的次數之和
-    range[i] += range[i - 1];
-  }
-  //至此，range中存放的是相應鍵值應該出現的位置
-  int length = vec.size();
-  for (int i = length - 1; i >= 0;
-       --i) //注意一個小細節，統計時最正序的，這裏是逆序
-  { //如果存在相同的鍵值，為了保持穩定性，後出現的應該還是位於後面
-    //如果正序，則先出現的會放置到後面，因此不再穩定
-    objVec[range[vec[i]]] = vec[i]; //將鍵值放到目標位置
-    range[vec[i]]--;
-  }
+
+// 計數排序
+void CountSort(vector<int>& vecRaw, vector<int>& vecObj)
+{
+	// 確保待排序容器非空
+	if (vecRaw.size() == 0)
+		return;
+
+	// 使用 vecRaw 的最大值 + 1 作為計數容器 countVec 的大小
+	int vecCountLength = (*max_element(begin(vecRaw), end(vecRaw))) + 1;
+	vector<int> vecCount(vecCountLength, 0);
+
+	// 統計每個鍵值出現的次數
+	for (int i = 0; i < vecRaw.size(); i++)
+		vecCount[vecRaw[i]]++;
+	
+	// 後面的鍵值出現的位置為前面所有鍵值出現的次數之和
+	for (int i = 1; i < vecCountLength; i++)
+		vecCount[i] += vecCount[i - 1];
+
+	// 將鍵值放到目標位置
+	for (int i = vecRaw.size(); i > 0; i--)	// 此處逆序是為了保持相同鍵值的穩定性
+		vecObj[--vecCount[vecRaw[i - 1]]] = vecRaw[i - 1];
 }
 
-int main() {
-  int a[14] = {0, 5, 7, 9, 6, 3, 4, 5, 2, 8, 6, 9, 2, 1};
-  vector<int> vec(a, a + 14);
-  vector<int> objVec(14, 0);
+int main()
+{
+	vector<int> vecRaw = { 0,5,7,9,6,3,4,5,2,8,6,9,2,1 };
+	vector<int> vecObj(vecRaw.size(), 0);
 
-  countSort(vec, objVec);
+	CountSort(vecRaw, vecObj);
 
-  for (int i = 0; i < objVec.size(); ++i)
-    cout << objVec[i] << "  ";
-  cout << endl;
-  system("pause");
-  return 0;
+	for (int i = 0; i < vecObj.size(); ++i)
+		cout << vecObj[i] << "  ";
+	cout << endl;
+
+	return 0;
 }
